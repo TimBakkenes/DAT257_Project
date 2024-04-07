@@ -36,3 +36,105 @@
     transform: rotate(360deg);
   }
 }
+
+.stores-wrapper {
+   /* Takes up left half of the screen */
+  height: 100vh; /* Full height of the viewport */
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+  background-color: #00CED1; /* Turquoise green background color */
+}
+
+.stores-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 90%; /* Takes up left half of the screen */
+  padding: 20px;
+  background-color: #00CED1; /* Turquoise green background color */
+}
+
+.store {
+  width: 300px; /* Fixed width */
+  height: 200px;
+  padding: 10px;
+  border: 4px solid #ccc;
+  background-color: #fff;
+  box-sizing: border-box;
+  
+    /* White background color for each store */
+}
+
+.store img {
+  width: 100%;
+  height: auto;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.stars {
+  display: flex;
+}
+
+.star {
+  color: #f0ad4e;
+  font-size: 20px;
+}
+
+.FavouritesPage {
+  position: absolute;
+  display: flex;
+  top: 50px; /* Adjust the top position based on the header height and padding */
+  width: 100%;
+
+  overflow: auto; /* Allow scrolling if the content exceeds the height */
+}
+
+.FavouriteStores {
+  position: flex;
+  left: 0;
+  top: 10;
+  height: 100%;
+  width: 50%; /* Initial width, adjust as needed */
+  transition: width 0.5s ease;
+  overflow: auto;
+}
+
+.Google {
+  position: flex;
+  left: 50%; /* Position the Google component to the right */
+  top: 10;
+   /* Initial width, takes up the rest of the screen */
+  height: 100%;
+  width: 100%; /* Take up the full width initially */
+  transition: left -0.5s ease; /* Smooth transition for transform and width */
+  overflow: auto; /* Allow scrolling if the content exceeds the height */
+}
+
+/* For the FavouriteStores component */
+.visible {
+  display: block;
+}
+
+.hidden {
+  width: 0; /* Collapse the favourites */
+  overflow: hidden; 
+}
+
+/* For the Google component */
+.map-small {
+  left: 50%;
+  width: 50%;
+  transition: left 0.5s ease, width 0.5s ease;
+}
+
+.map-large {
+  position: absolute;
+  left: 0%;
+  width: 100%;
+  transition: left 0.5s ease; 
+}
+
+
