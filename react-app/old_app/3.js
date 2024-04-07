@@ -101,10 +101,23 @@ const App = () => {
   stores.get_stores(logStores);
 
   return (
-    test()
+    <LoadScript
+    
+      googleMapsApiKey={API_KEY}
+    >
+      
+      <h2>Hello Group vi har fått google maps api:et att funka</h2>
+      
+      <GoogleMap
+        mapContainerStyle={mapStyles}
+        zoom={10}
+        center={gothenburg}
+        >
+        <MarkerF position={gothenburg}
+         />
+      </GoogleMap>
+    </LoadScript>
   );
 };
 
 export default App;
-
-
