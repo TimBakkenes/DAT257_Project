@@ -25,6 +25,5 @@ export function Header({ navigateHome, toggleFavorites, navigateFactPage, naviga
                 aria-label="Login" // Accessibility label
             />
         </div>
-
     );
 }
