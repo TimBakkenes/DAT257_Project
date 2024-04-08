@@ -17,13 +17,13 @@ function App() {
   return (
 
     <div>
-       <Header toggleFavorites={toggleFavorites} />
+      <Header toggleFavorites={toggleFavorites} />
       <div className='FavouritesPage'>
         <div className={`FavouriteStores ${showFavorites ? 'visible' : 'hidden'}`}>
           <FavoriteStores/>
         </div>
         <div className={`Google ${showFavorites ? 'map-small' : 'map-large'}`}>
-          <Google/>
+           <Google/> 
         </div>
       </div>
     </div>
