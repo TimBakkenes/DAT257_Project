@@ -103,13 +103,13 @@
 
 .Google {
   position: flex;
-  left: 50%; /* Position the Google component to the right */
+  left: 50%; 
   top: 10;
-   /* Initial width, takes up the rest of the screen */
+
   height: 100%;
-  width: 100%; /* Take up the full width initially */
-  transition: left -0.5s ease; /* Smooth transition for transform and width */
-  overflow: auto; /* Allow scrolling if the content exceeds the height */
+  width: 100%; 
+  transition: left -0.5s ease; /* Bra transition */
+  overflow: auto; 
 }
 
 /* For the FavouriteStores component */
