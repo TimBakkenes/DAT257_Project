@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { Google } from './components/googleMap';
 import { FavoriteStores } from './components/favourites';
 import { Header } from './components/header';
-
+import { Factpage } from './components/factpage';
 
 function App() {
 

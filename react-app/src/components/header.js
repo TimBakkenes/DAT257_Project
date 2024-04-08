@@ -1,7 +1,7 @@
 import React from 'react';
 import "./css/Header.css"; // make sure the path is correct
 
-export function Header({ navigateHome, toggleFavorites, navigateFactPage, navigateProfilePage }) {
+export function Header({ navigateHome, toggleFavorites, toggleFactpage, navigateProfilePage }) {
     return (
         <div className="fixed-header">
           <button
@@ -16,7 +16,7 @@ export function Header({ navigateHome, toggleFavorites, navigateFactPage, naviga
             />
             <button
                 className="header-button fact-button"
-                onClick={toggleFactPage}
+                onClick={toggleFactpage}
                 aria-label="Fact" // Accessibility label
             />
             <button
