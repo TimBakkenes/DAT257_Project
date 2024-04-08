@@ -13,6 +13,7 @@ export function Google () {
         lat: 57.7089,
         lng: 11.9746
       };
+    
 
     return (
       <LoadScript
