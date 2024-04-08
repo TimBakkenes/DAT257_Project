@@ -1,0 +1,1834 @@
+{
+  "places": [
+    {
+      "formattedAddress": "Kaserntorget 6, 411 18 G\u00f6teborg, Sweden",
+      "location": {
+        "latitude": 57.7029362,
+        "longitude": 11.961788000000002
+      },
+      "rating": 4.1,
+      "websiteUri": "http://www.humanasecondhand.se/",
+      "displayName": {
+        "text": "HUMANA Second Hand",
+        "languageCode": "sv"
+      },
+      "photos": [
+        {
+          "name": "places/ChIJZS3xPuvzT0YRlvrnVzcA4RE/photos/ATplDJY01rFWjsJoEirdXCR-CcWeBP2nRyXCMeV7qnfCZJ3bLcusjwHTVYIwUqrh0OU_lfPC1bJJ8VryxjM3EMP2vVfe6zmESAFGTL-RuuA_x65-j1ZmUrcz_s5hNedQDTNpLPBlReE5LV8nqAvVi8cWkkimtkJx0GgznzCy",
+          "widthPx": 3024,
+          "heightPx": 4032,
+          "authorAttributions": [
+            {
+              "displayName": "Pedram Azampanah (Pedro Panah)",
+              "uri": "//maps.google.com/maps/contrib/111430741244891358043",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUjlHswJQVItVOmuYNntjVDEfxX3sM9yZ7ogGjcxNyhEa-K7a20qg=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJZS3xPuvzT0YRlvrnVzcA4RE/photos/ATplDJaAFljexSu99kVK_HC_WC8HBAmU5aQH2T473rvjUDSSOZVbCQrkjlJUp_zTjABympYGd6849NptcsX-GPuw1odlAA54HLldUoQ3xA-J78IaQ98iYOMrdZtY_vUmBZlyeLQMQDu4AdWMZ8NQC6foUBCrm-PrHSlEFlga",
+          "widthPx": 4032,
+          "heightPx": 3024,
+          "authorAttributions": [
+            {
+              "displayName": "Pedram Azampanah (Pedro Panah)",
+              "uri": "//maps.google.com/maps/contrib/111430741244891358043",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUjlHswJQVItVOmuYNntjVDEfxX3sM9yZ7ogGjcxNyhEa-K7a20qg=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJZS3xPuvzT0YRlvrnVzcA4RE/photos/ATplDJboIQD32MJcRACqcioYfAsiygWSNseibqeBaZUbnIQP6vzZtpIeN8ONyVD81QPGj1jE9C5s9wmFr67wM_zISiGtU0ZEpa-Vs9KSn_8L604dz4VdPPVKH1JxECOxzo2rpauX7wCkAHSYgDkjXMVWYdTbQDeodsc8tYh8",
+          "widthPx": 4032,
+          "heightPx": 3024,
+          "authorAttributions": [
+            {
+              "displayName": "Pedram Azampanah (Pedro Panah)",
+              "uri": "//maps.google.com/maps/contrib/111430741244891358043",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUjlHswJQVItVOmuYNntjVDEfxX3sM9yZ7ogGjcxNyhEa-K7a20qg=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJZS3xPuvzT0YRlvrnVzcA4RE/photos/ATplDJbtuhvP1SfcXtFrHMEukb9F6sRdW1UaH29Q9NtMJihOSmw2f4sQe9SMG0D4-LC3U_XAXxAshRjjeOv-uDPu5NJSXQ97Hd8cBMTFv7EGlAJsBzSuVwIDPSveg9MAgHbP6pqe31rJ-d7PxpJ39hMs3yqEe2zHC-POHFXe",
+          "widthPx": 3024,
+          "heightPx": 4032,
+          "authorAttributions": [
+            {
+              "displayName": "Pedram Azampanah (Pedro Panah)",
+              "uri": "//maps.google.com/maps/contrib/111430741244891358043",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUjlHswJQVItVOmuYNntjVDEfxX3sM9yZ7ogGjcxNyhEa-K7a20qg=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJZS3xPuvzT0YRlvrnVzcA4RE/photos/ATplDJbps6XoIch-RHZJ2-S6q6sROkoDQfmN7ll0J3wIMJj9M3vY1m36YfK-vDm8ZS2c7mPob4YBJQSK2QW2qtY1902SIWu1qeYU2ObJaFyydqli_WhGW8RMFOc4XftMfGekaq50l2NPEirhwJr7zdBWwOZRdoCKnPK-wK8",
+          "widthPx": 589,
+          "heightPx": 589,
+          "authorAttributions": [
+            {
+              "displayName": "HUMANA Second Hand",
+              "uri": "//maps.google.com/maps/contrib/116803958513888087668",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXkCRTO6yf5ZPgE4VTJqc8gc151eKc5q7ygfoy3etA3QyL8Mw=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJZS3xPuvzT0YRlvrnVzcA4RE/photos/ATplDJa_cBlkio-WlhdOn0ZYDSJAMxKDEzi1g9VVEzcHGngssNXxNg5cCZWWmP23Taqgd_X5eWKBuq8XoiDnfLyFanQkjkJOur8qpELmiK7fLcEvWfC9WN01fPcUVdJnYsLYmuO1lMRBFnSCN2ru9F_pnHIAJQGF_BK1kGk",
+          "widthPx": 560,
+          "heightPx": 563,
+          "authorAttributions": [
+            {
+              "displayName": "HUMANA Second Hand",
+              "uri": "//maps.google.com/maps/contrib/116803958513888087668",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXkCRTO6yf5ZPgE4VTJqc8gc151eKc5q7ygfoy3etA3QyL8Mw=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJZS3xPuvzT0YRlvrnVzcA4RE/photos/ATplDJb8Ysst7QptAFxNoNiYGRKKnXWbA8ZTtI2hZ5hc7v7bEyiPeRgNvzR0Bh1jIfm3ORCpHKZuJqbO-udk_EFQakgg0_tk0XWJz1SvtqTHIVP97HtEIPWh97n3HXajmSLy2DtGqkyaD3s0a6ZzFCFYt5obz8zYI71pFLY",
+          "widthPx": 593,
+          "heightPx": 586,
+          "authorAttributions": [
+            {
+              "displayName": "HUMANA Second Hand",
+              "uri": "//maps.google.com/maps/contrib/116803958513888087668",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXkCRTO6yf5ZPgE4VTJqc8gc151eKc5q7ygfoy3etA3QyL8Mw=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJZS3xPuvzT0YRlvrnVzcA4RE/photos/ATplDJaJmqIwb3g7i0ZVsMT24zA5HKw6iqhrDrN-pSgZnyWagco55Blr-E_bnQAQbC45XRmUMIT7zd4gNM5i0rwyjInNKxu7vQxVZGMuFqHGoNzh1FmBA3Cg3kHBFMOO6XHsQ0nDRsoyTTm0p7jhoukyfWj_efJ63MhwEgU",
+          "widthPx": 589,
+          "heightPx": 590,
+          "authorAttributions": [
+            {
+              "displayName": "HUMANA Second Hand",
+              "uri": "//maps.google.com/maps/contrib/116803958513888087668",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXkCRTO6yf5ZPgE4VTJqc8gc151eKc5q7ygfoy3etA3QyL8Mw=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJZS3xPuvzT0YRlvrnVzcA4RE/photos/ATplDJYF-K3QwoAvbUt3Ng7tY9MJpYY3CwwR_FkZYhI68qE_oBUeghD0a5tgCqnCz2gBgcOCPrLLsTDmER-_fY9LalJyBzHkN-vk1occtVgqp-rybQckSLvV-zFSqEKuem9DxQfuYc8tzqCMmr8r9A27botWaWDJs09YUzV7",
+          "widthPx": 4624,
+          "heightPx": 2604,
+          "authorAttributions": [
+            {
+              "displayName": "Black Panther H",
+              "uri": "//maps.google.com/maps/contrib/108547579821667463250",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVKedJkczGAeC2mw0jkwMOkuZZm4pqgDCBbOjw9h_WVb3yGmks=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJZS3xPuvzT0YRlvrnVzcA4RE/photos/ATplDJbdeBW62N7FWza-7JA0HhtTn2-g1_G1hoJiqEYT7bQ2Qa7l66zwZXS2aZPfNifFTdPj8HyviY1Xt-MKGLJ_yc2XstYT7SAE300Z1UmXwL9nGcHLEE6Db4nx7ty3d149-EFpuK5E_2ylSMkWgmvxoJ-HBF3iTS1buDk",
+          "widthPx": 595,
+          "heightPx": 595,
+          "authorAttributions": [
+            {
+              "displayName": "HUMANA Second Hand",
+              "uri": "//maps.google.com/maps/contrib/116803958513888087668",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXkCRTO6yf5ZPgE4VTJqc8gc151eKc5q7ygfoy3etA3QyL8Mw=s100-p-k-no-mo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "formattedAddress": "Krokeg\u00e5rdsgatan 5, 417 30 G\u00f6teborg, Sweden",
+      "location": {
+        "latitude": 57.72193480000001,
+        "longitude": 11.951713999999999
+      },
+      "websiteUri": "https://www.myrorna.se/butiker/goteborg/myrorna-goteborg-backaplan/",
+      "displayName": {
+        "text": "Myrorna - Second hand Backaplan G\u00f6teborg",
+        "languageCode": "sv"
+      }
+    },
+    {
+      "formattedAddress": "Drottninggatan 38, 411 07 G\u00f6teborg, Sweden",
+      "location": {
+        "latitude": 57.706132200000006,
+        "longitude": 11.9690845
+      },
+      "rating": 3.3,
+      "websiteUri": "https://www.stadsmissionen.org/second-hand/butiker/",
+      "displayName": {
+        "text": "Stadsmissionens Second Hand Arkaden",
+        "languageCode": "en"
+      },
+      "photos": [
+        {
+          "name": "places/ChIJY8f2Mf7zT0YRF-BbEyQB_00/photos/ATplDJZXgBfEujtP6reGY0gauZRldwLzXhV1SMnQw591_qWWOXNzoJ2wQk2gLOKLbPr_qEEMgGaUHJUhqyoRDR3Rh5dciIbZ6f0hsKZiWk-OtF6MgrgyTUYp4H-Jy-Z-JP9Em-14hRDxg0ufgF9JB4CCnk3sfHCuuKuaSiFx",
+          "widthPx": 4624,
+          "heightPx": 3468,
+          "authorAttributions": [
+            {
+              "displayName": "Black Panther H",
+              "uri": "//maps.google.com/maps/contrib/108547579821667463250",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVKedJkczGAeC2mw0jkwMOkuZZm4pqgDCBbOjw9h_WVb3yGmks=s100-p-k-no-mo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "formattedAddress": "Brunnsgatan 5, 413 12 G\u00f6teborg, Sweden",
+      "location": {
+        "latitude": 57.693067500000005,
+        "longitude": 11.959140699999999
+      },
+      "rating": 4.2,
+      "websiteUri": "http://saron.se/saron-second-hand/",
+      "displayName": {
+        "text": "Saronkyrkan Second Hand",
+        "languageCode": "en"
+      },
+      "photos": [
+        {
+          "name": "places/ChIJn8xtV2vzT0YRxKXcp7xfp2E/photos/ATplDJYUH0PElOaoQznnF9gUT7xl0h5haTSvZuY3T9EO0bpwDpMMo6q1MdXJ5tisjohDR-gnXeoc9y2ToIT_THHo9I4VwE4UrkojMdDdb2t_mneSrPWQXgRLdwjd8K24j0OmSjUSlX4X9GB-bGR3yZGTEv6Z0G3E2FZoKNKl",
+          "widthPx": 4032,
+          "heightPx": 3024,
+          "authorAttributions": [
+            {
+              "displayName": "svartefilip",
+              "uri": "//maps.google.com/maps/contrib/117858804521964533689",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjX_Hp6KG-5VuscB1ZrDee0jZbxm3NZUFsNO9Xzw0YdplNuykCw=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJn8xtV2vzT0YRxKXcp7xfp2E/photos/ATplDJY8ojw6gfMBK3RIQIfqkXDWfsU9UflfS4MujaeMkTE20sR9sz2xUcmtwq7yCvWYRjL7NJ3U2S3h27PJtpPeM8t3AlXrUtkXoMMSCAaXGchWA4iWJGkD6FugfgLq8NzIPB_M3ZQA1seZfXoWr6bYtPA9ejiqglYsXBo",
+          "widthPx": 5920,
+          "heightPx": 2664,
+          "authorAttributions": [
+            {
+              "displayName": "Zhe Li",
+              "uri": "//maps.google.com/maps/contrib/114851967710609192404",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXVVM19ULIzcUGF1l5Pofuo2JdusTdsRWDcEoaegoMOur3U-_en=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJn8xtV2vzT0YRxKXcp7xfp2E/photos/ATplDJaZOU9KBCGIaOop7MRCDEP3E9q6AZiZGFx3g8Rk36rolIPz_9EoBfM5Sx0ejOhhC1W2VnI1hselTvNerQLLPOS4vs-5dLYX-CxW5ZqzToVPfaxLK-z5PnRPcCqxgXv0Qlg57C6VCl__8a1tmXm4mToyj2RgYlFEqLA-",
+          "widthPx": 3024,
+          "heightPx": 4032,
+          "authorAttributions": [
+            {
+              "displayName": "Yudetaro Ali",
+              "uri": "//maps.google.com/maps/contrib/101635740407077307871",
+              "photoUri": "//lh3.googleusercontent.com/a/ACg8ocKuJlXS7-fYrPKFRPiZxPm-6r__lNquKumeQJbQjKsDleMctA=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJn8xtV2vzT0YRxKXcp7xfp2E/photos/ATplDJbkJ3OjhyIUyx8NmDpuxD3xBzOqJ88NpNRrC9wvwlu4gn_4zEkEZYdYpyvZdHn1cA4mt2hErkDtE-vh3tf3R-ZwrvNfj47OJWy_aKzzVM-FDTMM4yWnGF3fbba1WPB904l7qDH-H_vo518u_8junldu87pp88UDaQJG",
+          "widthPx": 4624,
+          "heightPx": 3468,
+          "authorAttributions": [
+            {
+              "displayName": "Black Panther H",
+              "uri": "//maps.google.com/maps/contrib/108547579821667463250",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVKedJkczGAeC2mw0jkwMOkuZZm4pqgDCBbOjw9h_WVb3yGmks=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJn8xtV2vzT0YRxKXcp7xfp2E/photos/ATplDJbfbGds9pAUUfpU6EQ6RGWTZbrSkrFPwgfKd_HUXzpwO0k-deqsn521aX5mTX541JrIj2TSd-RDmPOy9EJTH5kHM0twvYtcklOTQn7zznzYADVNydQzmg3nk49fbGrpAWPvRknJQtZFMpeqBWBC5U_eCJk0OgwNtcuq",
+          "widthPx": 2000,
+          "heightPx": 1414,
+          "authorAttributions": [
+            {
+              "displayName": "Saronkyrkan Second Hand",
+              "uri": "//maps.google.com/maps/contrib/100433598155209947904",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUs3T66RvOA_D4otdnzPUL20oJ_xUZofXij9xZKv16ZjXANawc=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJn8xtV2vzT0YRxKXcp7xfp2E/photos/ATplDJbODMml8qSgfIw0UiRnyLqDnARB23irEs0fcXIz61LVXQcrfbnHntqR4CaCzOuEEYjB3wt0rs13qTa0DgvVP_iZjv2iNKJDxUyNTqrkR6XZ5okkxI8cfA5aI-Jgu1hVb-VYgduDw1hmKqBqxy5DxjRlVyvoqoUPuOU",
+          "widthPx": 2736,
+          "heightPx": 3648,
+          "authorAttributions": [
+            {
+              "displayName": "Matthew Telles",
+              "uri": "//maps.google.com/maps/contrib/105614183308578450324",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWarQ_SvMS43148zr6IrwLAnUtuO-RertZ2zqUpZAtsNUMfHGU=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJn8xtV2vzT0YRxKXcp7xfp2E/photos/ATplDJamn5vfzzCWIOptUIboKnq0bqjq9824t4HrPJwq53PmlVUNQI8dfU4xOwIPYA__C4fO8OgT9Z75f-wVXgnNE4ltNueftkY-P32K8BrB2eVlhiVNLXMX7FLMaVb5hV7bIuxWzwspJA0AmUXaekrp5xuGbf2q65KcD3Rw",
+          "widthPx": 3024,
+          "heightPx": 4032,
+          "authorAttributions": [
+            {
+              "displayName": "Yudetaro Ali",
+              "uri": "//maps.google.com/maps/contrib/101635740407077307871",
+              "photoUri": "//lh3.googleusercontent.com/a/ACg8ocKuJlXS7-fYrPKFRPiZxPm-6r__lNquKumeQJbQjKsDleMctA=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJn8xtV2vzT0YRxKXcp7xfp2E/photos/ATplDJY4KyFgIrgBJCxX2EJMyu_nsKFVUF__EDNcEvsDrxJxHZu1a6ykV9Xcv-_zbJ2K0gXVvRCqUB03qa_NbX-xBhHffZAk9c0dGEsUJIb5iACo0TaQ-XpzeyI2EpvyNxtS0wZ5YQSsu9IOtfRIU_xU-rNJXp0kA9x_oFw",
+          "widthPx": 2736,
+          "heightPx": 3648,
+          "authorAttributions": [
+            {
+              "displayName": "Matthew Telles",
+              "uri": "//maps.google.com/maps/contrib/105614183308578450324",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWarQ_SvMS43148zr6IrwLAnUtuO-RertZ2zqUpZAtsNUMfHGU=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJn8xtV2vzT0YRxKXcp7xfp2E/photos/ATplDJa_r0NSME6fBBn2KQKivArh732xxQiSsUSdeuHD-fjQC1x_JZU2cbVbR1gD8U5_id_TYb5z4oUzCNCoWrQ7PWioEyq2ODuuD-GtbWbfTEqlqvMvGGKz8RtFpY8PIkJtMEoIEqidDooBoozsqHPBcO1AWJbjlSB2tpNC",
+          "widthPx": 4000,
+          "heightPx": 3000,
+          "authorAttributions": [
+            {
+              "displayName": "Pouya R",
+              "uri": "//maps.google.com/maps/contrib/110042338432881348857",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV-qNw9bAVCSHtkjISBEZqEArdEE2CtbCPVKQ0YqXXMzr6PNPtk=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJn8xtV2vzT0YRxKXcp7xfp2E/photos/ATplDJbyuukF0gaB22zIDYLaEGr19I0zt69qH0KqANFgnSffL5r6bCmVNC06jFiQaniMd37EdPasV6VEVWxu9TQqTVxnh8IEwrAaT1mN3eCkbExFwaGvJmgnr1CBxIlv_y8oWrGXPoltW7Wv4OKAuAPvkpnqrgW52uiX_0hv",
+          "widthPx": 1800,
+          "heightPx": 1200,
+          "authorAttributions": [
+            {
+              "displayName": "Mikael Good",
+              "uri": "//maps.google.com/maps/contrib/110954841642416508040",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjU5Rbhjn_xh0NJJhKruulQKmxDHfhxr3hgwoMcnSYdyhAQdLAA=s100-p-k-no-mo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "formattedAddress": "Bj\u00f6rk\u00e5Secondhand Backaplan, \u00c5ngpannegatan 5, 417 05 G\u00f6teborg, Sweden",
+      "location": {
+        "latitude": 57.7266286,
+        "longitude": 11.9491769
+      },
+      "displayName": {
+        "text": "Second Hand Big Shop (has electronics, kitchenware, clothes, etc)",
+        "languageCode": "pt-PT"
+      },
+      "photos": [
+        {
+          "name": "places/ChIJwf9sH8j1T0YRRZcy9wfb5SQ/photos/ATplDJb8whn0uqI0kGdco1tSkONTXwo6FxTtm_e7BGpOo1vHISJ2YHBvrgnP0BI7rBF5NqzTYYgv4ckf_egY8rLSxyJyFMdUZmyE4_FCyRZVf9zFnBUm8Bpsgt68DLjOq00s4t972q75OgZ-6RV7gU5clJ-xm48DLjMkfT1L",
+          "widthPx": 4000,
+          "heightPx": 1800,
+          "authorAttributions": [
+            {
+              "displayName": "\u0421\u0435\u0440\u0433\u0435\u0439",
+              "uri": "//maps.google.com/maps/contrib/113232041770447227207",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXwqtWNCSahK5Z5G1Hv51Odm6lJHP6AGB5uyy_RVQpE4239eYE=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJwf9sH8j1T0YRRZcy9wfb5SQ/photos/ATplDJZCrz2qzzzDpMSRToppnyvMwQsTeSe5QdKdllDSvTy-mC5PPyhP0T7UyqRS-qMC2FAXj_kM4UXJLRlOCsSwnsRVXHFMefpYp_XjmvEIIflGaE7uu6hqr8aVwkhpt_Uc_xS5p9ahDwgWJt1fWypJ1y5hTd9ZojSoWJez",
+          "widthPx": 1800,
+          "heightPx": 4000,
+          "authorAttributions": [
+            {
+              "displayName": "\u0421\u0435\u0440\u0433\u0435\u0439",
+              "uri": "//maps.google.com/maps/contrib/113232041770447227207",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXwqtWNCSahK5Z5G1Hv51Odm6lJHP6AGB5uyy_RVQpE4239eYE=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJwf9sH8j1T0YRRZcy9wfb5SQ/photos/ATplDJbXoPr_EHZbXucqD7qpGZkb8U3ISmUauojPomEqUwkOFaGHYdoPcx8rHLPWg4gvlz4nFGjHa1KbdeYYIVQhPokXSZebaakAq4Inwmsa7VV4Hpovzr-02VU7HElJLMOLM5oFpNKO0e6XNA9YE5yPV4utdbfYyGVhXOWT",
+          "widthPx": 1800,
+          "heightPx": 4000,
+          "authorAttributions": [
+            {
+              "displayName": "\u0421\u0435\u0440\u0433\u0435\u0439",
+              "uri": "//maps.google.com/maps/contrib/113232041770447227207",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXwqtWNCSahK5Z5G1Hv51Odm6lJHP6AGB5uyy_RVQpE4239eYE=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJwf9sH8j1T0YRRZcy9wfb5SQ/photos/ATplDJbusgymV3s7IwlNRrtkU_lYZhZCyLRVkUwa3M12x0TL60gIIAWV97NZ6Xm_y4x4n9v7oOTdHn-Df0POhaRC4TIevrIoJo5DUyovVF4KXrzoW-ipCY3Cqq9hPYSbY9-iUeSgGtDOs69Gd7q-oTtlbN5uu6HF6qMJ0o6F",
+          "widthPx": 4000,
+          "heightPx": 1800,
+          "authorAttributions": [
+            {
+              "displayName": "\u0421\u0435\u0440\u0433\u0435\u0439",
+              "uri": "//maps.google.com/maps/contrib/113232041770447227207",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXwqtWNCSahK5Z5G1Hv51Odm6lJHP6AGB5uyy_RVQpE4239eYE=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJwf9sH8j1T0YRRZcy9wfb5SQ/photos/ATplDJZr0wcOLS4TUJo7orJUVYXj7ajjTh2FXnp1PCBiBP7rQaRT0AS9n7yh9lnm1bjadHm9NBkO_14jxDEJCGI9yLhnKtL6Wc8F_5ochzQRDQyzCDevBLvd-5MeApX4y1jGjadPc2y8omPPlqCJvnyOmSx2HFAppaWvt3fK",
+          "widthPx": 4000,
+          "heightPx": 1800,
+          "authorAttributions": [
+            {
+              "displayName": "\u0421\u0435\u0440\u0433\u0435\u0439",
+              "uri": "//maps.google.com/maps/contrib/113232041770447227207",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXwqtWNCSahK5Z5G1Hv51Odm6lJHP6AGB5uyy_RVQpE4239eYE=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJwf9sH8j1T0YRRZcy9wfb5SQ/photos/ATplDJYphq73dU62nPEedtb6s2C1eN5rcbDjZ3w06bIj3ptFlGRX7Yn7sz3bL0j498mmqvrscJgi841fqg77oYKkWZV5cn79cpmylAP5O56yz8wMLI0OeSaW73KNAXePVzCtfEvUZCV3tbRnVyiB31AeUwHODqJQqdLsVvn1",
+          "widthPx": 1800,
+          "heightPx": 4000,
+          "authorAttributions": [
+            {
+              "displayName": "\u0421\u0435\u0440\u0433\u0435\u0439",
+              "uri": "//maps.google.com/maps/contrib/113232041770447227207",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXwqtWNCSahK5Z5G1Hv51Odm6lJHP6AGB5uyy_RVQpE4239eYE=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJwf9sH8j1T0YRRZcy9wfb5SQ/photos/ATplDJaZkhi5K9Of8iigB5nO5hiRU4Hj_8BZQuMoFtwagqC2vbhTSPoxT-Z-mQ33Ft1ee--iAWM42xzVJApiIL5pWszQVM1jk04dLQf8lYNImtCw0uAtl4vKkp60RyOlrQMoyVhWR4miDUG5DRM1q-FeSsFFSIgWdTfOdZ7g",
+          "widthPx": 1800,
+          "heightPx": 4000,
+          "authorAttributions": [
+            {
+              "displayName": "\u0421\u0435\u0440\u0433\u0435\u0439",
+              "uri": "//maps.google.com/maps/contrib/113232041770447227207",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXwqtWNCSahK5Z5G1Hv51Odm6lJHP6AGB5uyy_RVQpE4239eYE=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJwf9sH8j1T0YRRZcy9wfb5SQ/photos/ATplDJZJLUwXyXReb82j2A3oFgzmTHzlgf-VQebf5CLj9GdfnGHDQlS7QvrXE0ovZIq-NMowtyvwe73QbrKB8LC2OYPdwWcJcW_0FWvILk41eLwS6oIY6-Ed70EryZIukr4zQ8j7It19TbO3WbWfYmi3DeE_PhoRd21lzM-0",
+          "widthPx": 4000,
+          "heightPx": 1800,
+          "authorAttributions": [
+            {
+              "displayName": "\u0421\u0435\u0440\u0433\u0435\u0439",
+              "uri": "//maps.google.com/maps/contrib/113232041770447227207",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXwqtWNCSahK5Z5G1Hv51Odm6lJHP6AGB5uyy_RVQpE4239eYE=s100-p-k-no-mo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "formattedAddress": "J\u00e4rntorgsgatan 10, 413 01 G\u00f6teborg, Sweden",
+      "location": {
+        "latitude": 57.700833300000006,
+        "longitude": 11.9544444
+      },
+      "rating": 3.9,
+      "websiteUri": "https://www.myrorna.se/butiker/goteborg/goteborg-jarntorget/",
+      "displayName": {
+        "text": "Myrorna",
+        "languageCode": "en"
+      },
+      "photos": [
+        {
+          "name": "places/ChIJHez212nzT0YReTAUfQr2qKM/photos/ATplDJbB5XmMAz8lclg7KA6yU-lDeFjoFs8JfS2UQ0OAsFi5J6yp-TBxgsxniJYz44ARgFr7ErLXUdUFbPID9yNNe66cv78t3EmReHjQBs-dhItjlutAfVEb5MhCct6nPXhVv_C4Nm5t6sxl22yDtDpe2yAag02FvWLzu_vQ",
+          "widthPx": 3264,
+          "heightPx": 2448,
+          "authorAttributions": [
+            {
+              "displayName": "Love Josefsson",
+              "uri": "//maps.google.com/maps/contrib/102487524108650310005",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUNuE2fDLOccFxmyZpM9a7JKeLuNp5VUn0dLzz07RZHtDNfh2jMJg=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJHez212nzT0YReTAUfQr2qKM/photos/ATplDJbhl9EolfqJqo0C-SVB2ndUgOl-TIfNZj_xXjqILV8XnYfbEptc6v-PpGRIbuqGEYJe2PjkxyvdtG-3ZxfHWx2dGDle6agog20Wpbf6MzOmIEVp-8gcnfsNPvGcS6dlZDkyujnjSCTkQ8sWQxUGEqARPUhK1AOsxQTk",
+          "widthPx": 2268,
+          "heightPx": 4032,
+          "authorAttributions": [
+            {
+              "displayName": "Iryna Shevchuk",
+              "uri": "//maps.google.com/maps/contrib/100952465816967208190",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjU8HFO4fRgUDhUxFDCuf6G9_FStDy2yoOJHn-xTdw--R4tPC9Y-=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJHez212nzT0YReTAUfQr2qKM/photos/ATplDJYGxKRSB2VLTt3shRFCR-k7YGvjf6nEBwXAoBWnxML-9WtBhY56NYKgGxA7jKYks9Xvxzj1_F8CT9Ckb_rv4eqsfjPVgH7QMwZPghdkwu9-KKwiSjqvvKIbuFMFyfIqc1IFcJOT3BYaQT_FuJK2IspMZirYN316RQQq",
+          "widthPx": 3264,
+          "heightPx": 1840,
+          "authorAttributions": [
+            {
+              "displayName": "Myrorna",
+              "uri": "//maps.google.com/maps/contrib/118436437600572473997",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUFt9YsuL_uvpBsBt_mcq6BYqfWEKhKldxhSd6shPsExGQB72c=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJHez212nzT0YReTAUfQr2qKM/photos/ATplDJbImXm6EwMuXvMlnEuIKpwZ8Xz3dTMbbPskwl-fdtqlR4ry3TW7e421DZd1egv4PU7uCAqrsmi2J3_GFnPzPqvf3BwmMa7cLiKzVezlIDWWhqiDBxEg3jOOqVFw1HfPySfmu6jJ1I4pO9FfILbluVGG2yCYYW_wOTrS",
+          "widthPx": 2432,
+          "heightPx": 1824,
+          "authorAttributions": [
+            {
+              "displayName": "biketommy999",
+              "uri": "//maps.google.com/maps/contrib/102751562062352999304",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWUs4-zO87-PuogJqo9JVC3h7lI5rmvjn_-Wri1DLxJA13xEbJl_g=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJHez212nzT0YReTAUfQr2qKM/photos/ATplDJZOAhqLJlCEV1kvmb-beHEJ0MmOWNUZJTXAA6NZ2SKk2LMYr-oBOLjTnsi0jnZvd0RSw-2k6h3yfSLjZBj5q1MEF4lZ5E1wm6DR9M2l0Z6ZjNxPa66_FN40_Q-mrOt27sFOo-n9W88BEYvYMfqNbA3PV_acCvgPywv9",
+          "widthPx": 3024,
+          "heightPx": 4032,
+          "authorAttributions": [
+            {
+              "displayName": "Noora Bapir55",
+              "uri": "//maps.google.com/maps/contrib/107778747509731411615",
+              "photoUri": "//lh3.googleusercontent.com/a/ACg8ocK_RRkHzc9Lv5bQchVtMvICEAFSObKJ6caejjSAJH1hhriiGQ=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJHez212nzT0YReTAUfQr2qKM/photos/ATplDJarpSLprCIjWxUgmdVYWJGt8c7JCa4k6Da__Fm_GFJRhc98A0MONnhAX_oT_gD-2l7bCJM-fax_PGZH1Tj7B9C_AGALRB_khF9BNU_CwK_H5chj8k7rzW0OhpEvvsvTsuKCLjcg3IKzSuApvZYBRUH5u3M0Jd8ocIL8",
+          "widthPx": 2432,
+          "heightPx": 1824,
+          "authorAttributions": [
+            {
+              "displayName": "biketommy999",
+              "uri": "//maps.google.com/maps/contrib/102751562062352999304",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWUs4-zO87-PuogJqo9JVC3h7lI5rmvjn_-Wri1DLxJA13xEbJl_g=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJHez212nzT0YReTAUfQr2qKM/photos/ATplDJbsONb5QKt-AKFssAiTPH4iVmyw6K6hpOBB3vy_-mG2VAi-lDFgBoDLgTrz8ELgkT_vJZn6IQSIoNwT6-txnumOSmSNWkT0XmJAUMaTGhFEudlt1gL3ZhgJURPVvnZuPkV4jgUDINL5prQ35zD_f7pwtcq_RKzv4HQ",
+          "widthPx": 4032,
+          "heightPx": 3024,
+          "authorAttributions": [
+            {
+              "displayName": "Emily",
+              "uri": "//maps.google.com/maps/contrib/116390295789771842836",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWekcY94z-fdO_WnLXtUTV8iIU2aOnnE9R9QBLduug-9Slsh-s=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJHez212nzT0YReTAUfQr2qKM/photos/ATplDJaGZRe-iis9UtNJmxFs0QAAy-SwHWxH_9Bl-21tu_qAowgI5Wy81bjMUz4Tl-Ijt9trmSKmKbFsdsvK_NoqnVosKVPODmpL9JZsWZHF_jaDYvxg6HHEDXl6w_uVX1PCunLGira7-F1ZuKZFMzvu1B0Vw5yXGcEslmEy",
+          "widthPx": 3024,
+          "heightPx": 4032,
+          "authorAttributions": [
+            {
+              "displayName": "Noora Bapir55",
+              "uri": "//maps.google.com/maps/contrib/107778747509731411615",
+              "photoUri": "//lh3.googleusercontent.com/a/ACg8ocK_RRkHzc9Lv5bQchVtMvICEAFSObKJ6caejjSAJH1hhriiGQ=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJHez212nzT0YReTAUfQr2qKM/photos/ATplDJYefemAc_pD8RBf7v3g0WUDOI1gX4dCjWGeIsTkRoI1GYuAWSpuIDVuAbcEKy-zHM1HPmAbGZnDO_w2RNOiIGn3tBzF-26Roh6ol3Z5sAL5GxRXzidHSVq9rDVQNdtWLZK-V2p00lzUjxOjD9amEuzD6ypr0fSV33Gq",
+          "widthPx": 4000,
+          "heightPx": 3000,
+          "authorAttributions": [
+            {
+              "displayName": "\u041c\u0430\u0440\u0438\u044f \u041c\u0430\u0440\u0442\u044b\u043d\u0435\u043d\u043a\u043e",
+              "uri": "//maps.google.com/maps/contrib/108474297061747604656",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXoLVC-H4LTvP4AantI9M92UXGGhsqKwGBGWkN-j9hY5yliK2mZ=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJHez212nzT0YReTAUfQr2qKM/photos/ATplDJY5pMRbEfFurtrLihdABwBais-UBJD2lR6XMWKujeUfd98iEu40U_A7qal5aEGi2mnRDXMFaVeOAoJd_e9N8_i8IXZkNd_b23faAh5iliVvcPTxrxOL-s8UWuJl_RVHmWWx_pkY0twr93_OZzHQc8mcghhtrrTxVZWh",
+          "widthPx": 2268,
+          "heightPx": 4032,
+          "authorAttributions": [
+            {
+              "displayName": "Sture E",
+              "uri": "//maps.google.com/maps/contrib/109019819008478830196",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWmfDfRcLsEPPDHsf66BIjwFY2yV8mp06Q8uTH6nizVcIh7Z_YxXA=s100-p-k-no-mo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "formattedAddress": "Rosenlundsgatan 8, 411 20 G\u00f6teborg, Sweden",
+      "location": {
+        "latitude": 57.701127299999996,
+        "longitude": 11.9595563
+      },
+      "rating": 4.5,
+      "websiteUri": "https://erikshjalpen.se/store/goteborg-rosenlundsgatan/",
+      "displayName": {
+        "text": "Erikshj\u00e4lpen Second Hand Citybutik",
+        "languageCode": "en"
+      },
+      "photos": [
+        {
+          "name": "places/ChIJnSEw3AvzT0YRpk9H_vtijKQ/photos/ATplDJZUIhEcY_DPNb2QHv4i8iQ00sJJPQljN5qfzvYIyWl3mpAwJ-VG2QRjvAjVHgr8j4Vp0IZlhBd7SuaxmjldCPBohQuPY0WojoDn4vZk6wnpvVWjiD_ecXCMFCN3ZmDDcra5dQADvHbbtXmD7olEvr_3xKiRYbbbR2v0",
+          "widthPx": 4032,
+          "heightPx": 3024,
+          "authorAttributions": [
+            {
+              "displayName": "eduardo jauregui",
+              "uri": "//maps.google.com/maps/contrib/102607812297335455082",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUM_p3D4ekxRGU_2Uhcj_75P3Ku7Bx9_FuE_Yhbuj_5Wp1C4Bef=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJnSEw3AvzT0YRpk9H_vtijKQ/photos/ATplDJZjrORBQqDg1W5SWv5UzsxpPsyv7gRJ11GrOBo9KV9RXHWMpHjVileDXdvmtdB4vR4FqCAKOrFzcm0_JfFEjpbEeKYh6gD77EVkp5A5Vv7_kkoF0sDHI2CUSdZY1PHGhp9aghfBNK4i6PNU9yr1_bwuxufXXXwADapl",
+          "widthPx": 1816,
+          "heightPx": 4032,
+          "authorAttributions": [
+            {
+              "displayName": "Minna Uhlgren",
+              "uri": "//maps.google.com/maps/contrib/102867106469762617308",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXildYvBbTVZqlYyzrhTYEiEuHW5K5-fYqyB2UFtyZQdkRRFSD2ew=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJnSEw3AvzT0YRpk9H_vtijKQ/photos/ATplDJarch6jwohdQJXqXp6-xUoZ-rlpU0AydLxuAxYL0Z-l7hFMnAFTqFN_djuYNWAWv-eZqiuAwJfqTRxmJgWYi01mEG77-wRnPP1FQ2vvz0qrbEsTR71Z3b8YVmVEq5mYOypt_YTDX8BwDv-wkJMsxgirg1QuLJM1jQaW",
+          "widthPx": 4608,
+          "heightPx": 3456,
+          "authorAttributions": [
+            {
+              "displayName": "Majbrit Jensen",
+              "uri": "//maps.google.com/maps/contrib/117342364609281335173",
+              "photoUri": "//lh3.googleusercontent.com/a/ACg8ocI6p78R1LBrqraaW4dJwXYacvRn8Xt6LPbLVUEdB3khQFlGYw=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJnSEw3AvzT0YRpk9H_vtijKQ/photos/ATplDJY_GWXfiLvkCRkBwRhrFq4hk0FzCJ6GOR9Kp3v-AYGNWCS4EqcttPUIupr1AA1O9Leg1YfUT0p8tvH3k7NviZ105ckUSJ6AnAEJLf9RUa9-xDmvfq51od_5YXQvxkrVvLR3UYpFDApweKX-HQYkcwQe4A_zu_cyr1ES",
+          "widthPx": 4032,
+          "heightPx": 3024,
+          "authorAttributions": [
+            {
+              "displayName": "eduardo jauregui",
+              "uri": "//maps.google.com/maps/contrib/102607812297335455082",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUM_p3D4ekxRGU_2Uhcj_75P3Ku7Bx9_FuE_Yhbuj_5Wp1C4Bef=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJnSEw3AvzT0YRpk9H_vtijKQ/photos/ATplDJahDZoZpIBcaYoCkLKzNxn9VscqmRN0XOb1bolz0oLGtnorZ6BPGJ0n78yMZqd-xztqG1ytuNqsCJHQEcA1qzD-AxQBfcgUn6R0b_nSFb7fDtnepgtmWsgFwYc3xRWseie8PHkAD4eTC_jn8oeUY_GqDEihCCKuI5Bo",
+          "widthPx": 1813,
+          "heightPx": 3561,
+          "authorAttributions": [
+            {
+              "displayName": "Minna Uhlgren",
+              "uri": "//maps.google.com/maps/contrib/102867106469762617308",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXildYvBbTVZqlYyzrhTYEiEuHW5K5-fYqyB2UFtyZQdkRRFSD2ew=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJnSEw3AvzT0YRpk9H_vtijKQ/photos/ATplDJY7hp8YJPvcJf1z0sfMoJ7okk-rkJP83jouUoZpO2FVyMKrKptxfA6WVJlKYkdVmDOqOpvp6dYglt8lZqe_DdOS1e6ifPS3DKyKhC2hSDk8bEwoEX2RLz_awrp8VZebTJ9cZ1gR6jhr23SaLii84Rij18UZ_eRvpnwY",
+          "widthPx": 4608,
+          "heightPx": 3456,
+          "authorAttributions": [
+            {
+              "displayName": "Majbrit Jensen",
+              "uri": "//maps.google.com/maps/contrib/117342364609281335173",
+              "photoUri": "//lh3.googleusercontent.com/a/ACg8ocI6p78R1LBrqraaW4dJwXYacvRn8Xt6LPbLVUEdB3khQFlGYw=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJnSEw3AvzT0YRpk9H_vtijKQ/photos/ATplDJbcOmXEiJRGAr4JNNcOAtHGL7NNIktDfutYhqk4G8mx1YGPrOBT1SVGl7KyKZlRe_9qw6rTqCNY4hyWzQA4rbQWX1InWf3msGKgKLOlS-01IbwvKMTO-yFTtM3fbx2xnL7LH6kFOJCX52-i0AH9RdjaS9rBTqqaSaTy",
+          "widthPx": 1816,
+          "heightPx": 4032,
+          "authorAttributions": [
+            {
+              "displayName": "Minna Uhlgren",
+              "uri": "//maps.google.com/maps/contrib/102867106469762617308",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXildYvBbTVZqlYyzrhTYEiEuHW5K5-fYqyB2UFtyZQdkRRFSD2ew=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJnSEw3AvzT0YRpk9H_vtijKQ/photos/ATplDJbzQve-_DHlz3Keyo9Zz9vllNHNL-a_l0tBNgxE_GTJmzNL4GzO-FGwoS_MenQeYqoUvpjdKoOEQd54DlTIO_9GCJtFKXtCSyVvjiDOAsMCuB62AaXUL9mgzVVzOpWCK8eagOA0MUkE3aB1PyBDkpms84VNx_OnvaXg",
+          "widthPx": 1816,
+          "heightPx": 4032,
+          "authorAttributions": [
+            {
+              "displayName": "Minna Uhlgren",
+              "uri": "//maps.google.com/maps/contrib/102867106469762617308",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXildYvBbTVZqlYyzrhTYEiEuHW5K5-fYqyB2UFtyZQdkRRFSD2ew=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJnSEw3AvzT0YRpk9H_vtijKQ/photos/ATplDJbjQAPXxk8VQOjbEYkDWAjtau9jZvQ03xebA7e6hGYnt1DMme1MuLOdtZEaqhAmsWf5wvsBnyCIgItmu2nLtRGrCMI5ijklsQbDUtmXnESieaoi3ZhhEXz77Avou4NCxn1uJccCz_eNTDzDvuR0MsBkC6Io2nVBjVp4",
+          "widthPx": 4032,
+          "heightPx": 1816,
+          "authorAttributions": [
+            {
+              "displayName": "Minna Uhlgren",
+              "uri": "//maps.google.com/maps/contrib/102867106469762617308",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXildYvBbTVZqlYyzrhTYEiEuHW5K5-fYqyB2UFtyZQdkRRFSD2ew=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJnSEw3AvzT0YRpk9H_vtijKQ/photos/ATplDJY6CGS5YsVqFmlboz4KdoxLJA3eeVGYey8twQJ019BXVWuac0uVv1cVmDw_pNwjBslLvU9E9_Sxu786Jq5exZKggx332gHC8qiImWU__-hS0DpYLPTRNszbdbsQenH3ca8hBIsH3q1V-zQ18FN_KSy9Vi30yg8IgFxk",
+          "widthPx": 4624,
+          "heightPx": 2604,
+          "authorAttributions": [
+            {
+              "displayName": "Black Panther H",
+              "uri": "//maps.google.com/maps/contrib/108547579821667463250",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVKedJkczGAeC2mw0jkwMOkuZZm4pqgDCBbOjw9h_WVb3yGmks=s100-p-k-no-mo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "formattedAddress": "Redbergsv\u00e4gen 11A, 416 65 G\u00f6teborg, Sweden",
+      "location": {
+        "latitude": 57.7144652,
+        "longitude": 11.9990816
+      },
+      "rating": 3.8,
+      "websiteUri": "https://www.myrorna.se/butiker/goteborg/olskroken-goteborg/",
+      "displayName": {
+        "text": "Myrorna - Second hand G\u00f6teborg",
+        "languageCode": "sv"
+      },
+      "photos": [
+        {
+          "name": "places/ChIJQ6I5s3_0T0YRHBSx0KYoYXM/photos/ATplDJYzQQPHEUjkunt4tW0cPvTxllomyrUs-sncAQQQiaWzDSsBghFsjp7xHEz0GXbaxWm4Osn21ckiKu2brmZ9Yig6wPSA95k3_t__4-8Fnz1IfmDSYFLk96wqFjTtqb2VLHlfMjGsRGxEGr-xnKV3eH_0mvGQ76Ot4k69",
+          "widthPx": 4602,
+          "heightPx": 2657,
+          "authorAttributions": [
+            {
+              "displayName": "Ulf Andersson",
+              "uri": "//maps.google.com/maps/contrib/113321207445240876327",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUkkqssmPoWR3TxXNn_k5K1_yk8bGHbgGyd1QQqC_r6Z3RX9X3U=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJQ6I5s3_0T0YRHBSx0KYoYXM/photos/ATplDJZWuDgrdb8V2W7gsvE-Z4FzeMQXcUdpzZ5CiPDEbkfmIX7QwMky3SMf5UfrTzf8XuCYn9IDvuFNtmjKltN3tBLGUuN6A9435D7oRGsXHIeOYSF2DQfdKOA-CqLpa8rp3vab002Di7Wa9FxILpyPU9rOm7wfJ1spmRsR",
+          "widthPx": 5984,
+          "heightPx": 3376,
+          "authorAttributions": [
+            {
+              "displayName": "Katarina Isakson",
+              "uri": "//maps.google.com/maps/contrib/105811167173071944521",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV0GDRhP9FUX6MiInzJU46OgR-RbAcbeN0iGHBjAq5RqeYiWVV4pQ=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJQ6I5s3_0T0YRHBSx0KYoYXM/photos/ATplDJbcBUTya_pWykxYSF3Hw6XLFcPS0D9ucv3JmUk4JlJysW0WxHXlw6yFO70VdqYKiYEc3YeIQP9O9f6DiBBJIMHaP08-17PgescqzrmG662l8rLzudbiw645CKKKaWBqhM4dPu-H_O1GpDDTCTU80Xvd13syPq4xQC5z",
+          "widthPx": 4624,
+          "heightPx": 3468,
+          "authorAttributions": [
+            {
+              "displayName": "Black Panther H",
+              "uri": "//maps.google.com/maps/contrib/108547579821667463250",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVKedJkczGAeC2mw0jkwMOkuZZm4pqgDCBbOjw9h_WVb3yGmks=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJQ6I5s3_0T0YRHBSx0KYoYXM/photos/ATplDJbb3wgMKBZmZEXaJKjZYJa17fxPxqL-m7OAD_AmAhcvGACCoxyXPUD4f4wSr71JGiUQgi_0EyNca3FTjSqgAPc5wSni-AbYGK6zmpdHAhxqtJyoA4QihXvip9g1ZqGHnOmDxiYLz1cDYY9IYQYOO-TtQzx-vMQf2anT",
+          "widthPx": 5984,
+          "heightPx": 3376,
+          "authorAttributions": [
+            {
+              "displayName": "Katarina Isakson",
+              "uri": "//maps.google.com/maps/contrib/105811167173071944521",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV0GDRhP9FUX6MiInzJU46OgR-RbAcbeN0iGHBjAq5RqeYiWVV4pQ=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJQ6I5s3_0T0YRHBSx0KYoYXM/photos/ATplDJbTUeMMbGMxBAtHFsIZLCNXkTbAgY9m4UpUYMAc6wXTvVjq4em0t0Y_EwhHH-JdCRPibB-wgVMW5w2cd_RMnFQWssodx5Xje-t-rgCaKxPPwZQMJb4KiaI5UhpHe-_sSc4tutc3_Zj00H2bFf26W6tGGuD1nHwPh0qo",
+          "widthPx": 5984,
+          "heightPx": 3376,
+          "authorAttributions": [
+            {
+              "displayName": "Katarina Isakson",
+              "uri": "//maps.google.com/maps/contrib/105811167173071944521",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV0GDRhP9FUX6MiInzJU46OgR-RbAcbeN0iGHBjAq5RqeYiWVV4pQ=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJQ6I5s3_0T0YRHBSx0KYoYXM/photos/ATplDJYPKVUESZB1bDOxudW3DjNjG0rcCBFQm5Mg0b6siSeZPYBKvUcIyMzNmUMk0MOdOfsWAkQFDu_jJVa_F8oHOpPbv7O46adIShAdNla2kWVRuntnLgdm_Pcov2XIHGOntYqwqARRRqdDOlgiarWR43p6sQoeexe_oFvZ",
+          "widthPx": 4624,
+          "heightPx": 3468,
+          "authorAttributions": [
+            {
+              "displayName": "Black Panther H",
+              "uri": "//maps.google.com/maps/contrib/108547579821667463250",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVKedJkczGAeC2mw0jkwMOkuZZm4pqgDCBbOjw9h_WVb3yGmks=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJQ6I5s3_0T0YRHBSx0KYoYXM/photos/ATplDJa4_KXvZHbI1C2K9jYYjfqty4tzAQROerY06EuCg7ZzccVzAhhGvra68nig5gU9Uysd5gzCu36CjGmy2pXIUfE7e-DSvzk1k8YSvel5ofovfJdBXuocWVRC8JREPj1vZavvQxghTYqorhti2hj3K5HbqXLN_2tew0BP",
+          "widthPx": 4000,
+          "heightPx": 3000,
+          "authorAttributions": [
+            {
+              "displayName": "Katarina Isakson",
+              "uri": "//maps.google.com/maps/contrib/105811167173071944521",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV0GDRhP9FUX6MiInzJU46OgR-RbAcbeN0iGHBjAq5RqeYiWVV4pQ=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJQ6I5s3_0T0YRHBSx0KYoYXM/photos/ATplDJbtTord4RIh9RaEjl3KfgiZGwaHjOIzAlcUk9unHeKvo8-z9Z35ckmPWPk2WsVyaHbdZzupAhP2i2TzLZX71yNyKVC6C1tYF7pgzuRUr2ZG1uMfekraBH7oBHIWoono2df5-_MRuxXzxXXTzJ6KhyBCOa4K_wUYK7J-",
+          "widthPx": 3016,
+          "heightPx": 3016,
+          "authorAttributions": [
+            {
+              "displayName": "Katarina Isakson",
+              "uri": "//maps.google.com/maps/contrib/105811167173071944521",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV0GDRhP9FUX6MiInzJU46OgR-RbAcbeN0iGHBjAq5RqeYiWVV4pQ=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJQ6I5s3_0T0YRHBSx0KYoYXM/photos/ATplDJYbD-rWsuWGChn9EXmpR8CT0VGJp0uYcAZ5sSBV-ddZTfKuqSSv3HTIeWdhzkoaTTfIGZ5uxZ_jV5kahICgJuO2jpGlGM3fhYxT06J5w0IEAPgXu0JTla_-vCejGTKKbXemLd4yMB6NErrgjVSzDvotpsHJr4SPbVPH",
+          "widthPx": 4032,
+          "heightPx": 3024,
+          "authorAttributions": [
+            {
+              "displayName": "Netha Hussain",
+              "uri": "//maps.google.com/maps/contrib/112706300124648033889",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXW3FSG5a2k304IB_fP-ng2er-FCXA6j4yz_9rNPXFBQVk_C7mqKA=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJQ6I5s3_0T0YRHBSx0KYoYXM/photos/ATplDJZLqa7GkgStSkf4jJZdOB5jMnpflMEzmYwCJn95TtHPzXHgO4V2eHtarmh-oTH4kWA1Zz8OtgwpuXhlLIn0lX4dIRcEZ3wBuRkBuP3kUPRGUYPFdTfOlEKXA-mfuivBEQwdiIYUDR7h_ru1ckwDVzegFMB_359PGVy9",
+          "widthPx": 5325,
+          "heightPx": 3004,
+          "authorAttributions": [
+            {
+              "displayName": "Katarina Isakson",
+              "uri": "//maps.google.com/maps/contrib/105811167173071944521",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV0GDRhP9FUX6MiInzJU46OgR-RbAcbeN0iGHBjAq5RqeYiWVV4pQ=s100-p-k-no-mo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "formattedAddress": "Fabriksgatan 30, 412 51 G\u00f6teborg, Sweden",
+      "location": {
+        "latitude": 57.7023674,
+        "longitude": 11.9935432
+      },
+      "websiteUri": "https://dodsbovast.se/",
+      "displayName": {
+        "text": "G\u00e5rda secondhand",
+        "languageCode": "sv"
+      }
+    },
+    {
+      "formattedAddress": "Fj\u00e4rde L\u00e5nggatan 1, 413 05 G\u00f6teborg, Sweden",
+      "location": {
+        "latitude": 57.69816,
+        "longitude": 11.951027999999999
+      },
+      "rating": 3.3,
+      "displayName": {
+        "text": "Bj\u00f6rn and secondhand",
+        "languageCode": "de"
+      }
+    },
+    {
+      "formattedAddress": "F\u00f6rsta L\u00e5nggatan 28C, 413 27 G\u00f6teborg, Sweden",
+      "location": {
+        "latitude": 57.699281299999996,
+        "longitude": 11.944507699999999
+      },
+      "rating": 3.9,
+      "websiteUri": "https://www.rodakorset.se/vad-vi-gor/second-hand/butiker/roda-korset-second-hand-goteborg/?timeline=EqPLUSjqwZ9Xnq3zdPLUSiPLUSHwvqumBRGzEhzi2BrOLPLUSD4RKf4LjNkfYlJcwSLASH7o2xrsmE9A1fleCwoB7kemci5k0rCyoscg12jMa0jSLASH47Zdq6cylPLUSeoKz2zdPLUSu6DQVljosBb6Pk0GOjoaUpF9lcoiViZoQXxUqBfewCP8Jt3XKTa1padKjJqbl4VU6x87oexGYoaOZedrx6CG9H98IbqCeaaiYgAHB4KTjAGmVnLSG9VENgV0LE7hbHESZxSLASHPbUgSUkgOml",
+      "displayName": {
+        "text": "R\u00f6da Korset Second hand G\u00f6teborg",
+        "languageCode": "sv"
+      },
+      "photos": [
+        {
+          "name": "places/ChIJpYQ_q0bzT0YRv9FhenD7cdU/photos/ATplDJYw56eYvCE5dWsrRf0hHdTeGYGZV91VXEf4tXXlrcjsnrAoNoofZuAeierxRDySfuJustNTN1coPcVJsZo51l6CJdIzsBZQdsJSoivIPe8R0cqJdbjDFEmHTZUhLjIMS-xehqufzeGuZrbOnUJ83WvUETK0wBGPMOkQ",
+          "widthPx": 872,
+          "heightPx": 1920,
+          "authorAttributions": [
+            {
+              "displayName": "RoShivan Ta",
+              "uri": "//maps.google.com/maps/contrib/100669795440052157322",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWKE38BEF2gpvluj-t0HsmvphKe8SQEyPdwCHBnv4rB27mklYhNMw=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJpYQ_q0bzT0YRv9FhenD7cdU/photos/ATplDJaZOLEvMhcWabzbM1fo5YUZaZ6Dn5A_tHbQm84W0Vte8xFQ50p5QiN0lSbNI6RwDki5miaQJf70TUfhUt-13e0QYAaa1eSKp6t5B3b5me4vmc_0lgicvkTT-v6cmaWQHv8Bh_5GaaRIqIdmpSBQHj7vJVgUii5wQZg3",
+          "widthPx": 3004,
+          "heightPx": 5325,
+          "authorAttributions": [
+            {
+              "displayName": "Katarina Isakson",
+              "uri": "//maps.google.com/maps/contrib/105811167173071944521",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV0GDRhP9FUX6MiInzJU46OgR-RbAcbeN0iGHBjAq5RqeYiWVV4pQ=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJpYQ_q0bzT0YRv9FhenD7cdU/photos/ATplDJbazsUv9re3sOt8WEDVr6gyZZjzkMAJCIrMgnn0Ru4-eabNQmTKyL7muxuf04G9-izY_S-FAX4n3to4dHwl23eNTgNX4kl8YDUXfROV1le3_dwfaKNdgnu1swQHpqB-5kRIIJ7K8om-YPKbzDIWksQE7_AEdeRBDhHZ",
+          "widthPx": 3968,
+          "heightPx": 2976,
+          "authorAttributions": [
+            {
+              "displayName": "Frida s",
+              "uri": "//maps.google.com/maps/contrib/107163521546435480268",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUyGaA-fP0dpPyzQgDCy5ATFBmNCrtRQJyFAfkME1sZYJaEfQaleg=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJpYQ_q0bzT0YRv9FhenD7cdU/photos/ATplDJa2Adxw3jwfi22ToebEJB4VKzgKla30sClVneU8lgVa3m4upKKbHEyW23Fvb-Ky6w0V27s7yJh6rvIkq0xqDjki1MpcQeG3bmMHdlL5oOkUurgLdlcZUaKAhzJhzJTpofHhEZ53hFN-OvUgxjwZ9jcL7I3CzCNwGW94",
+          "widthPx": 5325,
+          "heightPx": 3004,
+          "authorAttributions": [
+            {
+              "displayName": "Katarina Isakson",
+              "uri": "//maps.google.com/maps/contrib/105811167173071944521",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV0GDRhP9FUX6MiInzJU46OgR-RbAcbeN0iGHBjAq5RqeYiWVV4pQ=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJpYQ_q0bzT0YRv9FhenD7cdU/photos/ATplDJaEiTieWNfIxD21yOwhjhKxmnifMo8r5kV5gnxxDEJ3vsnVb9nBhOSbh5Ni1vhZjnTaELxoVIzl8GpgoEX9mNTXibaBLGH7jV-YlIIYD6VfXq63bflN58jv-5JIaugjEmWpBj-FnSnZraRLZfKA87mIhOAH-yNE506b",
+          "widthPx": 3968,
+          "heightPx": 2976,
+          "authorAttributions": [
+            {
+              "displayName": "Frida s",
+              "uri": "//maps.google.com/maps/contrib/107163521546435480268",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUyGaA-fP0dpPyzQgDCy5ATFBmNCrtRQJyFAfkME1sZYJaEfQaleg=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJpYQ_q0bzT0YRv9FhenD7cdU/photos/ATplDJb4uu8vT2WnQY1DiULOdSttq6oYU5kK0O55WcsshRDac6BX487vh_wNOgQqe-6JB4rUwR16_qO7k5Qd7UftDApmZKpURO1A0DCKaRHQHySth2cH_zekrHmW39XIa--WF-BAoPyTW0uIVPdyHBDRPePzlWsBg2cZYc4u",
+          "widthPx": 3968,
+          "heightPx": 2976,
+          "authorAttributions": [
+            {
+              "displayName": "Frida s",
+              "uri": "//maps.google.com/maps/contrib/107163521546435480268",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUyGaA-fP0dpPyzQgDCy5ATFBmNCrtRQJyFAfkME1sZYJaEfQaleg=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJpYQ_q0bzT0YRv9FhenD7cdU/photos/ATplDJakSpNn4yNFk4xMVaKojoeH4g9QwZESFSo0TgfycW0j9OZdPLAQU4Y2oFWqMsLzdT3U-DWjAuZITxemQABcMuWjsoYctkS1RdhHH-0ZBr16ZyE0xEVsU8EfEOJRpPyd8fwhcsBJBYGdhE0c3LKmecjNiHUqgAEPeN1I",
+          "widthPx": 5325,
+          "heightPx": 3004,
+          "authorAttributions": [
+            {
+              "displayName": "Katarina Isakson",
+              "uri": "//maps.google.com/maps/contrib/105811167173071944521",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV0GDRhP9FUX6MiInzJU46OgR-RbAcbeN0iGHBjAq5RqeYiWVV4pQ=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJpYQ_q0bzT0YRv9FhenD7cdU/photos/ATplDJYoYfaBMOnbUVHqwE55DBxBaIlhAkNQxDX8RjmPAqNfzXrXnWfHi9IkxSjIizaE8EXLP8ilct2jyxbHYl1VEU4_gLLInTnzVKbKgzRyUpavYdL6GK1RNmZNVl3dW_btF0gvKp5COCtgWp84ZSEByVa7kVrycde1jvNp",
+          "widthPx": 3024,
+          "heightPx": 4032,
+          "authorAttributions": [
+            {
+              "displayName": "mahzad hty",
+              "uri": "//maps.google.com/maps/contrib/107047437875236754473",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV_wzfAkxTOYl6D4bp3EOTLk2z3Hov9ECfsQhZ7IOKy4VWV1iQV=s100-p-k-no-mo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "formattedAddress": "H\u00f6kegatan 32, 416 66 G\u00f6teborg, Sweden",
+      "location": {
+        "latitude": 57.715317399999996,
+        "longitude": 12.001495000000002
+      },
+      "rating": 4.1,
+      "displayName": {
+        "text": "R\u00f6da korset",
+        "languageCode": "en"
+      },
+      "photos": [
+        {
+          "name": "places/ChIJI3lfGRv1T0YROpY59nr0tuo/photos/ATplDJa2yP5AqvuNZ5xalhrr4Dw_EwWlqZRy1hSz0vXTsSd3Pc3KnHdYw0eHxgJRNxOWoV3-kcpABjz8re_n-rN0aL59JkUEFY1iXfe8fKUGiR1GthgrRd_W0auqZRAMg6F7sEgZgD5xtKyueVRGLAhoTCqiZDYqDw0WF5R-",
+          "widthPx": 3648,
+          "heightPx": 2736,
+          "authorAttributions": [
+            {
+              "displayName": "R\u00f6da Korset Second Hand",
+              "uri": "//maps.google.com/maps/contrib/102379392057169304138",
+              "photoUri": "//lh3.googleusercontent.com/a/ACg8ocI6mN6O9Q_89LMS2845aQaKsAKGXsT0eagISvwmIY1DYeTlZg=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJI3lfGRv1T0YROpY59nr0tuo/photos/ATplDJbgNWlZFz_BbbuWf4b81oq5HL4erbVuTeFzbIt_jF_OXNTbvR6Jc9FwCvqCsmIrUstFb_h_7syB7IYViAd13IL0N4SttKS4Zsn__YEwe0ig615QtQb1FbtNbdRnRXZSyBKURdFkvn5-98j8gWEnP9Ml650uW-iyH3Fl",
+          "widthPx": 4032,
+          "heightPx": 2272,
+          "authorAttributions": [
+            {
+              "displayName": "Katarina Isakson",
+              "uri": "//maps.google.com/maps/contrib/105811167173071944521",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV0GDRhP9FUX6MiInzJU46OgR-RbAcbeN0iGHBjAq5RqeYiWVV4pQ=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJI3lfGRv1T0YROpY59nr0tuo/photos/ATplDJY5d04a0Vfmhl2Y49skqlvazTZKqi_xFDfxcl-C4Q360eI7sHZo5g8k5SqvvsrUBi18ZZ2sTTdWUPm-UrzRyKHuTkDZccZx-zadGdMUq-bLx44HZrEaP0gNiQVDg_x7utdDA3pu0QyANp5jNvpOMYI6-PqrCbFSZrLB",
+          "widthPx": 1920,
+          "heightPx": 1080,
+          "authorAttributions": [
+            {
+              "displayName": "Edvin Bengtsson",
+              "uri": "//maps.google.com/maps/contrib/114745387209495119461",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWgx3n816MngbN71u8gRD-5tUZIBO-STd_ob55c6rW5GXns5EoY=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJI3lfGRv1T0YROpY59nr0tuo/photos/ATplDJbTz5PN2WRFk8jWnq6qruzGXbQMQD0nLOc3-VgdbdS-e8GBonz36He91BgLmPFe8ImVZXDzMK5hkBjjn4bZBSVGRUFau6gBWO2X88vNnYY0ZPaJIjdORB8rkJrG952ceofHjV3a_UjCKjURq9bnaNXGwwhyIecNXqKE",
+          "widthPx": 6896,
+          "heightPx": 5042,
+          "authorAttributions": [
+            {
+              "displayName": "R\u00f6da Korset Second Hand",
+              "uri": "//maps.google.com/maps/contrib/102379392057169304138",
+              "photoUri": "//lh3.googleusercontent.com/a/ACg8ocI6mN6O9Q_89LMS2845aQaKsAKGXsT0eagISvwmIY1DYeTlZg=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJI3lfGRv1T0YROpY59nr0tuo/photos/ATplDJZC8oXXQ0mv8WCxtHUBihFFv7F2sAr01PMikNv9SB761_FoDk3StTntSEh5mHLokF5ZeReeZNQ75Afh0wlHX0YHUJscoDJAY6CGphiktyRq7FU7s4p7RRvLhOCaIVk7bIrlNVfhxhtXgQb_nJY7Jt5D1ssYAUQXKLKT",
+          "widthPx": 1440,
+          "heightPx": 1800,
+          "authorAttributions": [
+            {
+              "displayName": "R\u00f6da Korset Second Hand",
+              "uri": "//maps.google.com/maps/contrib/102379392057169304138",
+              "photoUri": "//lh3.googleusercontent.com/a/ACg8ocI6mN6O9Q_89LMS2845aQaKsAKGXsT0eagISvwmIY1DYeTlZg=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJI3lfGRv1T0YROpY59nr0tuo/photos/ATplDJZISBh36O2HoGVC48H-qrZ45fsTSELInGgOaE8RGAs_21-Q9kkoSHSNl_T5z6wJQMblCa-JGUdqOnU3qkiYGxD9_HEfhZNH--hwzEF98WYGqRYjxUjxaCpDQoCUWN46XBvZ1wQZ4Wd2E0Kc-W9Vcqup3f3pJ_oh4t5v",
+          "widthPx": 1920,
+          "heightPx": 1080,
+          "authorAttributions": [
+            {
+              "displayName": "Edvin Bengtsson",
+              "uri": "//maps.google.com/maps/contrib/114745387209495119461",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWgx3n816MngbN71u8gRD-5tUZIBO-STd_ob55c6rW5GXns5EoY=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJI3lfGRv1T0YROpY59nr0tuo/photos/ATplDJYC-wzL-lqypqbq9m_gj463DwQx78R0VYzmLDryDAZmGLEVlFQ_AL7vFMyNjuUZtKbquu95TtArWF_XzRXfcT5gMe-zTiYOzG9djxJgSbqFC6b0t52an5L6sKj7uwdE5O3CeVhz8CE084O-m9nWFFqeNVOWkocARhc4",
+          "widthPx": 1440,
+          "heightPx": 1637,
+          "authorAttributions": [
+            {
+              "displayName": "R\u00f6da Korset Second Hand",
+              "uri": "//maps.google.com/maps/contrib/102379392057169304138",
+              "photoUri": "//lh3.googleusercontent.com/a/ACg8ocI6mN6O9Q_89LMS2845aQaKsAKGXsT0eagISvwmIY1DYeTlZg=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJI3lfGRv1T0YROpY59nr0tuo/photos/ATplDJa0EK1N0mu5patxRnEsMkYdJP5wFw8KNnaEmSaQ4TOM8i1Of7oh6s_8krS6FB_MD3zHsI2-PtqEn_ncmPyPonR2JfTUHnRxFDn-HSoW-yMG8o_eQq-oG_EA8ORE8o9RMWFgS1y62hKv9eK4uZcNeQE9NZ2ocIHQmePC",
+          "widthPx": 4032,
+          "heightPx": 2272,
+          "authorAttributions": [
+            {
+              "displayName": "Katarina Isakson",
+              "uri": "//maps.google.com/maps/contrib/105811167173071944521",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV0GDRhP9FUX6MiInzJU46OgR-RbAcbeN0iGHBjAq5RqeYiWVV4pQ=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJI3lfGRv1T0YROpY59nr0tuo/photos/ATplDJa8TGGrABKm9WCfUYMYvv-L2EMp_SUZszCjT02vwQDWJXiL4ca5ZB3nIzTWN_ws33WYogZlNS5nD25SGZStP-2hlwtl0-_jqLrUpnspmXv0Z5ZjY4gcNHWatwCjJPgz2AX_6BCS0P6JioSTTElnh8KQMvKIMOh422ZP",
+          "widthPx": 1920,
+          "heightPx": 1080,
+          "authorAttributions": [
+            {
+              "displayName": "Edvin Bengtsson",
+              "uri": "//maps.google.com/maps/contrib/114745387209495119461",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWgx3n816MngbN71u8gRD-5tUZIBO-STd_ob55c6rW5GXns5EoY=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJI3lfGRv1T0YROpY59nr0tuo/photos/ATplDJaN0wlLCHbZ6SLyBmIYaojYGAr_DP-ch-HCu-YUijztDCbRuNkTIt-E089hp3qfNFSVl1j8mkus7U_RNAUqugddGGMpH6p5sM97Fhevp59xd2i4gQtnJm5wxvONw6W2Gn1hhEl6wDskn_9qSeX2o0VZwkRXUHyt6VNy",
+          "widthPx": 4000,
+          "heightPx": 3000,
+          "authorAttributions": [
+            {
+              "displayName": "Katarina Isakson",
+              "uri": "//maps.google.com/maps/contrib/105811167173071944521",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV0GDRhP9FUX6MiInzJU46OgR-RbAcbeN0iGHBjAq5RqeYiWVV4pQ=s100-p-k-no-mo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "formattedAddress": "Norra \u00c5gatan 6, 416 64 G\u00f6teborg, Sweden",
+      "location": {
+        "latitude": 57.7117699,
+        "longitude": 11.9924308
+      },
+      "rating": 3.8,
+      "websiteUri": "https://www.stadsmissionen.org/second-hand/",
+      "displayName": {
+        "text": "Stadsmissionens second hand Svingeln",
+        "languageCode": "sv"
+      },
+      "photos": [
+        {
+          "name": "places/ChIJDw1Z3X_zT0YRnICXov5erP4/photos/ATplDJZIJmkJfRuX6i-_gLMFyz6ibWLjV8RJgUQJMtDyStiVzFB5QFVsmnP0CDbOvdXIu6JUAm8Zlqj28owA0OQljXM91n_CV1K1FWjSFpKFZ9qmxWwFUzwG6OmyqV9xPVJf40Ro8c0F59up5lS4y4cX6JhWoZsTjDgBoZ4T",
+          "widthPx": 4624,
+          "heightPx": 2608,
+          "authorAttributions": [
+            {
+              "displayName": "Katarina Isakson",
+              "uri": "//maps.google.com/maps/contrib/105811167173071944521",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV0GDRhP9FUX6MiInzJU46OgR-RbAcbeN0iGHBjAq5RqeYiWVV4pQ=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJDw1Z3X_zT0YRnICXov5erP4/photos/ATplDJa0AxThhDznp_kK5azUgXeT0_JNTxnhXz2asYWC8NbfqUk4Bu0zFuWzdWRVsTUFf-szTnkgAopGRi83UC8PyB_RxcYZUBlHVwTwDAtNOv9rwCVv70I--kG0Ts73WUG9wx-b3F3r1nYaAjBCkTL9J8yzhpDRneXBtLaI",
+          "widthPx": 5325,
+          "heightPx": 3004,
+          "authorAttributions": [
+            {
+              "displayName": "Katarina Isakson",
+              "uri": "//maps.google.com/maps/contrib/105811167173071944521",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV0GDRhP9FUX6MiInzJU46OgR-RbAcbeN0iGHBjAq5RqeYiWVV4pQ=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJDw1Z3X_zT0YRnICXov5erP4/photos/ATplDJbyM3-2K2OAqjEeFfGVnO1-sN_RBVQeeG9NdDTpMZAC8bpKW817tP0nEjiIMk-3J9RL0kvHp6fD_qKh8u64VqIApKgKEDgLQqgIyjHWBmTx1GU_5FH-4WpKXb4lGA8ng7wu1hKzQC6-STbhPZKCPqNqsfGJN-3G3NG7",
+          "widthPx": 5325,
+          "heightPx": 3004,
+          "authorAttributions": [
+            {
+              "displayName": "Katarina Isakson",
+              "uri": "//maps.google.com/maps/contrib/105811167173071944521",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV0GDRhP9FUX6MiInzJU46OgR-RbAcbeN0iGHBjAq5RqeYiWVV4pQ=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJDw1Z3X_zT0YRnICXov5erP4/photos/ATplDJahgYLLhl1C_53eYh3Ci6qbox2kQJNwqDRa5jZ6JjvlCqAOFJEBgN00bhc5we5wH_tdbB8C6NV_yC6wr8NcY7P7aowMpyR8i52mH1-vL9-QNzOP-LPXF0EvmlglQjBBHH9-rYgevyNOD-W2SkhVWA-zFOQ4J_qYqk4k",
+          "widthPx": 2272,
+          "heightPx": 4032,
+          "authorAttributions": [
+            {
+              "displayName": "Katarina Isakson",
+              "uri": "//maps.google.com/maps/contrib/105811167173071944521",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV0GDRhP9FUX6MiInzJU46OgR-RbAcbeN0iGHBjAq5RqeYiWVV4pQ=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJDw1Z3X_zT0YRnICXov5erP4/photos/ATplDJYyZAq9HLDFD85HR1nz26QJp-D4LThbUS9l2i2ct3htitValkQc2GeOuPGmyuluQaQEI6N3fmV2Z1APBALlDLfP-0A4C2h38xE7KBpRlzZWRpIu7P2n4C8ZrHGPnphxpD4cpJLvwEw-LVgRwvzGBrcb0PeZg9GZ9C0N",
+          "widthPx": 5325,
+          "heightPx": 3004,
+          "authorAttributions": [
+            {
+              "displayName": "Katarina Isakson",
+              "uri": "//maps.google.com/maps/contrib/105811167173071944521",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV0GDRhP9FUX6MiInzJU46OgR-RbAcbeN0iGHBjAq5RqeYiWVV4pQ=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJDw1Z3X_zT0YRnICXov5erP4/photos/ATplDJanDnuW-ZJtf5bHABJo4qt8ydxQ6kNx9NRK55dZo3pSJ2ShcFf4Y_fgR93dHcPx5joWQDqJYrG-RCvn2StkW_hhmXJRSREkR7P6vUNikswRdJQFv-j1p5RxE2plKY3Z_zYv17H9qFlXB8bappwxhGHv6WaI9jvbyt32",
+          "widthPx": 1728,
+          "heightPx": 4032,
+          "authorAttributions": [
+            {
+              "displayName": "Katarina Isakson",
+              "uri": "//maps.google.com/maps/contrib/105811167173071944521",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV0GDRhP9FUX6MiInzJU46OgR-RbAcbeN0iGHBjAq5RqeYiWVV4pQ=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJDw1Z3X_zT0YRnICXov5erP4/photos/ATplDJaUYKedEnhGWGwqqqG1DMYC7jt_b0NjCterXVyD_wYMSFZynBHBeInz66In1_Nvf8y8EimTbsdLlG1M9lNV2YPRDty7V2hHsHQhLZaKpPIrEwa8KlKAP_-04NyvPNWSdPdM89mCl3wXALnp1_mZ73L0V-AKNyoBoWNZ",
+          "widthPx": 4032,
+          "heightPx": 3024,
+          "authorAttributions": [
+            {
+              "displayName": "Darya Kazymyrova",
+              "uri": "//maps.google.com/maps/contrib/104781113529798836619",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV1GopSAx_ozcvCmYcJ0jdFp3HNjgY4CTRfj988dvBIvXnP3BfsAA=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJDw1Z3X_zT0YRnICXov5erP4/photos/ATplDJZFJCVtfG2XCjTA_XD2FQ-0LSnqlwUvKdv7qOGx43CKO5QkevPceHdR7QP3CKEydBWZECryzvsyYlIqV1KMdl47lqQZiHkJvCFhprPZpmjuWK4Er6LWurokF3oLoix_Fc_qmXayFb4mwUH67OWM3zd_Mc4kyPEqixJY",
+          "widthPx": 4000,
+          "heightPx": 3000,
+          "authorAttributions": [
+            {
+              "displayName": "Katarina Isakson",
+              "uri": "//maps.google.com/maps/contrib/105811167173071944521",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV0GDRhP9FUX6MiInzJU46OgR-RbAcbeN0iGHBjAq5RqeYiWVV4pQ=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJDw1Z3X_zT0YRnICXov5erP4/photos/ATplDJaGOV89ia9164vYsd7Xs6FquBOqh0JPIfh80Y_RVjk679ru1RHCW9Muqn_YjyxjIz_54m41RX6z3cvlK9R_o4jbg6BI7ObFw6MiD2TGQhCnUiTifCF42NxbXfpKbk-OSbDuZ3kmKXE0yrp1G-DDHvB5YYsHgkGirF7R",
+          "widthPx": 1728,
+          "heightPx": 4032,
+          "authorAttributions": [
+            {
+              "displayName": "Katarina Isakson",
+              "uri": "//maps.google.com/maps/contrib/105811167173071944521",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV0GDRhP9FUX6MiInzJU46OgR-RbAcbeN0iGHBjAq5RqeYiWVV4pQ=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJDw1Z3X_zT0YRnICXov5erP4/photos/ATplDJYHcfLquP8DmGtgycqyEiOAUjBj1d1hJm5mkYBEX4dOjEpQlPbponPcFKQkKIRPq2viddji2Sr4kibLmduoH0UmEcxGOrDjlcbSPQ0GGOApZJTWj8Lo6K946YWfQDMOrWT1GVDw6p1euIR-BNz-Q6I70BRsnuBSzNQ7",
+          "widthPx": 4032,
+          "heightPx": 2272,
+          "authorAttributions": [
+            {
+              "displayName": "Katarina Isakson",
+              "uri": "//maps.google.com/maps/contrib/105811167173071944521",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV0GDRhP9FUX6MiInzJU46OgR-RbAcbeN0iGHBjAq5RqeYiWVV4pQ=s100-p-k-no-mo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "formattedAddress": "\u00c5ngpannegatan 5, 417 05 G\u00f6teborg, Sweden",
+      "location": {
+        "latitude": 57.7264244,
+        "longitude": 11.9493119
+      },
+      "rating": 3.5,
+      "displayName": {
+        "text": "Allt i hem",
+        "languageCode": "en"
+      },
+      "photos": [
+        {
+          "name": "places/ChIJUQ72srj1T0YRSuEXp63rYyo/photos/ATplDJYAWTRW1x6C1LpH7DR3utWfbgwWWlbe-wNqYmwCPlOtBfrQSrbCbgw-E-CBX8GIBrL99cGFH7LWewWGN0zx9MT7CAqZqDgUq9PPvFHkoxf5c25OZaUK86Cgu45JoSZ-w0McbOXWqZYO36B_LBb_LWGFC_vSnN1iPMAi",
+          "widthPx": 3195,
+          "heightPx": 2637,
+          "authorAttributions": [
+            {
+              "displayName": "Love Josefsson",
+              "uri": "//maps.google.com/maps/contrib/102487524108650310005",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUNuE2fDLOccFxmyZpM9a7JKeLuNp5VUn0dLzz07RZHtDNfh2jMJg=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJUQ72srj1T0YRSuEXp63rYyo/photos/ATplDJZKt7-48kkAo6SKNoCQOqEF9qb_5dZhC78Y6tl0giax5P5mfVesRnSOyO2VtJGFAbCi9pJNRl3Xx9Fpxc6h1MHPZEG5GHV7RCfiiPsS1c21SScWJ3WWlRbN8_m7cOexIxPOxq7WsN92sFTxcOpNTUzV76Pvs0UNN31A",
+          "widthPx": 3024,
+          "heightPx": 4032,
+          "authorAttributions": [
+            {
+              "displayName": "Yudetaro Ali",
+              "uri": "//maps.google.com/maps/contrib/101635740407077307871",
+              "photoUri": "//lh3.googleusercontent.com/a/ACg8ocKuJlXS7-fYrPKFRPiZxPm-6r__lNquKumeQJbQjKsDleMctA=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJUQ72srj1T0YRSuEXp63rYyo/photos/ATplDJYLpWSMKR6jx8zmo5-HnFPotJIHMnj7clwFawYeF01fOob1g1ZC_E02cMAJTbOU8U0quXBrG3jw6sopVJQAw8DxlFddjauCkrl4B8T2sLbbp2YfP1MqK3s9ennSMBHstPzrX1K1p7sO5oz4bR7tddv6kQS34ZrD3eoQ",
+          "widthPx": 4032,
+          "heightPx": 3024,
+          "authorAttributions": [
+            {
+              "displayName": "Love Josefsson",
+              "uri": "//maps.google.com/maps/contrib/102487524108650310005",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUNuE2fDLOccFxmyZpM9a7JKeLuNp5VUn0dLzz07RZHtDNfh2jMJg=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJUQ72srj1T0YRSuEXp63rYyo/photos/ATplDJZXs8ZRIhGBTpzsko_NspQdzQ2tf5Nd0I9adV3RkyBKSkGHl2tdM86eZgZxwIoXTD6HgN0GCHx6bN59sBIhqalGwA0AOUQeiDpQg-IgMEOCcjEQPrJumgPZiuM4bd6yKU6IkSgVoBjIxI-K5-Edhp2vXtok2nRfj_zx",
+          "widthPx": 4640,
+          "heightPx": 3472,
+          "authorAttributions": [
+            {
+              "displayName": "Simon the Delusional",
+              "uri": "//maps.google.com/maps/contrib/103279857787031170194",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXf0UhMdt3vVhU1w1nSnJ2D1g7K7m49aVgaUlVWaBfUwC5Sn44=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJUQ72srj1T0YRSuEXp63rYyo/photos/ATplDJYlJpQn9i0obubpgIAha4ZhEc60pdYmp5ySwt_iiCUt2TcUFCoppBS3HgKRj-rm2pTe1tTyPbjZW7TPfFel8WIm9IOnym17xSkG-ArAGtmtmK7AfA5JbSFu6zcc4URaJ9qezqQiNTda1LzT2_9o0YawIDCnmVNe-QDP",
+          "widthPx": 3024,
+          "heightPx": 4032,
+          "authorAttributions": [
+            {
+              "displayName": "Yudetaro Ali",
+              "uri": "//maps.google.com/maps/contrib/101635740407077307871",
+              "photoUri": "//lh3.googleusercontent.com/a/ACg8ocKuJlXS7-fYrPKFRPiZxPm-6r__lNquKumeQJbQjKsDleMctA=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJUQ72srj1T0YRSuEXp63rYyo/photos/ATplDJa9lacXAChl2cDFmemG6xClKa1C_MGBKX9XemDrQyRiMj94dRoADksqJgyP0rar98EKFoqYLS4cfTQxgx4NqIuBCSAFgnDZ7VpHtdY59tPBzhkXTClT8d02RtCZNeeHe6C_FyeCjMgC35zNUyNJph8SI_EqBCrJikHs",
+          "widthPx": 3024,
+          "heightPx": 4032,
+          "authorAttributions": [
+            {
+              "displayName": "Yudetaro Ali",
+              "uri": "//maps.google.com/maps/contrib/101635740407077307871",
+              "photoUri": "//lh3.googleusercontent.com/a/ACg8ocKuJlXS7-fYrPKFRPiZxPm-6r__lNquKumeQJbQjKsDleMctA=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJUQ72srj1T0YRSuEXp63rYyo/photos/ATplDJbHe9bRczGOQSAQamKoCw-V2W4MGsffgkZcBwJ8N30Vn9zYH3d3pE4YRMW3DDIpePKQ6lSWDHwHZA_WSC6fxNwrqUfN-8qHEJcVY_PQ7oyqzaQ8rMcK78RCUo8UE6PWM4Pcj75PtF8-n915Xmv-Aofy7YPM7s8AnoPq",
+          "widthPx": 3024,
+          "heightPx": 4032,
+          "authorAttributions": [
+            {
+              "displayName": "Yudetaro Ali",
+              "uri": "//maps.google.com/maps/contrib/101635740407077307871",
+              "photoUri": "//lh3.googleusercontent.com/a/ACg8ocKuJlXS7-fYrPKFRPiZxPm-6r__lNquKumeQJbQjKsDleMctA=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJUQ72srj1T0YRSuEXp63rYyo/photos/ATplDJY97F9mXqQluWY2cB7ndWsh1P7hrAi0_u7LHpJ0mWniIjaclP23zoZSCbuihA-yJfZHfLTlGp3hLYV_3M26cI2fwKHNrqPjIxU2gOfZVrOLJWgEpZPleMKgpi4Gvfe-kQtCRanMP1djp9L08J72fB1trSgSgUzloTdC",
+          "widthPx": 3024,
+          "heightPx": 4032,
+          "authorAttributions": [
+            {
+              "displayName": "Yudetaro Ali",
+              "uri": "//maps.google.com/maps/contrib/101635740407077307871",
+              "photoUri": "//lh3.googleusercontent.com/a/ACg8ocKuJlXS7-fYrPKFRPiZxPm-6r__lNquKumeQJbQjKsDleMctA=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJUQ72srj1T0YRSuEXp63rYyo/photos/ATplDJZFk2uTvFKdM1TtukV--fOb39iSYFVNMO6e0F71Q6t3gui-6b5D12u8iVpfY_E9iaBXcwk5H9et8hbV1x1Q42MAmChZvd6OFWKUM-N174xjv44MJ_uIgnyOgOFiHFmlTs1AQOfWe5Kxz346qkSuwK6tl7usXcgz58bV",
+          "widthPx": 3024,
+          "heightPx": 4032,
+          "authorAttributions": [
+            {
+              "displayName": "Fredrik Vikstr\u00f6m",
+              "uri": "//maps.google.com/maps/contrib/114071671695632482699",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWZrCFUnhqXg8K_0GLEdusPuMyugnFblvRm8GrSQt1FIPXdzZ2n=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJUQ72srj1T0YRSuEXp63rYyo/photos/ATplDJZoM8JqFQsYHKxLXMjL6KnCTUfMQjcMvYraY-Mcyi1CxQQdLD6v56HOgFyaYY8g2uWHlqkXJ1oGLVVp6FTcrw0RQOFYa6iywUM8R1f0blFP12X2KhSTew4UcqqjkGib-Ub2lZm1b7-sDIaG8awpBqBiOtxGVtjtOaxF",
+          "widthPx": 4640,
+          "heightPx": 3472,
+          "authorAttributions": [
+            {
+              "displayName": "Simon the Delusional",
+              "uri": "//maps.google.com/maps/contrib/103279857787031170194",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXf0UhMdt3vVhU1w1nSnJ2D1g7K7m49aVgaUlVWaBfUwC5Sn44=s100-p-k-no-mo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "formattedAddress": "\u00c5n\u00e4sv\u00e4gen 6A, 416 67 G\u00f6teborg, Sweden",
+      "location": {
+        "latitude": 57.7161111,
+        "longitude": 12.003888900000002
+      },
+      "rating": 4,
+      "displayName": {
+        "text": "Evergreen Second-Hand Butik",
+        "languageCode": "en"
+      },
+      "photos": [
+        {
+          "name": "places/ChIJ3c0hvX70T0YRmDcqUBpcm6o/photos/ATplDJZ2D6PvDXTTCudkkQeN1Ts6uBlxgiAqYymmDaD1g4f1RO93iog8G7bJ9LH4b_tvP-BPNF_Qf2mrRlYXWFpjL_Aav3UkvOgM7h5qpBsqWSxGGnvDfmSDTZwR6qHXo0C2scb2QiKVg3GoUAaRz8Aqc3x4WUuOkYSmiyf0",
+          "widthPx": 5312,
+          "heightPx": 2988,
+          "authorAttributions": [
+            {
+              "displayName": "Magdalena Eriksson",
+              "uri": "//maps.google.com/maps/contrib/112317783552886296030",
+              "photoUri": "//lh3.googleusercontent.com/a/ACg8ocLTKIGYKSZ5fMvcaTqCy6KUgKT0bKCO1ByQaKsEQLT6PsQ5Bg=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJ3c0hvX70T0YRmDcqUBpcm6o/photos/ATplDJY0dgeVrII0FW98HeDFqWlVrSGJnX2aYz-Qosb7OdIQSFVQqRhPIMvqiE_Kz5LjVk1aqoD0mfGWzkkDtM2MXM90Wuk0V7xZYx4s0KK8YTWVPcWwUEkUR2kxi6DfcncMwsZelPWEDFB84gTMkKnRFahNIHFT9MXP_NuR",
+          "widthPx": 2988,
+          "heightPx": 5312,
+          "authorAttributions": [
+            {
+              "displayName": "Magdalena Eriksson",
+              "uri": "//maps.google.com/maps/contrib/112317783552886296030",
+              "photoUri": "//lh3.googleusercontent.com/a/ACg8ocLTKIGYKSZ5fMvcaTqCy6KUgKT0bKCO1ByQaKsEQLT6PsQ5Bg=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJ3c0hvX70T0YRmDcqUBpcm6o/photos/ATplDJbSp-PRXz5tEGYAznm5kSBypFUOJVsomZpfJgM2a-hdItKaR1llzmoad8uhmoN1tc_6SBrJyuhZRmlmgASfSFet1Xdx5TsvwcyNa1HnbzdRP_gN1iDgSJ2_Tiril3-AedIxIVssx7GLXPL36L_Vx8UL-RXaYunGz2EL",
+          "widthPx": 1068,
+          "heightPx": 1608,
+          "authorAttributions": [
+            {
+              "displayName": "Evergreen Second Hand-butik",
+              "uri": "//maps.google.com/maps/contrib/117405550044997992513",
+              "photoUri": "//lh3.googleusercontent.com/a/ACg8ocIMbyPeqHyQISCd4Z7DvGyGjWrt_uTiTNciSPeKpBeSl9BSbw=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJ3c0hvX70T0YRmDcqUBpcm6o/photos/ATplDJY-7RpDRNvEO78Cel6B6je0AcfMKnUPPpHxCQrUdmuUL1MPza3Q0BzFWB3Uj1NgNTz3NuMLrSfVBv9NtiHVc7aIW03YRmQ9RSsHyIv8-qwnraMtaO0ApLFuA9ESbv7v02xPlEo07lcRn0Kt9SE-TB9WOKbFRR8cLQfq",
+          "widthPx": 2121,
+          "heightPx": 2652,
+          "authorAttributions": [
+            {
+              "displayName": "Magdalena Eriksson",
+              "uri": "//maps.google.com/maps/contrib/112317783552886296030",
+              "photoUri": "//lh3.googleusercontent.com/a/ACg8ocLTKIGYKSZ5fMvcaTqCy6KUgKT0bKCO1ByQaKsEQLT6PsQ5Bg=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJ3c0hvX70T0YRmDcqUBpcm6o/photos/ATplDJZuE2SkXn9aQZI90nNH0zsKAftzZoHQnsMDWe3iL54Yqc7l4byla_Eq97hgxIxErypM20CvSABIuHFzkyxKtdGLMruwygmv19PTFICNSRZnsNIKh1cg4AT2NZAlpOnQNNmOOM3xYednZE7wHHjyagNie-SkJDRj2Amy",
+          "widthPx": 2988,
+          "heightPx": 5312,
+          "authorAttributions": [
+            {
+              "displayName": "Magdalena Eriksson",
+              "uri": "//maps.google.com/maps/contrib/112317783552886296030",
+              "photoUri": "//lh3.googleusercontent.com/a/ACg8ocLTKIGYKSZ5fMvcaTqCy6KUgKT0bKCO1ByQaKsEQLT6PsQ5Bg=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJ3c0hvX70T0YRmDcqUBpcm6o/photos/ATplDJZA7iiVPNYsOMmzgI4iT6SgPQcTbg4IDZcCN3Yr9BQIQ-N3CvD9p1yvsiGSHo7bMiZ8yjIFpFF8CPJLi9FCbKny2hCrFhTyerTkGlGGxenQg-UKRIvcl171Sc_5j0HFAL9cz3mFx9voyFw3sBSsdDsX5n1Wk8wefROr",
+          "widthPx": 2988,
+          "heightPx": 3735,
+          "authorAttributions": [
+            {
+              "displayName": "Magdalena Eriksson",
+              "uri": "//maps.google.com/maps/contrib/112317783552886296030",
+              "photoUri": "//lh3.googleusercontent.com/a/ACg8ocLTKIGYKSZ5fMvcaTqCy6KUgKT0bKCO1ByQaKsEQLT6PsQ5Bg=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJ3c0hvX70T0YRmDcqUBpcm6o/photos/ATplDJaDn3UWoK4Imd0TQuWByyzPdupuT5col3HxI8A65FrfJsJShwQnGxN_ZMQCwNO-d0hwXm4fqqmbsRMLY-8V41uefyQhs1zoSKGW-3RFfEqABJiLa0E98Ds-a2zBgvMUomavaunQWmWvINBJhUFRYoGoVKGxafXlCPgZ",
+          "widthPx": 2988,
+          "heightPx": 5312,
+          "authorAttributions": [
+            {
+              "displayName": "Magdalena Eriksson",
+              "uri": "//maps.google.com/maps/contrib/112317783552886296030",
+              "photoUri": "//lh3.googleusercontent.com/a/ACg8ocLTKIGYKSZ5fMvcaTqCy6KUgKT0bKCO1ByQaKsEQLT6PsQ5Bg=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJ3c0hvX70T0YRmDcqUBpcm6o/photos/ATplDJZo3kIYukYrWONFEzyPA7UCVvN1nYzxOSpGXQrJ_EKhRYohJkXzFlz2Vzk8zHWKUwNoC0YOwHXYKlyV3NBNX4G4ZyqWZMyHSmI774RwnNGEuSBVbohAzsZif6CtTLW_d_uAMoYBhwUu7amNCwQkNLvRY-Y-MgPPps_q",
+          "widthPx": 2988,
+          "heightPx": 5312,
+          "authorAttributions": [
+            {
+              "displayName": "Magdalena Eriksson",
+              "uri": "//maps.google.com/maps/contrib/112317783552886296030",
+              "photoUri": "//lh3.googleusercontent.com/a/ACg8ocLTKIGYKSZ5fMvcaTqCy6KUgKT0bKCO1ByQaKsEQLT6PsQ5Bg=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJ3c0hvX70T0YRmDcqUBpcm6o/photos/ATplDJZJ_UlGI0gEPMklt2l0P6fjO3SF3F_zFub6wmo6UVYU7ebqLVwj0FN5PEpnB5H6E1f_fd9tGGyqZb9hvSK2I5yL-T0DJ_6_pWtpR9BAM9G8CeEfhRtL0gIdAXf34pYE1_zDI4vaKicshSjhMPlpM6AVF7Udpx-zC6VH",
+          "widthPx": 2988,
+          "heightPx": 5312,
+          "authorAttributions": [
+            {
+              "displayName": "Magdalena Eriksson",
+              "uri": "//maps.google.com/maps/contrib/112317783552886296030",
+              "photoUri": "//lh3.googleusercontent.com/a/ACg8ocLTKIGYKSZ5fMvcaTqCy6KUgKT0bKCO1ByQaKsEQLT6PsQ5Bg=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJ3c0hvX70T0YRmDcqUBpcm6o/photos/ATplDJbIVTW5W60xgXgqFP4TcJRL8_sL0F_Y1GnZNQdWQ2-AfZCQ0jRIlF3Ign3ENDbp6yEgOVn1N3P9SUgu-0jTqHBfLmjNbd0ldaSYmgpFH-aodfVwCNviQ_iPMxerL9JXdWp9rZsm-IoSfgSIjlPVvix-O25i1qs-g28T",
+          "widthPx": 2988,
+          "heightPx": 5312,
+          "authorAttributions": [
+            {
+              "displayName": "Magdalena Eriksson",
+              "uri": "//maps.google.com/maps/contrib/112317783552886296030",
+              "photoUri": "//lh3.googleusercontent.com/a/ACg8ocLTKIGYKSZ5fMvcaTqCy6KUgKT0bKCO1ByQaKsEQLT6PsQ5Bg=s100-p-k-no-mo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "formattedAddress": "G\u00f6tabergsgatan 22, 411 34 G\u00f6teborg, Sweden",
+      "location": {
+        "latitude": 57.698768099999995,
+        "longitude": 11.9730229
+      },
+      "rating": 4,
+      "websiteUri": "http://boutiquelaila.se/",
+      "displayName": {
+        "text": "G\u00f6tabergsgatans Mode HB",
+        "languageCode": "en"
+      },
+      "photos": [
+        {
+          "name": "places/ChIJI5bxxnHzT0YRa4iteaH4rnQ/photos/ATplDJbSqoKUbg2O0BvfmH9dvRTa1ZF5N9zP5oBze3Pqszw2wpP4Cagqhgnavh3hKvYnGojQiDyLMFlCynpRGaY3g3lP9iHhXg4BHkIwA6vNtYtRaqaWqjZtFlPa4oh6xR9sAgm_HWpVu5XGM_Xuk_2PJoTxrO-ydEn4IZxF",
+          "widthPx": 2736,
+          "heightPx": 3648,
+          "authorAttributions": [
+            {
+              "displayName": "VESNA BURIC",
+              "uri": "//maps.google.com/maps/contrib/116514148216530508800",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVRXe4PP-gzS22HVOkKWZsXJYtTzW9qiZ9tJ3_qgWmmLBxWEn4W=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJI5bxxnHzT0YRa4iteaH4rnQ/photos/ATplDJbCQqOAbtFtGbPNVQuQ_pNLtkEVvSyUmvJo82ExTzDzHktPndQvUj2UJThk4WcAa7z1s4pS_mxzKfMgEKhF0Lz9FPL7aIPvY9vazPre9PxZatE9bYVDj0v1hXqTdQGxC_JYm93m0w9RUnDOjQoRRZisQ4ljZ7Sy90Lh",
+          "widthPx": 2112,
+          "heightPx": 2816,
+          "authorAttributions": [
+            {
+              "displayName": "VESNA BURIC",
+              "uri": "//maps.google.com/maps/contrib/116514148216530508800",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVRXe4PP-gzS22HVOkKWZsXJYtTzW9qiZ9tJ3_qgWmmLBxWEn4W=s100-p-k-no-mo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "formattedAddress": "S\u00f6dra V\u00e4gen 95, 412 63 G\u00f6teborg, Sweden",
+      "location": {
+        "latitude": 57.691841999999994,
+        "longitude": 11.9915755
+      },
+      "rating": 4.5,
+      "displayName": {
+        "text": "Hobbyboden Secondhand",
+        "languageCode": "sv"
+      },
+      "photos": [
+        {
+          "name": "places/ChIJIzR0HJ_zT0YR-Rr73w_sxyc/photos/ATplDJZnbFPjjf1h2xO_Lm2VyuDrIowMJ2L2tMVi4mWLLJNEkOmdyi5nkxH9GfBI6b9Abfkkw62STQXeAgxI04vmKqDr1J1xIuvrqlYo7-BvDHpxkgzCGJDgweJ5DqXYVoc-F-8ozav6lUCl8pf4DfhYoEfQLVWIZg2H2L0w",
+          "widthPx": 3024,
+          "heightPx": 4032,
+          "authorAttributions": [
+            {
+              "displayName": "Ludvig Lagerfors",
+              "uri": "//maps.google.com/maps/contrib/114563057076197811157",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUbDGhG_km7ang9EdVezxKNJJwLcDiai-9VnnfJ3_i7lteO0zf55Q=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJIzR0HJ_zT0YR-Rr73w_sxyc/photos/ATplDJYQ2EJleaMUH5AGAgzjpdtgVfTPxy1bDBc8sHfyu3aK2G-ameLSMC2larbB10hd_oz4AfWqjk52dn_E6uCfCBmNLk2u91us8_aq5Ne4mTNPgahU9y_PEvEr83pVCgC2lo3UtwJ1Ptam9lYGFA-Zm-uwDw8VplQ5gB4O",
+          "widthPx": 3472,
+          "heightPx": 4640,
+          "authorAttributions": [
+            {
+              "displayName": "Malin \u00c5",
+              "uri": "//maps.google.com/maps/contrib/112072868111793656764",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUrs3R3cJCKa5av_sOYq2_RgXwir4MCAZcZTXwiYq_l8sa3-g_Z=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJIzR0HJ_zT0YR-Rr73w_sxyc/photos/ATplDJaX3iGtdYspEZEj7wCXNx1jFTfoEtPaRqYzO_tH3UtiLrrBtvtKUWAexxPZFb0uaDKSxXuLG0thF1qT87NKcznDMsSvveAxW0OsCQ3SvgcUKvqhYPy5vta5frfiEF-y4B-5lP59skykgN8yf3vXKoT_e0bFpmriUhkx",
+          "widthPx": 9248,
+          "heightPx": 6936,
+          "authorAttributions": [
+            {
+              "displayName": "Ludvig Lagerfors",
+              "uri": "//maps.google.com/maps/contrib/114563057076197811157",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUbDGhG_km7ang9EdVezxKNJJwLcDiai-9VnnfJ3_i7lteO0zf55Q=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJIzR0HJ_zT0YR-Rr73w_sxyc/photos/ATplDJb0wC3DwWVnHWbbqF66SlE4fWg11d_mFOrqC7pfjBvGU7_FJTqHn5AJmW0jfckT2GtQ6DVpERJqEG27IKzsHOCTlrhd5NyD3NlDcNFfVgx8vrglRfd3plpN1Oy9LQb8MdGXp3gxRhgnjI-gTwTJl1_uEwNKuzqSM4Q",
+          "widthPx": 3024,
+          "heightPx": 4032,
+          "authorAttributions": [
+            {
+              "displayName": "Dennis Kristoffersson",
+              "uri": "//maps.google.com/maps/contrib/103868148019455826249",
+              "photoUri": "//lh3.googleusercontent.com/a/ACg8ocLA33PoDnFPpQhmQ78TAHHeopH0yUK8fEAZkZv5FTqRxiNm=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJIzR0HJ_zT0YR-Rr73w_sxyc/photos/ATplDJaqUo4Krhi3b-jtRCnKCbw8IdMnpWgAoL_JhkOCzHydK04As3SVmB2N-yLjvPXC9605NQgLcsoD-KD_xcBo3gnTdUSGaizWmfe_KLfK4mn4R8UXAK-4Efn3cJPR5X18MveJviWH0KFR7o6HFj4MzaKlLunl_iJmq7bb",
+          "widthPx": 4608,
+          "heightPx": 3456,
+          "authorAttributions": [
+            {
+              "displayName": "Ludvig Lagerfors",
+              "uri": "//maps.google.com/maps/contrib/114563057076197811157",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUbDGhG_km7ang9EdVezxKNJJwLcDiai-9VnnfJ3_i7lteO0zf55Q=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJIzR0HJ_zT0YR-Rr73w_sxyc/photos/ATplDJZHdxIvw49pInTzWwnhKjKd-pIcO7QRQgXI0lfMAE7y84Q4b7imVOq69GX7TyFCbP-RIcrrQKrJzo-5t7edQQLo87WUa88aLk1Mn6W3tmOFssluJKn5aVVNmYgzf04tEXrHh5Wsw0-ddj_wBRrkcQz9Ng_tl4ij7RHQ",
+          "widthPx": 3024,
+          "heightPx": 3024,
+          "authorAttributions": [
+            {
+              "displayName": "Elin Brug\u00e5rd",
+              "uri": "//maps.google.com/maps/contrib/113831462765142348135",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVKU7pmllug5TV1zToHffsApk6hwNOsbfVxI97qTvmhV5_gjqDYrA=s100-p-k-no-mo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "formattedAddress": "Teatergatan 17, 411 35 G\u00f6teborg, Sweden",
+      "location": {
+        "latitude": 57.698887400000004,
+        "longitude": 11.9755255
+      },
+      "rating": 2.6,
+      "websiteUri": "http://www.exexklusiv.se/",
+      "displayName": {
+        "text": "Extra Exklusive Secondhand i G\u00f6teborg AB",
+        "languageCode": "en"
+      },
+      "photos": [
+        {
+          "name": "places/ChIJa9AMqXHzT0YReHJcPIxZYn4/photos/ATplDJbn25bqS6N-qOdpN7WGh32MacmHQqg1v8dzFriDrllpZYdSZREQ6qGeBMLO7gz7X2u4o6u0vb5UOwT0pTejHw1H84a98jRMqzdMhsBG0Zp_oucWuZ4XoWLx2I01Lw80nRxZF4lc5bY1fmWkJgnEKis7lfHcunWv_WM0",
+          "widthPx": 4032,
+          "heightPx": 1960,
+          "authorAttributions": [
+            {
+              "displayName": "Mark F",
+              "uri": "//maps.google.com/maps/contrib/105096380019912442741",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXpbp0xeApKwlJ-ernFi--uI4OLCVz0GbEVu-YFI2yAWcR-Dy3N=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJa9AMqXHzT0YReHJcPIxZYn4/photos/ATplDJYKM6mil59BRGgwVknVTuRbMZb_8DIvFEAhXiKnMfAAln110tujrwKx2cDJOWwz7l3hiKKoENeq5HXFkXobf_2zz56ApqfSkHxy-XQiIVSkPGbHrrLt76HJ9wKdvLsgcxd_GvQ9ZHVpTPmmZUhG1pN9o3Q1OId_X54E",
+          "widthPx": 1960,
+          "heightPx": 4032,
+          "authorAttributions": [
+            {
+              "displayName": "Mark F",
+              "uri": "//maps.google.com/maps/contrib/105096380019912442741",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXpbp0xeApKwlJ-ernFi--uI4OLCVz0GbEVu-YFI2yAWcR-Dy3N=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJa9AMqXHzT0YReHJcPIxZYn4/photos/ATplDJb9EOdo1zrVBy6ZJigDgoYJY98v4wy5agNzXKfkGDQMmE9ij_h1ENQxeuAZvzXAKacRLSHBXBjPwD43zX7nkasIlekeE3b4a4_qavcHT56SGdmZjaQw_arpH5TuP08-3wsD_Lv2QlZ873kCUzJIYISBypxSbhzjNIIU",
+          "widthPx": 4032,
+          "heightPx": 1960,
+          "authorAttributions": [
+            {
+              "displayName": "Mark F",
+              "uri": "//maps.google.com/maps/contrib/105096380019912442741",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXpbp0xeApKwlJ-ernFi--uI4OLCVz0GbEVu-YFI2yAWcR-Dy3N=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJa9AMqXHzT0YReHJcPIxZYn4/photos/ATplDJbENKD0sc-M0NQnZvMSb8eA3puy72dhVBwlmeADj4un3yHqF_BtkMMXzi8gws1QuaW6HYHUOwz-oi8sAtXM5NGHDg6bghGyMZFaAg7vremrLh7Mb4UdeFUwSgZDWyqqIQiI76EhG8p6zXdl284ge0jr9j2Z1dKNMtX2",
+          "widthPx": 4032,
+          "heightPx": 1960,
+          "authorAttributions": [
+            {
+              "displayName": "Mark F",
+              "uri": "//maps.google.com/maps/contrib/105096380019912442741",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXpbp0xeApKwlJ-ernFi--uI4OLCVz0GbEVu-YFI2yAWcR-Dy3N=s100-p-k-no-mo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "formattedAddress": "Gamla Tuvev\u00e4gen 22, 417 05 G\u00f6teborg, Sweden",
+      "location": {
+        "latitude": 57.724502400000006,
+        "longitude": 11.946541499999999
+      },
+      "rating": 5,
+      "displayName": {
+        "text": "Capell M\u00f6bler & Hemelektronik",
+        "languageCode": "en"
+      }
+    },
+    {
+      "formattedAddress": "Karlagatan 8, 416 61 G\u00f6teborg, Sweden",
+      "location": {
+        "latitude": 57.7128908,
+        "longitude": 12.0040938
+      },
+      "rating": 5,
+      "websiteUri": "http://www.favoretro.com/",
+      "displayName": {
+        "text": "FavoRetro",
+        "languageCode": "en"
+      },
+      "photos": [
+        {
+          "name": "places/ChIJ4QtX-Tr1T0YRcvyzB2nGYvg/photos/ATplDJbIsNXYVCT49HcQLacw1BdTEMOgOSFpjZBxqd7WbCHkJrNFhJvZjOuBAgFChjNGrBDrOkg14WgyeJIs0eDThpg58_Kx7PmLHjCiTXKcYGxa9eFElCMByaSRtIHwQuM8wUlDCGa9VKeS_guN3tdqdvD1rqDJel8gfUO4",
+          "widthPx": 4032,
+          "heightPx": 3024,
+          "authorAttributions": [
+            {
+              "displayName": "Love Josefsson",
+              "uri": "//maps.google.com/maps/contrib/102487524108650310005",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUNuE2fDLOccFxmyZpM9a7JKeLuNp5VUn0dLzz07RZHtDNfh2jMJg=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJ4QtX-Tr1T0YRcvyzB2nGYvg/photos/ATplDJYwZyfsDNApBU3gq8tjUhOZ8OZPJWPZR7AObx4uOZFZ4X7T_SR4llIlZKRdLmiFnvIVZI47dKBFPqUeDjFIffnt1N5boRXdAhSHEL6R8ceA80qV_Z3Yp_RUmPVaAW3HwZAxeS6rZkqegMOG8UHyxMr_wIw0c5JML6a2",
+          "widthPx": 1440,
+          "heightPx": 809,
+          "authorAttributions": [
+            {
+              "displayName": "FavoRetro",
+              "uri": "//maps.google.com/maps/contrib/115221970279295637215",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXAcWiXRp7fTuOlk664kMYZfR3laN_xl7jQ8pvYtula9mnnp94H=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJ4QtX-Tr1T0YRcvyzB2nGYvg/photos/ATplDJbi1ryeCVqzVqL0bIqNx6Rl1T22wEsl9KbNYGDzaZlI_05j5ANkuRrgjlHHuaajmSHloqZ01aUP8z5yKJ9xBoBkpDJ49WIxHsLM5ZXXMuL3TH-qJi_cLY_soJqGqNX0SkU_zxDMLXzOTfifs9fwuI_GTZs9HzKop807",
+          "widthPx": 1920,
+          "heightPx": 1920,
+          "authorAttributions": [
+            {
+              "displayName": "FavoRetro",
+              "uri": "//maps.google.com/maps/contrib/115221970279295637215",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXAcWiXRp7fTuOlk664kMYZfR3laN_xl7jQ8pvYtula9mnnp94H=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJ4QtX-Tr1T0YRcvyzB2nGYvg/photos/ATplDJaBTSAR_xHhePfMPTeK2_qVKfF_nLYeubeEBi6wTe9TejyZf_dsm1fh2DH0tQKkoSLHvrkzDAGSLN5NeAZwhgJWa5QsntgZ2qyHw62x_sHvBzxkraEPXDsOQDjQc3Y8Y4jI6_R7PPGKK-Ifo1BWkD-JvozEzRB3oeqB",
+          "widthPx": 2629,
+          "heightPx": 3506,
+          "authorAttributions": [
+            {
+              "displayName": "FavoRetro",
+              "uri": "//maps.google.com/maps/contrib/115221970279295637215",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXAcWiXRp7fTuOlk664kMYZfR3laN_xl7jQ8pvYtula9mnnp94H=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJ4QtX-Tr1T0YRcvyzB2nGYvg/photos/ATplDJZ0hOlehYScz6pJyQ0t7f1o93bs28eabpEZjnxPDiZlrnWWaYNY05yjz6A2pQSCkCg18yQc8NOeS6ODbVMDX94YS5uk9obD816Av0P0g3TwiZyTicJ4YIgrDDMoU5Nj7cpItJloHzkB3GC2r0QPKVhxlURiHr_6kUJq",
+          "widthPx": 2660,
+          "heightPx": 2661,
+          "authorAttributions": [
+            {
+              "displayName": "FavoRetro",
+              "uri": "//maps.google.com/maps/contrib/115221970279295637215",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXAcWiXRp7fTuOlk664kMYZfR3laN_xl7jQ8pvYtula9mnnp94H=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJ4QtX-Tr1T0YRcvyzB2nGYvg/photos/ATplDJbdVdn6SYfkQnxa6C0w6wXWcBYK9v_Y_Zz-G_azwpIdKRg67CoIAE1xReimw7XH7DLzQF8bU9VudXYmrDm09rawn_875xo4p04WRCJQGcxOA4xEliiB0b9KKZ-_yAMfjdimxR6EPUKe9IrMeMzx3yuP_QgSNb9DDuYe",
+          "widthPx": 2487,
+          "heightPx": 3319,
+          "authorAttributions": [
+            {
+              "displayName": "FavoRetro",
+              "uri": "//maps.google.com/maps/contrib/115221970279295637215",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXAcWiXRp7fTuOlk664kMYZfR3laN_xl7jQ8pvYtula9mnnp94H=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJ4QtX-Tr1T0YRcvyzB2nGYvg/photos/ATplDJbeFl8D2iP6c8jdN5h-DKlStnwai2TiuzZBiz_MkBmT_qA3GYIFeivV9-LFNqqmqDci_2cp0pZq5MXj_XbMKvkhbK0aQNJ9ZlndzuE2J0I3bmxz3v1lwKp4lOzcfWTRcVfok_qGVEv4J5n2sDLLi9kb3wAeiR6zaiDu",
+          "widthPx": 3068,
+          "heightPx": 3481,
+          "authorAttributions": [
+            {
+              "displayName": "FavoRetro",
+              "uri": "//maps.google.com/maps/contrib/115221970279295637215",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXAcWiXRp7fTuOlk664kMYZfR3laN_xl7jQ8pvYtula9mnnp94H=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJ4QtX-Tr1T0YRcvyzB2nGYvg/photos/ATplDJYEC2KnvjOLD3dQu93O1mm9jsgdGdnMm_QA2a8fDVVimPYC24_sGdguvjIBKdOjAku_KDDBsyTEDzTsvbJxVC2bq3WDWGNtjErEeMvVQlemAdpbZedPonqroyACDpIQWmZDHHxSVujlScz-ksHt_uDLbo5vtKIXTKwd",
+          "widthPx": 2331,
+          "heightPx": 2331,
+          "authorAttributions": [
+            {
+              "displayName": "FavoRetro",
+              "uri": "//maps.google.com/maps/contrib/115221970279295637215",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXAcWiXRp7fTuOlk664kMYZfR3laN_xl7jQ8pvYtula9mnnp94H=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJ4QtX-Tr1T0YRcvyzB2nGYvg/photos/ATplDJaR-8s1G2yJsMRBlNc99AWu2CqIR94rSCk82FHzwzXv9IgeS4_dZnKhdrHQfm2igIZVd1sxjxW32adIFPwSf5YGyoe2LeCdSoEbCO4BiG8H4JLT6W5MPIPJ5XgWjFFN-DyyJV9vioyWf9MKCNc-vTVvWabe7ehJYl8l",
+          "widthPx": 2112,
+          "heightPx": 2894,
+          "authorAttributions": [
+            {
+              "displayName": "FavoRetro",
+              "uri": "//maps.google.com/maps/contrib/115221970279295637215",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXAcWiXRp7fTuOlk664kMYZfR3laN_xl7jQ8pvYtula9mnnp94H=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJ4QtX-Tr1T0YRcvyzB2nGYvg/photos/ATplDJa31MtRRD0EzXMm9wowpxV8XXKIGS89P99peibYPuIDM5EmBfDLvVqE17wtj2dU8kMU_hr2tsI15_5HUwgTB7u37dp8GyvLVe17jVr7q-CW98DA_dR6D_fxDiwe03aTWlizVJEwzgjghV3_YaJqQ-CWDh_9xTSPJBDd",
+          "widthPx": 2660,
+          "heightPx": 3547,
+          "authorAttributions": [
+            {
+              "displayName": "FavoRetro",
+              "uri": "//maps.google.com/maps/contrib/115221970279295637215",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXAcWiXRp7fTuOlk664kMYZfR3laN_xl7jQ8pvYtula9mnnp94H=s100-p-k-no-mo"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

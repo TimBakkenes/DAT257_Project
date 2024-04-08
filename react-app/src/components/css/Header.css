@@ -1,0 +1,29 @@
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    z-index: 9999; 
+  }
+  
+  .fixed-header button {
+    margin-right: 10px;
+    border: none; /* Tar bort bordern */
+    border-radius: 20px; 
+    padding: 8px 16px;
+    background-color: #007bff; 
+    color: #fff; 
+    cursor: pointer; /* Ändrar våran pointer när man hovrar över den */
+    transition: background-color 0.3s; /* Transition till och från den mörkare och ljusa färgen */
+  }
+  
+  .fixed-header button:hover {
+    background-color: #0056b3;
+  }
+
+
+ 
+  
+  
