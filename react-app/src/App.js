@@ -10,18 +10,21 @@ import { Header } from './components/header';
 function App() {
 
   const [showFavorites, setShowFavorites] = useState(false);
+  const [showFactpage, setShowFactpage] = useState(false);
 
 
   const toggleFavorites = () => {
     setShowFavorites(prevState => !prevState);
   };
 
-
+  const toggleFactpage = () => {
+    setShowFactpage(prevState => !prevState);
+  };
 
   return (
 
     <div>
-       <Header toggleFavorites={toggleFavorites}  />
+       <Header toggleFavorites={toggleFavorites} toggleFactpage={toggleFactpage}  />
       <div className='FavouritesPage'>
         <div className={`FavouriteStores ${showFavorites ? 'visible' : 'hidden'}`}>
           <FavoriteStores/>
@@ -31,6 +34,12 @@ function App() {
         </div>
       
       </div>
+      {showFactpage && (
+        <div className='Factpage'>
+          <Factpage/>
+        </div>
+        
+      )}
     </div>
   );
 }

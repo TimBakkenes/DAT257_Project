@@ -137,5 +137,40 @@
   transition: left 0.5s ease; 
 }
 
+.Factpage {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%; /* Initial width, adjust as needed */
+  background-color: #9fddb0; /* Eller valfri bakgrundsfärg */
+  z-index: 10; /* Säkerställer att den visas över andra komponenter */
+  overflow: auto; /* Tillåter skrollning inom komponenten */
+}
 
+.fact-page {
+  background-color: #9fddb0; /* Set background color */
+  padding: 20px; /* Add padding */
+  border-radius: 10px; /* Add border radius */
+}
+
+.fact-page-heading {
+  color: #ffffff; /* Set text color */
+}
+
+.fact-page-heading2 {
+  color: #ffffff; /* Set text color */
+  font-size: 20px;
+}
+
+/*Bröd-text */
+.fact-page-text {
+  color: #ffffff; /* Set text color */
+  font-size: 16px; /* Set font size */
+}
+
+.fact-page-list li {
+  list-style-type: disc; /* Set bullet style to disc */
+  margin-left: 20px; /* Add margin to the left of the list items */
+}
 

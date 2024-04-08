@@ -16,7 +16,7 @@ export function Header({ navigateHome, toggleFavorites, navigateFactPage, naviga
             />
             <button
                 className="header-button fact-button"
-                onClick={navigateFactPage}
+                onClick={toggleFactPage}
                 aria-label="Fact" // Accessibility label
             />
             <button
