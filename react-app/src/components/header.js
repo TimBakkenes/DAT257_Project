@@ -7,10 +7,9 @@ export function Header({ toggleFavorites , navigateLoginPage, navigateAboutPage}
       <div className="fixed-header">
         {/* Här kan man lägga till och ta bort knappar från headern */}
 
-        <button className="leftbutton" onClick={toggleFavorites}>
+        <button onClick={toggleFavorites}>
             Favorites
           </button>
-        
         
         <button onClick={navigateLoginPage} >
             Login
@@ -19,8 +18,6 @@ export function Header({ toggleFavorites , navigateLoginPage, navigateAboutPage}
         <button onClick={navigateAboutPage} >
             About
         </button>
-        
-          
      
       </div>
     );
