@@ -3,26 +3,42 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #f0f0f0;
-    padding: 10px;
-    z-index: 9999; 
-  }
-  
-  .fixed-header button {
-    margin-right: 10px;
-    border: none; /* Tar bort bordern */
-    border-radius: 20px; 
-    padding: 8px 16px;
-    background-color: #007bff; 
-    color: #fff; 
-    cursor: pointer; /* Ändrar våran pointer när man hovrar över den */
-    transition: background-color 0.3s; /* Transition till och från den mörkare och ljusa färgen */
-  }
-  
-  .fixed-header button:hover {
-    background-color: #0056b3;
-  }
+    background-color: #9fddb0;
+    padding: 1%;
+    z-index: 9999;
+}
 
+.header-button {
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    background-size: cover; /* Cover the entire button area */
+    background-position: center; /* Center the image */
+    width: 50px; /* Adjust based on your needs */
+    height: 50px; /* Adjust based on your needs */
+    background-color: transparent;
+}
+.home-button {
+  background-image: url('./Icon_map.png'); /* Path to your image */
+}
+
+.favorites-button {
+    background-image: url('./Icon_heart.png'); /* Path to your image */
+}
+
+.fact-button {
+    background-image: url('./Icon_fact.png'); /* Path to your image */
+}
+
+.login-button {
+    background-image: url('./Icon_login.png'); /* Path to your image */
+}
+
+.header-button:hover {
+    transform: scale(1.1); /* Slightly enlarge button on hover */
+}
 
  
   

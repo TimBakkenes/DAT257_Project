@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { Google } from './components/googleMap';
 import { FavoriteStores } from './components/favourites';
 import { Header } from './components/header';
-import { Factpage } from './components/factpage';
+
 
 function App() {
 
@@ -15,12 +15,10 @@ function App() {
 
   const toggleFavorites = () => {
     setShowFavorites(prevState => !prevState);
-    //setShowFactpage(false); // Stäng av visning av Factpage när Favorites aktiveras
   };
 
   const toggleFactpage = () => {
     setShowFactpage(prevState => !prevState);
-    //setShowFavorites(false); // Stäng av visning av Favorites när Factpage aktiveras
   };
 
   return (
