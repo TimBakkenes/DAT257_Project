@@ -4,12 +4,13 @@ export function Factpage() {
     return (
         <div className='fact-page'>
             <h1 className="fact-page-heading">Why Second Hand?</h1>
-            <p>Shopping second hand aligns with the United Nations' Sustainable Development Goal on Responsible Consumption and Production. 
+            <p className = "fact-page-text">Shopping second hand aligns with the United Nations' Sustainable Development Goal on Responsible Consumption and Production. 
                 By opting for second-hand goods, individuals contribute to reducing waste and the demand for new products, 
                 which in turn lessens the environmental impact of manufacturing processes. Additionally, purchasing second-hand items often supports charitable causes, 
                 promotes recycling, and fosters a circular economy. Embracing second-hand shopping is a practical way for individuals to make a positive impact on the 
                 planet by reducing their carbon footprint and conserving resources.</p>
-            <u1 className="fact-page-list">
+            <h2 className="fact-page-heading2">Fun Facts:</h2> 
+            <p className = "fact-page-text">  
                 <li>Second-hand shopping offers the thrill of a treasure hunt, 
                     with the possibility of discovering unique vintage items that 
                     tell stories from the past.</li>
@@ -21,7 +22,7 @@ export function Factpage() {
                     with locations across the globe offering diverse selections of pre-loved goods.</li>
                 <li>The rise of online platforms like Depop, ThredUp, and Poshmark has revolutionized second-hand shopping, 
                     making it easier than ever to find unique items and reduce waste from the comfort of home.</li>
-            </u1>              
+                    </p>          
  
         </div>
     );

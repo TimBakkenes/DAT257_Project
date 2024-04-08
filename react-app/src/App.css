@@ -138,28 +138,34 @@
 }
 
 .Factpage {
-  position: flex;
+  position: fixed;
   left: 0;
-  top: 10;
+  top: 0;
   height: 100%;
   width: 100%; /* Initial width, adjust as needed */
-  transition: width 0.5s ease;
-  overflow: auto;
+  background-color: #9fddb0; /* Eller valfri bakgrundsfärg */
+  z-index: 10; /* Säkerställer att den visas över andra komponenter */
+  overflow: auto; /* Tillåter skrollning inom komponenten */
 }
 
 .fact-page {
-  background-color: #f0f0f0; /* Set background color */
+  background-color: #9fddb0; /* Set background color */
   padding: 20px; /* Add padding */
   border-radius: 10px; /* Add border radius */
 }
 
 .fact-page-heading {
-  color: #333; /* Set text color */
+  color: #ffffff; /* Set text color */
+}
+
+.fact-page-heading2 {
+  color: #ffffff; /* Set text color */
+  font-size: 20px;
 }
 
 /*Bröd-text */
-.fact-page-list {
-  color: #666; /* Set text color */
+.fact-page-text {
+  color: #ffffff; /* Set text color */
   font-size: 16px; /* Set font size */
 }
 
