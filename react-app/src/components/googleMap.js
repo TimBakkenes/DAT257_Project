@@ -1,6 +1,7 @@
-import React from 'react';
-import { GoogleMap, LoadScript, MarkerF} from '@react-google-maps/api';
+import React, {useState, useRef} from 'react';
+import { GoogleMap, LoadScript, MarkerF, InfoWindowF} from '@react-google-maps/api';
 import storeData from '../data/stores.json';
+import ".//css/info.css"
 
 export function Google () {
     const mapStyles = {
@@ -14,11 +15,24 @@ export function Google () {
         lat: 57.7089,
         lng: 11.9746
       };
+
+    const mapRef = useRef(null);
+
+    const [selectedPlace, setSelectedPlace] = useState(null);
+
+    const handleMarkerClick = (place) => {
+      setSelectedPlace(place);
+    };
+
+    const handleCloseInfoWindow = () => {
+        setSelectedPlace(null);
+    };
+
+    const handleMapClick = () => {
+      setSelectedPlace(null);
+    };
     
-      const handleMarkerClick = (name, address, rating, url) => {
-        // do whatever you want
-        console.log("Marker clicked:", name, address, rating, url);
-      };
+    
 
     return (
       <LoadScript
@@ -28,16 +42,34 @@ export function Google () {
           mapContainerStyle={mapStyles}
           zoom={10}
           center={gothenburg}
+          onClick={handleMapClick}
         >
           {storeData.places.map(place => (
                     <MarkerF
                         key={place.id} 
                         position={{ lat: place.location.latitude, lng: place.location.longitude }}
                         title={place.displayName.text} 
-                        onClick={handleMarkerClick(place.displayName, place.formattedAddress, place.rating, place.websiteUri)}
+                        onClick={ ()=> handleMarkerClick(place)}
                     />
                 ))}
+          
+          {selectedPlace && (
+                    <InfoWindowF
+                        position={{ lat: selectedPlace.location.latitude, lng: selectedPlace.location.longitude }}
+                        onCloseClick={handleCloseInfoWindow}
+                        ref={mapRef}
+                    >
+                        <div style={{backgroundColor:"#9fddb0"}}>
+                            <h3>{selectedPlace.displayName.text}</h3>
+                            <p>{selectedPlace.formattedAddress}</p>
+                            <p>Rating: {selectedPlace.rating}</p>
+                            <a href={selectedPlace.websiteUri} >Visit Website</a>
+                        </div>
+                    </InfoWindowF>
+                )}
+            
         </GoogleMap>
+        
       </LoadScript>
     );
   };
