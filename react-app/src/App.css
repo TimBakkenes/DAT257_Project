@@ -137,4 +137,34 @@
   transition: left 0.5s ease; 
 }
 
+.Factpage {
+  position: flex;
+  left: 0;
+  top: 10;
+  height: 100%;
+  width: 100%; /* Initial width, adjust as needed */
+  transition: width 0.5s ease;
+  overflow: auto;
+}
+
+.fact-page {
+  background-color: #f0f0f0; /* Set background color */
+  padding: 20px; /* Add padding */
+  border-radius: 10px; /* Add border radius */
+}
+
+.fact-page-heading {
+  color: #333; /* Set text color */
+}
+
+/*Bröd-text */
+.fact-page-list {
+  color: #666; /* Set text color */
+  font-size: 16px; /* Set font size */
+}
+
+.fact-page-list li {
+  list-style-type: disc; /* Set bullet style to disc */
+  margin-left: 20px; /* Add margin to the left of the list items */
+}
 

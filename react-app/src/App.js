@@ -5,25 +5,43 @@ import { useState } from 'react';
 import { Google } from './components/googleMap';
 import { FavoriteStores } from './components/favourites';
 import { Header } from './components/header';
+import { Factpage } from './components/factpage';
 
 function App() {
 
   const [showFavorites, setShowFavorites] = useState(false);
 
+  const [showFactpage, setShowFactpage] = useState(false);
+
+
   const toggleFavorites = () => {
     setShowFavorites(prevState => !prevState);
+  };
+
+  const toggleFactpage = () => {
+    setShowFactpage(prevState => !prevState);
   };
 
   return (
 
     <div>
-       <Header toggleFavorites={toggleFavorites} />
+       <Header toggleFavorites={toggleFavorites} toggleFactpage={toggleFactpage} />
       <div className='FavouritesPage'>
         <div className={`FavouriteStores ${showFavorites ? 'visible' : 'hidden'}`}>
           <FavoriteStores/>
         </div>
         <div className={`Google ${showFavorites ? 'map-small' : 'map-large'}`}>
           <Google/>
+        </div>
+        
+
+  
+      <div className='Factpage'>
+        <div className={`Factpage ${showFactpage ? 'visible' : 'hidden'}`}>
+          <Factpage/>
+        </div>
+
+    
         </div>
       </div>
     </div>
