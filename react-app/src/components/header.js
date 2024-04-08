@@ -11,9 +11,6 @@ export function Header({ toggleFavorites , navigateLoginPage, navigateAboutPage,
             Favorites
           </button>
         
-        <button className="leftbutton" onClick={toggleFactpage} >
-            Fact Page
-        </button>
         
         <button onClick={navigateLoginPage} >
             Login
