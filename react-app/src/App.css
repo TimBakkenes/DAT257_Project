@@ -39,18 +39,18 @@
 
 .stores-wrapper {
    /* Takes up left half of the screen */
-  height: 100vh; /* Full height of the viewport */
-  overflow-y: auto; /* Enable vertical scrolling if needed */
-  background-color: #00CED1; /* Turquoise green background color */
+  height: 100vh; 
+  overflow-y: auto;
+  background-color: #00CED1; 
 }
 
 .stores-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  width: 90%; /* Takes up left half of the screen */
+  width: 90%; 
   padding: 20px;
-  background-color: #00CED1; /* Turquoise green background color */
+  background-color: #00CED1; 
 }
 
 .store {
@@ -61,7 +61,6 @@
   background-color: #fff;
   box-sizing: border-box;
   
-    /* White background color for each store */
 }
 
 .store img {
@@ -86,10 +85,9 @@
 .FavouritesPage {
   position: absolute;
   display: flex;
-  top: 50px; /* Adjust the top position based on the header height and padding */
+  top: 9%; 
   width: 100%;
-
-  overflow: auto; /* Allow scrolling if the content exceeds the height */
+  overflow: auto; 
 }
 
 .FavouriteStores {
@@ -97,7 +95,7 @@
   left: 0;
   top: 10;
   height: 100%;
-  width: 50%; /* Initial width, adjust as needed */
+  width: 50%; 
   transition: width 0.5s ease;
   overflow: auto;
 }
@@ -105,7 +103,7 @@
 .Google {
   position: flex;
   left: 50%; 
-  top: 10;
+  top: 9;
 
   height: 100%;
   width: 100%; 

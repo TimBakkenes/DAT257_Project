@@ -59,7 +59,7 @@ export function Google () {
                         onCloseClick={handleCloseInfoWindow}
                         ref={mapRef}
                     >
-                        <div style={{backgroundColor:"#9fddb0"}}>
+                        <div style={{backgroundColor:'white'}}>
                             <h3>{selectedPlace.displayName.text}</h3>
                             <p>{selectedPlace.formattedAddress}</p>
                             <p>Rating: {selectedPlace.rating}</p>
