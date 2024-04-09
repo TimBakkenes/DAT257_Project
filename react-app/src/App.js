@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 import { useState } from 'react';
@@ -24,13 +23,13 @@ function App() {
   return (
 
     <div>
-       <Header toggleFavorites={toggleFavorites} toggleFactpage={toggleFactpage}  />
+      <Header toggleFavorites={toggleFavorites} toggleFactpage={toggleFactpage}  />
       <div className='FavouritesPage'>
         <div className={`FavouriteStores ${showFavorites ? 'visible' : 'hidden'}`}>
           <FavoriteStores/>
         </div>
         <div className={`Google ${showFavorites ? 'map-small' : 'map-large'}`}>
-          <Google/>
+           <Google/> 
         </div>
       
       </div>

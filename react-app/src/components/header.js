@@ -3,6 +3,7 @@ import "./css/Header.css"; // make sure the path is correct
 
 export function Header({ navigateHome, toggleFavorites, toggleFactpage, navigateProfilePage }) {
     return (
+
         <div className="fixed-header">
           <button
                 className="header-button home-button"
@@ -25,5 +26,6 @@ export function Header({ navigateHome, toggleFavorites, toggleFactpage, navigate
                 aria-label="Login" // Accessibility label
             />
         </div>
+
     );
 }
