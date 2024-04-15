@@ -1,6 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import api from '../api';
 
 export function Factpage() {
+    const [users, setUsers] = useState([])
+    const fetchUsers = async () => {
+        const response = await api.get('/user');
+        setUsers(response.data)
+    };
+    useEffect(() => {
+        fetchUsers();
+    },  []);
+
     return (
         <div className='fact-page'>
             <h1 className="fact-page-heading">Why Second Hand?</h1>
@@ -22,8 +32,18 @@ export function Factpage() {
                     with locations across the globe offering diverse selections of pre-loved goods.</li>
                 <li>The rise of online platforms like Depop, ThredUp, and Poshmark has revolutionized second-hand shopping, 
                     making it easier than ever to find unique items and reduce waste from the comfort of home.</li>
-                    </p>          
- 
+                    </p> 
+
+                    <div>
+            <h1>Users List</h1>
+            {users.map(user => (
+                <div key={user.id}>
+                    <p>Username: {user.username}</p>
+                    <p>ID: {user.id}</p>
+                </div>
+            ))}
+        </div>
+        
         </div>
     );
 }
