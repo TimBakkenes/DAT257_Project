@@ -19,6 +19,9 @@ app.add_middleware(
     allow_headers=['*']
 )
 
+with open("tables.sql", "r") as file:
+   sql_script = file.read()
+   db.cur.execute(sql_script)
 
 @app.post("/user")
 async def add_user(user):
