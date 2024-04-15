@@ -19,9 +19,6 @@ app.add_middleware(
     allow_headers=['*']
 )
 
-class UserBase(BaseModel):
-    username: str
-
 
 @app.post("/user")
 async def add_user():

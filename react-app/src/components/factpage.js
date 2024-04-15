@@ -68,9 +68,9 @@ export function Factpage() {
             <div>
                 <h1>Users List</h1>
                 {users.map(user => (
-                    <div key={user.id}>
-                        <p>Username: {user.username}</p>
-                        <p>ID: {user.id}</p>
+                    <div key={user[0]}>
+                        <p>Username: {user[1]}</p>
+                        <p>ID: {user[0]}</p>
                     </div>
                 ))}
             </div>

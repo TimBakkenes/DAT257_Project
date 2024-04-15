@@ -34,6 +34,7 @@ app.add_middleware(
 
 class UserBase(BaseModel):
     username: str
+    
 
 db_dependancy = Annotated[Session, Depends(get_db)]
 
