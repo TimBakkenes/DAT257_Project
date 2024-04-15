@@ -1,6 +1,6 @@
 import psycopg2
 
-conn = psycopg2.connect(host="localhost", dbname="postgres", user="postgres", password="postgres", port="5432")
+conn = psycopg2.connect(host="localhost", dbname="TEST", user="postgres", password="POSTGRES", port="5432")
 
 cur = conn.cursor()
 
@@ -15,6 +15,7 @@ cur.execute("""INSERT INTO person (id, name, age) VALUES
             (1, 'Axel', 22)""")
 
 cur.execute("""SELECT * FROM person;""")
+
 print(cur.fetchone())
 
 conn.commit()

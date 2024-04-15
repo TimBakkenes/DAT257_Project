@@ -49,3 +49,15 @@ async def add_user(user: UserBase, db: Session = Depends(get_db)):
 async def get_user(db: Session = Depends(get_db)):
     users = db.query(User).all()
     return users
+
+
+
+
+
+
+
+    
+
+
+
+
