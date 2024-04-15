@@ -21,8 +21,8 @@ app.add_middleware(
 
 
 @app.post("/user")
-async def add_user():
-   pass
+async def add_user(user):
+   return db.add_user(user)
 
 @app.get("/user")
 async def get_user():
