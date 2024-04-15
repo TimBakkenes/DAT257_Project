@@ -24,8 +24,8 @@ with open("tables.sql", "r") as file:
    db.cur.execute(sql_script)
 
 @app.post("/user")
-async def add_user(user):
-   return db.add_user(user)
+async def add_user(id, user):
+   return db.add_user(id, user)
 
 @app.get("/user")
 async def get_user():

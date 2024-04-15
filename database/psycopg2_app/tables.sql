@@ -1,8 +1,10 @@
  DROP TABLE Users;
 
 CREATE TABLE Users(
-    id TEXT PRIMARY KEY,
-    username TEXT UNIQUE
+    id INT NOT NULL PRIMARY KEY,
+    username TEXT NOT NULL UNIQUE
 ); 
+
+
 
 INSERT INTO users (id, username) VALUES (1, 'Axel')

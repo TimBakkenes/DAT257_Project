@@ -27,7 +27,7 @@ class DatabaseConnection():
     
     @staticmethod
     def get_connection():
-        conn = psycopg2.connect(host="localhost", dbname="postgres", user="postgres", password="postgres", port="5432") 
+        conn = psycopg2.connect(host="localhost", dbname="agil", user="postgres", password="0", port="5432") 
         return conn
     
     @staticmethod
@@ -46,11 +46,11 @@ class DataBaseManager():
         value = self.cur.fetchall()
         return value
     
-    def add_user(self, user):
-        query = "INSERT INTO users (username) VALUES (%s)"
-        val = (user,) 
+    def add_user(self, id, user):
+        query = "INSERT INTO users (id, username) VALUES (%s, %s)"
+        val = (id, user) 
         self.cur.execute(query, val)
         self.conn.commit()
-        
+
 db = DataBaseManager()
 
