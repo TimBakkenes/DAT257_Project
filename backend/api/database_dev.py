@@ -25,7 +25,15 @@ with open("DAT257_Project/backend/api/inserts.sql", "r") as inserts_file:
     inserts = inserts_file.read()
     cursor.execute(inserts)
 
+with open("DAT257_Project/backend/api/views.sql", "r") as views_file:
+    views = views_file.read()
+    cursor.execute(views)
+
 conn.commit()
+
+cursor.execute("SELECT * FROM Agg_Ratings;")
+res = cursor.fetchall()
+print(res)
 
 
 

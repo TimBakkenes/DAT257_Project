@@ -6,21 +6,21 @@ CREATE TABLE Users(
 
 CREATE TABLE Stores(
     id VARCHAR(6) PRIMARY KEY,
-    owner VARCHAR(8) REFERENCES Users(id),
+    owner VARCHAR(8) REFERENCES Users(id) ON DELETE CASCADE,
     name TEXT NOT NULL UNIQUE,
     latitude NUMERIC(8, 6) NOT NULL,
     longitude NUMERIC(8, 6) NOT NULL
 );
 
 CREATE TABLE Ratings(
-    rating_user VARCHAR(8) REFERENCES Users(id),
-    store VARCHAR(6) REFERENCES Stores(id),
+    rating_user VARCHAR(8) REFERENCES Users(id) ON DELETE CASCADE,
+    store VARCHAR(6) REFERENCES Stores(id) ON DELETE CASCADE,
     rating INTEGER CHECK (rating in (1, 2, 3, 4, 5)),
     PRIMARY KEY (rating_user, store)
 );
 
 CREATE TABLE Favourites (
-    user_id VARCHAR(8) REFERENCES Users(id),
-    store VARCHAR(6) REFERENCES Stores(id),
+    user_id VARCHAR(8) REFERENCES Users(id) ON DELETE CASCADE,
+    store VARCHAR(6) REFERENCES Stores(id) ON DELETE CASCADE,
     PRIMARY KEY (user_id, store)
 );
