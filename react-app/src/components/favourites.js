@@ -36,7 +36,6 @@ export function FavoriteStores() {
     return stars;
   };
   
-  
     useEffect(() => {
       const timer = setTimeout(() => {
         setStores([

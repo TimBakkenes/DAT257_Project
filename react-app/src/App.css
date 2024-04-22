@@ -38,7 +38,6 @@
 }
 
 .stores-wrapper {
-   /* Takes up left half of the screen */
   height: 100vh; 
   overflow-y: auto;
   background-color: #00CED1; 
@@ -85,7 +84,7 @@
 .FavouritesPage {
   position: absolute;
   display: flex;
-  top: 9%; 
+  top: 10%; 
   width: 100%;
   overflow: auto; 
 }
@@ -104,7 +103,6 @@
   position: flex;
   left: 50%; 
   top: 9;
-
   height: 100%;
   width: 100%; 
   transition: left -0.5s ease; /* Bra transition */
