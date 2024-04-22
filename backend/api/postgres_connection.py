@@ -4,7 +4,7 @@ class DatabaseConnection():
     
     @staticmethod
     def get_connection():
-        conn = psycopg2.connect(host="localhost", dbname="agil", user="postgres", password="0", port="5432") 
+        conn = psycopg2.connect(host="localhost", dbname="postgres", user="postgres", password="postgres", port="5432") 
         return conn
     
     @staticmethod
@@ -50,10 +50,25 @@ class DataBaseManager():
     
     def get_favourites(self, user):
         query = "SELECT store FROM Favourites WHERE user_id = %s"
-        val = (user)
+        val = (user,)
+        self.cur.execute(query, val)
+        result = self.cur.fetchall()
+        self.conn.commit()
+        return result
+    
+    def add_favourite(self, user, store):
+        query = "INSERT INTO Favourites (user_id, store) VALUES (%s, %s);"
+        val = (user, store)
         self.cur.execute(query, val)
         self.conn.commit()
         return "Success"
+    
+
+        
+        
+
+        
+        
         
 
         
