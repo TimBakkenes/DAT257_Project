@@ -53,7 +53,6 @@ class DataBaseManager():
         val = (user,)
         self.cur.execute(query, val)
         result = self.cur.fetchall()
-        self.conn.commit()
         return result
     
     def add_favourite(self, user, store):
@@ -63,9 +62,60 @@ class DataBaseManager():
         self.conn.commit()
         return "Success"
     
+    def remove_favourite(self, user, store):
+        query = "DELETE FROM Favourites WHERE (user_id = %s AND stores = %s);"
+        val = (user, store)
+        self.cur.execute(query, val)
+        self.conn.commit()
+        return "Success"
+    
+    def remove_user(self, id):
+        query = "DELETE FROM Users WHERE (id = %s);"
+        val = (id,)
+        self.cur.execute(query, val)
+        self.conn.commit()
+        return "Success"
 
-        
-        
+    def get_stores(self):
+        query = "SELECT * FROM Stores;"
+        self.cur.execute(query)
+        result = self.cur.fetchall()
+        return "Success"
+
+    def remove_stores(self, id):
+        query = "DELETE FROM Stores WHERE (id = %s);"
+        val = (id,)
+        self.cur.execute(query, val)
+        self.conn.commit()
+        return "Success"
+    
+    def get_ratings(self, user, store):
+        query = "SELECT store FROM Ratings WHERE user_id = %s, store = %s"
+        val = (user,store)
+        self.cur.execute(query, val)
+        result = self.cur.fetchall()
+        return result
+    
+    def get_all_stores_rating(self):
+        query = "SELECT * FROM Agg_Ratings;"
+        self.cur.execute(query)
+        result = self.cur.fetchall()
+        return result
+
+    def add_rating(self, user, store, rating):
+        query = "INSERT INTO Ratings (user_id, store, rating) VALUES (%s, %s, %s);"
+        val = (user, store, rating)
+        self.cur.execute(query, val)
+        self.conn.commit()
+        return "Success"
+
+    def remove_rating(self, user, store):
+        query = "DELETE FROM Ratings WHERE (user_id = %s, store = %s)"
+        val = (user, store)
+        self.cur.execute(query, val)
+        self.conn.commit()
+        return "Success"
+
 
         
         
