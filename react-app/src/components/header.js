@@ -1,15 +1,15 @@
 import React from 'react';
 import "./css/Header.css"; // make sure the path is correct
 
-export function Header({ navigateHome, toggleFavorites, toggleFactpage, navigateProfilePage }) {
+export function Header({toggleFavorites, toggleFactpage, navigateProfilePage }) {
     return (
 
         <div className="fixed-header">
-          <button
-                className="header-button home-button"
-                onClick={navigateHome}
-                aria-label="Home" // Accessibility label
-            />
+          {/* <button
+                className="header-button map-button"
+                onClick={toggleMap}
+                aria-label="Map" // Accessibility label
+            /> */}
             <button
                 className="header-button favorites-button"
                 onClick={toggleFavorites}

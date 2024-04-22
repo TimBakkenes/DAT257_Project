@@ -67,7 +67,8 @@ export function FavoriteStores() {
     <div className="stores-wrapper">
         
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '50px', whiteSpace:'nowrap' }}>
-            <h2>Your Favourite Stores</h2>
+            
+            <h1 className="fact-page-heading">Your Favourite Stores</h1>
         </div>
 
       <div className="stores-container">

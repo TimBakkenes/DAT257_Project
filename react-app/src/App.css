@@ -40,7 +40,7 @@
 .stores-wrapper {
   height: 100vh; 
   overflow-y: auto;
-  background-color: #00CED1; 
+  background-color: #9fddb0; 
 }
 
 .stores-container {
@@ -49,14 +49,13 @@
   gap: 20px;
   width: 90%; 
   padding: 20px;
-  background-color: #00CED1; 
+  background-color: #9fddb0; 
 }
 
 .store {
   width: 300px; /* Fixed width */
   height: 200px;
   padding: 10px;
-  border: 4px solid #ccc;
   background-color: #fff;
   box-sizing: border-box;
   
@@ -137,8 +136,8 @@
 .map-semi-small {
   position: absolute;
   left: 0%;
-  width: 70%; /* The map shrinks to 70% width when the profile is visible */
-  transition: width 0.5s ease; /* Smooth transition for resizing */
+  width: 68%; /* The map shrinks to 70% width when the profile is visible */
+  transition: width 0.5s ease, right 0.5s ease;; /* Smooth transition for resizing */
 }
 
 .map-semi-large {
@@ -193,7 +192,7 @@
   height: 100%;
   background-color: #fff;
   box-shadow: -5px 0 15px rgba(0,0,0,0.2);
-  transition: width 0.5s ease;
+  transition: right 0.5s ease;
   z-index: 100;
   padding: 20px;
   overflow: auto; /* Tillåter skrollning inom komponenten */
