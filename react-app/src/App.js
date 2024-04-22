@@ -7,6 +7,9 @@ import { Header } from './components/header';
 import { Factpage } from './components/factpage';
 import { ProfileSlideOut } from './components/profileslideout';
 
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 function App() {
 
   const [showFavorites, setShowFavorites] = useState(false);
