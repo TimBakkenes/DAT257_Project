@@ -3,21 +3,36 @@ import ".//css/login.css"
 import { useNavigate } from 'react-router-dom'
 import axios from "axios";
 
-export function Login() {
-    const [currentUser, setcurrentUser] = useState('');
+function Login() {
 
     const [userName, setuserName] = useState('');
     const [password, setPassword] = useState('');
 
-    // const navigate = useNavigate()
+    const navigate = useNavigate()
 
-    /* const onLoginClick = () => {
+    const onLoginClick = async () => {
 
-        navigate("/home")
+        try {
+            // use data destructuring to get data from the promise object
+            const response = await axios.get("http://127.0.0.1:8000/api/get/login", {params: {
+                username: userName,
+                password: password
+              }}); 
+            
+            console.log(response.data)
 
+            if (response.data == true) {
+                navigate("/home", {state: {user: userName}});
+            } else {
+                console.log("Wrong password")
+                alert("Wrong password or username")
+            }
+          } catch (error) {
+            console.log(error);
+            console.log("Wrong password")
+          }
 
-
-    } */
+    } 
 
     
 
@@ -48,10 +63,11 @@ export function Login() {
                 </div>
                 <br />
                 <div className={'login-input'}>
-                    <input className={'login-button'} type="button" /* onClick={onLoginClick} */ value={'Log in'} />
+                    <input className={'login-button'} type="button" onClick={onLoginClick} value={'Log in'} />
                 </div>
             </div>
 
         </div>
-    )
+    );
 }
+export default Login

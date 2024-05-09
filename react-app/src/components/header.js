@@ -21,9 +21,9 @@ export function Header({toggleFavorites, toggleFactpage, navigateProfilePage }) 
                 aria-label="Fact" // Accessibility label
             />
             <button
-                className="header-button login-button"
+                className="header-button profile-button"
                 onClick={navigateProfilePage}
-                aria-label="Login" // Accessibility label
+                aria-label="Profile" // Accessibility label
             />
         </div>
 
