@@ -41,6 +41,14 @@ class DataBaseManager():
         self.conn.commit()
         return "Success"
     
+    def log_in(self, username, password):
+        query = "SELECT EXISTS (SELECT * FROM Passwords WHERE c_user = %s AND password = %s);"
+        val = (username, password)
+        self.cur.execute(query, val)
+        value = self.cur.fetchall()
+        return value[0][0]
+
+    
     def add_stores(self, id, owner, name, lat, long):
         query = "INSERT INTO Stores (id, owner, name latitude, longitude) VALUES (%s, %s, %s, %s, %s)"
         val = (id, owner, name, lat, long) 
@@ -120,5 +128,10 @@ class DataBaseManager():
         
         
         
+d = DataBaseManager()
+d.get_conn()
+d.get_cursor()
+
+print(d.log_in('11111111', 'a'))
 
         

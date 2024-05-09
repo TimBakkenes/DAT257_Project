@@ -1,12 +1,16 @@
 import './App.css';
 
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+
 import { useState } from 'react';
 import { Google } from './components/googleMap';
 import { FavoriteStores } from './components/favourites';
 import { Header } from './components/header';
 import { Factpage } from './components/factpage';
 import { ProfileSlideOut } from './components/profileslideout';
-
+import { Login } from './components/login'
+import { Homepage } from './components/homepage';
+ 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
@@ -30,31 +34,19 @@ function App() {
 
   return (
     <div>
-      <Header toggleFavorites={toggleFavorites} toggleFactpage={toggleFactpage} navigateProfilePage={navigateProfilePage} />
-      <div className='FavouritesPage'>
-        <div className={`FavouriteStores ${showFavorites ? 'visible' : 'hidden'}`}>
-          <FavoriteStores/>
-        </div>
-        <div className={`Google ${showFavorites ? 'map-small' : (showProfile ? 'map-semi-small' : 'map-large')}`}>
-          <Google/> 
-        </div>
-      </div>
-      {showFactpage && (
-        <div className='Factpage'>
-          <Factpage/>
-        </div>
-      )}
-      {showProfile && (
-        <div>
-          <div className={`ProfileSlideOut ${showProfile ? 'visible' : 'hidden'}`}>
-            <ProfileSlideOut/>
-          </div>
-          <div className={`Google ${showProfile ? 'map-semi-small' : 'map-semi-large'}`}>
-            <Google/> 
-          </div>
-        </div>
-      )}
+      <Homepage/>
+      {/* <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Login/>} />
+          <Route path="/home" element={<Homepage/>} />
+        </Routes>
+      </BrowserRouter> */}
+
     </div>
+    
+      
+    
+    
   );
 }
    
