@@ -52,13 +52,23 @@
   background-color: #9fddb0; 
 }
 
+.members-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+  width: 80%; 
+  padding: 20px;
+  background-color: #9fddb0; 
+}
+
 .store {
   width: 300px; /* Fixed width */
   height: 200px;
   padding: 10px;
   background-color: #fff;
+  font-family: 'Georgia', serif; 
   box-sizing: border-box;
-  
+  box-shadow: 0 4px 8px rgba(36, 77, 36, 0.5);
 }
 
 .store img {
@@ -119,10 +129,10 @@
 }
 
 
-.Factpage {
+.Standardpage {
   position: fixed;
   left: 0;
-  top: 5%;
+  top: 9%;
   height: 100%;
   width: 100%; /* Initial width, adjust as needed */
   background-color: #9fddb0; /* Eller valfri bakgrundsfärg */
@@ -130,11 +140,6 @@
   overflow: auto; /* Tillåter skrollning inom komponenten */
 }
 
-.fact-page {
-  background-color: #9fddb0; /* Set background color */
-  padding: 20px; /* Add padding */
-  border-radius: 10px; /* Add border radius */
-}
 
 .fact-page-heading {
   color: #ffffff; /* Set text color */
