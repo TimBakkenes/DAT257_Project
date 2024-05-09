@@ -37,9 +37,14 @@
     background-image: url('./Icon_login.png'); /* Path to your image */
 }
 
+.contact-button {
+    background-image: url('./Icon_contact.png'); /* Path to your image */
+}
+
 .header-button:hover {
     transform: scale(1.1); /* Slightly enlarge button on hover */
 }
+
 
  
   
