@@ -33,6 +33,13 @@ def read_root():
 
 
 # Users
+@app.get("/api/get/login")
+async def login(username, password):
+   print(username)
+   print(password)
+   print(dc.log_in(username, password))
+   return dc.log_in(username, password)
+
 @app.post("/api/post/add_user")
 async def add_user(id, user, bio):
    return dc.add_user(id, user, bio)

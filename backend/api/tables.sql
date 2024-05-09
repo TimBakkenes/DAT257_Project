@@ -4,6 +4,12 @@ CREATE TABLE Users(
     bio TEXT 
 ); 
 
+CREATE TABLE Passwords(
+    c_user VARCHAR(8) PRIMARY KEY,
+    password VARCHAR(1),
+    FOREIGN KEY (c_user) REFERENCES Users(id)
+);
+
 CREATE TABLE Stores(
     id VARCHAR(6) PRIMARY KEY,
     owner VARCHAR(8) REFERENCES Users(id) ON DELETE CASCADE,
