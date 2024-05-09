@@ -32,7 +32,9 @@ export function Google () {
       setSelectedPlace(null);
     };
     
-    
+    const handleAddFavourites = () => {
+      alert('Added to Favoutries')
+    };
 
     return (
       <LoadScript
@@ -64,6 +66,15 @@ export function Google () {
                             <p>{selectedPlace.formattedAddress}</p>
                             <p>Rating: {selectedPlace.rating}</p>
                             <a href={selectedPlace.websiteUri} >Visit Website</a>
+                            <button className='addFavouritesButton' onClick={handleAddFavourites}  style={{ 
+                                  position: 'absolute',
+                                  right: '5px',
+                                  bottom: '5px',
+                                  backgroundImage: "url('./components/css/Icon_heart.png')",
+                                  backgroundSize: 'cover', 
+                                  backgroundPosition: 'center', 
+                                  backgroundRepeat: 'no-repeat',
+                                  }}>Add to favourites</button>
                         </div>
                     </InfoWindowF>
                 )}
