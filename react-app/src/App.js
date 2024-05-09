@@ -13,16 +13,13 @@ import Login from './components/login'
 import Homepage from './components/homepage';
  
 
-const [showContact, setShowContact] = useState(false);
+
 
 
 
 
 function App() {
 
-  const toggleContact = () => {
-    setShowContact(prevState => !prevState);
-  };
 
   return (
     <div>
