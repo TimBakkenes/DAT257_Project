@@ -51,24 +51,18 @@ function App() {
           <Factpage/>
         </div>
       )}
-       {showContact && (
+             {showContact && (
         <div className='Standardpage'>
           <Contact/>
         </div>
       )}
-      {showProfile && (
-        <div>
-          <div className={`ProfileSlideOut ${showProfile ? 'visible' : 'hidden'}`}>
-            <ProfileSlideOut/>
-          </div>
-          <div className={`Google ${showProfile ? 'map-semi-small' : 'map-semi-large'}`}>
-            <Google/> 
-          </div>
-        </div>
-      )}
-     
-    </div>
-  );
+    {showProfile && (
+      <div className='ProfileSlideOut'>
+        <ProfileSlideOut isVisible={showProfile} />
+      </div>
+    )}
+  </div>
+);
 }
    
 export default App;
