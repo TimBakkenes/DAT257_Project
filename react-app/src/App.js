@@ -1,35 +1,24 @@
 import './App.css';
 
-import { useState } from 'react';
-import { Google } from './components/googleMap';
-import { FavoriteStores } from './components/favourites';
-import { Header } from './components/header';
-import { Factpage } from './components/factpage';
-import { ProfileSlideOut } from './components/profileslideout';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+
 import { Contact } from './components/contactpage';
 
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+
+
+import { useState } from 'react';
+
+
+import Login from './components/login'
+import Homepage from './components/homepage';
+ 
+
+const [showContact, setShowContact] = useState(false);
+
+
+
 
 function App() {
-
-  const [showFavorites, setShowFavorites] = useState(false);
-  const [showFactpage, setShowFactpage] = useState(false);
-  const [showProfile, setShowProfile] = useState(false);
-  const [showContact, setShowContact] = useState(false);
-
-
-  const toggleFavorites = () => {
-    setShowFavorites(prevState => !prevState);
-  };
-
-  const toggleFactpage = () => {
-    setShowFactpage(prevState => !prevState);
-  };
-
-  const navigateProfilePage = () => {
-    setShowProfile(prevState => !prevState);
-  };
 
   const toggleContact = () => {
     setShowContact(prevState => !prevState);
@@ -37,32 +26,20 @@ function App() {
 
   return (
     <div>
-      <Header toggleFavorites={toggleFavorites} toggleFactpage={toggleFactpage} navigateProfilePage={navigateProfilePage} toggleContact={toggleContact}/>
-      <div className='FavouritesPage'>
-        <div className={`FavouriteStores ${showFavorites ? 'visible' : 'hidden'}`}>
-          <FavoriteStores/>
-        </div>
-        <div className={`Google ${showFavorites ? 'map-small' : (showProfile ? 'map-semi-small' : 'map-large')}`}>
-          <Google/> 
-        </div>
-      </div>
-      {showFactpage && (
-        <div className='Standardpage'>
-          <Factpage/>
-        </div>
-      )}
-             {showContact && (
-        <div className='Standardpage'>
-          <Contact/>
-        </div>
-      )}
-    {showProfile && (
-      <div className='ProfileSlideOut'>
-        <ProfileSlideOut isVisible={showProfile} />
-      </div>
-    )}
-  </div>
-);
+
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Login/>} />
+          <Route path="/home" element={<Homepage/>} />
+        </Routes>
+      </BrowserRouter>
+
+    </div>
+    
+      
+    
+    
+  );
 }
    
 export default App;
