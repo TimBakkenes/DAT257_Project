@@ -27,6 +27,13 @@ class DataBaseManager():
         self.conn.close()
         self.cur.close()
 
+    def get_user_by_id(self, user_id):
+        self.get_conn()
+        self.get_cursor()
+        query = "SELECT username, bio FROM Users WHERE id = %s;"
+        self.cur.execute(query, (user_id,))
+        user_row = self.cur.fetchone()
+        return {'username': user_row[0], 'bio': user_row[1]}
 
     def get_users(self):
         query = """SELECT * FROM Users;"""
