@@ -1,4 +1,4 @@
-CREATE TABLE Users(
+CREATE TABLE Users (
     id VARCHAR(8) PRIMARY KEY,
     username TEXT NOT NULL UNIQUE,
     bio TEXT 
