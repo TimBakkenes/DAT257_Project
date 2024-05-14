@@ -24,6 +24,15 @@ class RemoveRatingData(BaseModel):
     user: str
     store: str
 
+class UserData(BaseModel):
+   id: str
+   user: str
+   bio: str
+
+class RemoveUserData(BaseModel):
+   id: str
+   user: str
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
    print("Connecting ... ")
@@ -49,24 +58,24 @@ def read_root():
    return {"message": "Hello, world!"}
 
 
-# # Users
-# @app.post("/api/post/add_user")
-# async def add_user(id, user, bio):
-#    return dc.add_user(id, user, bio)
+# Users
+@app.post("/api/post/add_user")
+async def add_user(model: UserData):
+   return dc.add_user(model.id, model.user, model.bio)
 
-# @app.get("/api/get/get_users")
-# async def get_users():
-#    return dc.get_users()
+@app.get("/api/get/get_users")
+async def get_users():
+   return dc.get_users()
 
-# @app.post("/api/post/remove_user")
-# async def remove_user(id, user):
-#    return dc.remove_user(id, user)
+@app.post("/api/post/remove_user")
+async def remove_user(model: RemoveUserData):
+   return dc.remove_user(model.id, model.user)
 
 
-# # Stores
-# @app.get("/api/get/get_stores")
-# async def get_stores():
-#    return dc.get_favourites()
+# Stores
+@app.get("/api/get/get_stores")
+async def get_stores():
+   return dc.get_stores()
 
 @app.post("/api/post/add_store")
 async def add_store(model: StoreData):
@@ -97,14 +106,14 @@ async def remove_favourite(favourite_data: FavouriteData):
       raise Exception(str(e))
    
 
-# # Ratings
-# @app.get("/api/get/get_ratings")
-# async def get_rating(user: str, store:str):
-#    return dc.get_ratings(user, store)
+# Ratings
+@app.get("/api/get/get_ratings")
+async def get_rating(user: str, store:str):
+   return dc.get_ratings(user, store)
 
-# @app.get("/api/get/get_all_stores_ratings")
-# async def get_all_stores_ratings():
-#    return dc.get_all_stores_rating()
+@app.get("/api/get/get_all_stores_ratings")
+async def get_all_stores_ratings():
+   return dc.get_all_stores_rating()
 
 @app.post("/api/post/add_rating")
 async def add_rating(model: RatingData):
