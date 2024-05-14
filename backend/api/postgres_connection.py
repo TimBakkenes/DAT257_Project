@@ -13,39 +13,6 @@ def database_context():
         cur.close()
         conn.close()
 
-# Perform database operations
-
-
-# class DatabaseConnection():
-    
-#     @staticmethod
-#     def get_connection():
-#         conn = psycopg2.connect(host="localhost", dbname="agil", user="postgres", password="0", port="5432") 
-#         return conn
-    
-#     @staticmethod
-#     def get_cursor(conn):
-#         return conn.cursor()
-    
-
-# class DataBaseManager():
-#     def __init__(self):
-#         self.conn = None
-#         self.cur = None
-
-#     def get_conn(self):
-#         self.conn = DatabaseConnection.get_connection()
-    
-#     def get_cursor(self):
-#         self.cur = DatabaseConnection.get_cursor(self.conn)
-    
-#     def disconnect(self):
-#         self.conn.close()
-#         self.cur.close()
-#     con_obj = DatabaseConnection().get_connection()
-#     cur_obj = DatabaseConnection().get_cursor(con_obj)
-
-##############################################
 
 # def get_users():
 #     query = """SELECT * FROM Users;"""
@@ -67,6 +34,8 @@ def database_context():
 #     conn.commit()
 #     return "Success"
 
+
+# favourites 
 def get_favourites(user):
     query = "SELECT store FROM Favourites WHERE user_id = %s"
     val = (user,)
@@ -76,21 +45,17 @@ def get_favourites(user):
         return value
 
 
-class favourite_model(BaseModel):
-    user: str
-    store: str
-
-def add_favourite(fm: favourite_model):
+def add_favourite(user:str, store:str):
     query = "INSERT INTO Favourites (user_id, store) VALUES (%s, %s);"
-    val = (fm.user, fm.store)
+    val = (user, store)
     with database_context() as (cur, conn):
         cur.execute(query, val)
         conn.commit()
         return "Success"
 
-def remove_favourite(fm: favourite_model):
+def remove_favourite(user:str, store:str):
     query = "DELETE FROM Favourites WHERE (user_id = %s AND store = %s);"
-    val = (fm.user, fm.store)
+    val = (user, store)
     with database_context() as (cur, conn):
         cur.execute(query, val)
         conn.commit()

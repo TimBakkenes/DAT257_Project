@@ -1,7 +1,6 @@
 from fastapi import FastAPI, Depends, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 import postgres_connection as dc
-from postgres_connection import * 
 from pydantic import BaseModel
 
 
@@ -71,18 +70,18 @@ async def get_favourites(user: str):
    return dc.get_favourites(user)
 
 @app.post("/api/post/add_favourite")
-async def add_favourite(favourite_data: favourite_model):
+async def add_favourite(favourite_data: FavouriteData):
     try:
-        dc.add_favourite(favourite_data)
+        dc.add_favourite(favourite_data.user, favourite_data.store)
     except Exception as e:
-        raise HTTPException(status_code=400, detail=str(e))
+        raise Exception(str(e))
 
 @app.post("/api/post/remove_favourite")
-async def remove_favourite(favourite_data: favourite_model):
+async def remove_favourite(favourite_data: FavouriteData):
    try:
-        return dc.remove_favourite(favourite_data)
+        return dc.remove_favourite(favourite_data.user, favourite_data.store)
    except Exception as e:
-      raise HTTPException(status_code=400, detail=str(e))
+      raise Exception(str(e))
    
 
 # # Ratings
