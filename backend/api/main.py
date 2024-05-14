@@ -24,15 +24,15 @@ class RemoveRatingData(BaseModel):
     user: str
     store: str
 
-# @asynccontextmanager
-# async def lifespan(app: FastAPI):
-#    print("Connecting ... ")
-#    dc.database_context()
-#    print("Connected")
-#    yield
-#    print("Disconnecting ... ")
-#    dc.disconnect()
-#    print("Disconnected")
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+   print("Connecting ... ")
+   dc.database_context()
+   print("Connected")
+   yield
+   print("Disconnecting ... ")
+   dc.disconnect()
+   print("Disconnected")
 
 app = FastAPI(lifespan=lifespan)
 
