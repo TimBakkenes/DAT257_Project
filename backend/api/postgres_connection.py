@@ -97,7 +97,9 @@ def get_stores():
     with database_context() as (cur, conn):
         cur.execute(query)
         result = cur.fetchall()
-        return result
+        keys = ["name", "owner", "description", "latitude", "longitude"]
+        return [zip(keys, row) for row in result]
+        
 
 
 

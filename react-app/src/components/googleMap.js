@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import { GoogleMap, LoadScript, MarkerF, InfoWindowF} from '@react-google-maps/api';
 import storeData from '../data/stores.json';
 import ".//css/info.css"
@@ -12,15 +12,37 @@ export function Google (username) {
     };
   
     const API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
-  
-    const gothenburg = {
-        lat: 57.7089,
-        lng: 11.9746
-      };
+
+
+    const [center, setCenter] = useState({
+      lat: 57.7089,
+      lng: 11.9746
+    })
+    
+
+    const [customStores, setCustomStores] = useState([])
+    useEffect(() => {
+      var url = "http://127.0.0.1:8000/api/get/get_stores"
+      axios.get(url).then((response) => {
+        setCustomStores(response.data)
+        console.log(response.data)
+      }).catch((error) => {
+        alert("Failed to fetch stores" + error)
+      })
+    }, []) 
+    
+    const handleCloseStore = () => {
+      setSelectedStore(null);
+    }
+
+    const handleStoreClick = (store) => {
+      setSelectedStore(store);
+    }
 
     const mapRef = useRef(null);
 
     const [selectedPlace, setSelectedPlace] = useState(null);
+    const [selectedStore, setSelectedStore] = useState(null);
 
     const handleMarkerClick = (place) => {
       setSelectedPlace(place);
@@ -76,12 +98,15 @@ export function Google (username) {
 
   const [id, setId] = useState('');
   const handleSetId = (e) => {
+    setCenter({lat: formLocation.lat, lng: formLocation.lng})
     setId(e)
   }
 
   const [description, setDesription] = useState('');
   const handleSetDescription = (e) => {
+    setCenter({lat: formLocation.lat, lng: formLocation.lng})
     setDesription(e);
+    
   }
 
   const addStore = async () => {
@@ -100,7 +125,9 @@ export function Google (username) {
         "description": description,
         "lat": formLocation.lat,
         "long": formLocation.lng
-      }); 
+      }).catch(error => {alert("Failed to add store: " + error)}); 
+
+      window.location.reload()
       
       console.log(response.data)
     } catch (error) {
@@ -117,7 +144,7 @@ export function Google (username) {
         <GoogleMap
           mapContainerStyle={mapStyles}
           zoom={10}
-          center={gothenburg}
+          center={center}
           onClick={handleMapClick}
         >
           {storeData.places.map(place => (
@@ -128,6 +155,14 @@ export function Google (username) {
                         onClick={ ()=> handleMarkerClick(place)}
                     />
                 ))}
+          
+          {customStores.map(store => (
+            <MarkerF
+              key={store.name}
+              position={{lat: store.latitude, lng: store.longitude}}
+              onClick={() => handleStoreClick(store)}
+            />
+          ))}
           
           {showForm && (
               <InfoWindowF position={formLocation} onCloseClick={handleCloseClick}>
@@ -140,8 +175,6 @@ export function Google (username) {
                   <input onChange={(e) => handleSetDescription(e.target.value)}/>
                   <br></br>
                   <br></br>
-
-
                   <button className="app-button" onClick={addStore} >
                     Add Store
                   </button>
@@ -161,11 +194,25 @@ export function Google (username) {
                             <p>{selectedPlace.formattedAddress}</p>
                             <p>Rating: {selectedPlace.rating}</p>
                             <a href={selectedPlace.websiteUri} >Visit Website</a>
+                        </div>
+                    </InfoWindowF>
+                )}
+          
+          {selectedStore && (
+                    <InfoWindowF
+                        position={{ lat: selectedStore.latitude, lng: selectedStore.longitude }}
+                        onCloseClick={handleCloseStore}
+                        ref={mapRef}
+                    >
+                        <div style={{backgroundColor:'white', minWidth:'200px', minHeight:'100px'}}>
+                            <h3>{selectedStore.name}</h3>
+                            <p>{selectedStore.description}</p>
+                            <p>Rating: </p>
                             <button className='addFavouritesButton' onClick={handleAddFavourites}  style={{ 
                                   position: 'absolute',
+                                  
                                   right: '5px',
                                   bottom: '5px',
-                                  backgroundImage: "url('./components/css/Icon_heart.png')",
                                   backgroundSize: 'cover', 
                                   backgroundPosition: 'center', 
                                   backgroundRepeat: 'no-repeat',
