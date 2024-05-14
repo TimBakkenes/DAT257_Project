@@ -14,10 +14,10 @@ class RatingData(BaseModel):
     store: str
     rating: int
 
-class StoreData(BaseModel):
-    id: str
-    owner: str
+class Store(BaseModel):
     name: str
+    owner: str
+    description: str
     lat: float
     long: float
    
@@ -88,16 +88,6 @@ async def remove_user(model: RemoveUserData):
 @app.get("/api/get/get_stores")
 async def get_stores():
    return dc.get_stores()
-
-from pydantic import BaseModel
-from typing import Optional
-
-class Store(BaseModel):
-    name: str
-    owner: str
-    description: str
-    lat: float
-    long: float
     
 
 @app.post("/api/post/add_store")
