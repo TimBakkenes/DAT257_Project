@@ -17,7 +17,7 @@ export function Factpage() {
     };
 
     return (
-        <div className='fact-page'>
+        <div className='Standardpage'>
             <div className='hero-section'>
                 <Slider {...settings}>
                         <div>

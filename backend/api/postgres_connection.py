@@ -27,6 +27,13 @@ class DataBaseManager():
         self.conn.close()
         self.cur.close()
 
+    def get_user_by_id(self, user_id):
+        self.get_conn()
+        self.get_cursor()
+        query = "SELECT username, bio FROM Users WHERE id = %s;"
+        self.cur.execute(query, (user_id,))
+        user_row = self.cur.fetchone()
+        return {'username': user_row[0], 'bio': user_row[1]}
 
     def get_users(self):
         query = """SELECT * FROM Users;"""
@@ -40,6 +47,14 @@ class DataBaseManager():
         self.cur.execute(query, val)
         self.conn.commit()
         return "Success"
+    
+    def log_in(self, username, password):
+        query = "SELECT EXISTS (SELECT * FROM Passwords WHERE c_user = %s AND password = %s);"
+        val = (username, password)
+        self.cur.execute(query, val)
+        value = self.cur.fetchall()
+        return value[0][0]
+
     
     def add_stores(self, id, owner, name, lat, long):
         query = "INSERT INTO Stores (id, owner, name latitude, longitude) VALUES (%s, %s, %s, %s, %s)"
@@ -120,5 +135,10 @@ class DataBaseManager():
         
         
         
+d = DataBaseManager()
+d.get_conn()
+d.get_cursor()
+
+print(d.log_in('11111111', 'a'))
 
         

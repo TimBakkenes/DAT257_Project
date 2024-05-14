@@ -1,8 +1,14 @@
-CREATE TABLE Users(
+CREATE TABLE Users (
     id VARCHAR(8) PRIMARY KEY,
     username TEXT NOT NULL UNIQUE,
     bio TEXT 
 ); 
+
+CREATE TABLE Passwords(
+    c_user VARCHAR(8) PRIMARY KEY,
+    password VARCHAR(1),
+    FOREIGN KEY (c_user) REFERENCES Users(id)
+);
 
 CREATE TABLE Stores(
     id VARCHAR(6) PRIMARY KEY,
