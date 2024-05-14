@@ -1,35 +1,32 @@
+from contextlib import asynccontextmanager
 from fastapi import FastAPI, Depends, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 import postgres_connection as dc
 from pydantic import BaseModel
 
-
-app = FastAPI()
-
 class FavouriteData(BaseModel):
     user: str
     store: str
 
-# @asynccontextmanager
-# async def lifespan(app: FastAPI):
-#    print("Connecting ... ")
-#    dc.database_context()
-#    print("Connected")
-#    yield
-#    print("Disconnecting ... ")
-#    dc.disconnect()
-#    print("Disconnected")
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+   print("Connecting ... ")
+   dc.database_context()
+   print("Connected")
+   yield
+   print("Disconnecting ... ")
+   dc.disconnect()
+   print("Disconnected")
 
-# app = FastAPI(lifespan=lifespan)
+app = FastAPI(lifespan=lifespan)
 
-# app.add_middleware(
-#    CORSMiddleware,
-#    allow_origins=['*'],
-#    allow_credentials=True,
-#    allow_methods=['*'],
-#    allow_headers=['*']
-# )
-
+app.add_middleware(
+   CORSMiddleware,
+   allow_origins=['*'],
+   allow_credentials=True,
+   allow_methods=['*'],
+   allow_headers=['*']
+)
 
 @app.get("/")
 def read_root():
