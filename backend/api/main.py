@@ -62,9 +62,21 @@ async def remove_user(id, user):
 async def get_stores():
    return dc.get_favourites()
 
+from pydantic import BaseModel
+from typing import Optional
+
+class Store(BaseModel):
+    name: str
+    owner: str
+    description: str
+    lat: float
+    long: float
+    
+
 @app.post("/api/post/add_store")
-async def add_store(id, owner, name, lat, long):
-   return dc.add_store(id, owner, name, lat, long)
+async def add_store(store: Store):
+   print("test")
+   return dc.add_store(store.name, store.owner, store.description, store.lat, store.long)
 
 @app.post("/api/post/remove_store")
 async def remove_store(id: str):

@@ -56,8 +56,8 @@ class DataBaseManager():
         return value[0][0]
 
     
-    def add_stores(self, id, owner, name, lat, long):
-        query = "INSERT INTO Stores (id, owner, name latitude, longitude) VALUES (%s, %s, %s, %s, %s)"
+    def add_store(self, id, owner, name, lat, long):
+        query = "INSERT INTO Stores (id, owner, name, latitude, longitude) VALUES (%s, %s, %s, %s, %s)"
         val = (id, owner, name, lat, long) 
         self.cur.execute(query, val)
         self.conn.commit()
@@ -91,13 +91,13 @@ class DataBaseManager():
         self.conn.commit()
         return "Success"
 
-    def get_stores(self):
+    def get_store(self):
         query = "SELECT * FROM Stores;"
         self.cur.execute(query)
         result = self.cur.fetchall()
         return "Success"
 
-    def remove_stores(self, id):
+    def remove_store(self, id):
         query = "DELETE FROM Stores WHERE (id = %s);"
         val = (id,)
         self.cur.execute(query, val)
