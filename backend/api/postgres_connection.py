@@ -13,6 +13,13 @@ def database_context():
         cur.close()
         conn.close()
 
+  def get_user_by_id(self, user_id):
+      self.get_conn()
+      self.get_cursor()
+      query = "SELECT username, bio FROM Users WHERE id = %s;"
+      self.cur.execute(query, (user_id,))
+      user_row = self.cur.fetchone()
+      return {'username': user_row[0], 'bio': user_row[1]}
 
 # Users
 def get_users():
@@ -30,6 +37,16 @@ def add_user(id, user, bio):
         cur.execute(query, val)
         conn.commit()
         return "Success"
+    
+  def log_in(self, username, password):
+      query = "SELECT EXISTS (SELECT * FROM Passwords WHERE c_user = %s AND password = %s);"
+      val = (username, password)
+      self.cur.execute(query, val)
+      value = self.cur.fetchall()
+      return value[0][0]
+
+  
+
     
 def remove_user(id):
     query = "DELETE FROM Users WHERE (id = %s);"
@@ -128,6 +145,6 @@ def remove_rating(user, store):
 
         
         
-        
+    
 
         

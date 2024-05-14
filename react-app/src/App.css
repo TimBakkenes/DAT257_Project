@@ -52,13 +52,23 @@
   background-color: #9fddb0; 
 }
 
+.members-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+  width: 80%; 
+  padding: 20px;
+  background-color: #9fddb0; 
+}
+
 .store {
   width: 300px; /* Fixed width */
   height: 200px;
   padding: 10px;
   background-color: #fff;
+  font-family: 'Georgia', serif; 
   box-sizing: border-box;
-  
+  box-shadow: 0 4px 8px rgba(36, 77, 36, 0.5);
 }
 
 .store img {
@@ -93,7 +103,7 @@
   left: 0;
   top: 10;
   height: 100%;
-  width: 50%; 
+  width: 100%; 
   transition: width 0.5s ease;
   overflow: auto;
 }
@@ -118,39 +128,11 @@
   overflow: hidden; 
 }
 
-/* For the Favorites component */
-.map-small {
-  position: absolute;
-  left: 50%; /* Moves the map to start from the middle of the screen */
-  width: 50%; /* The map occupies the remaining half of the screen */
-  transition: width 0.5s ease, left 0.5s ease; /* Smooth transitions for size and position */
-}
 
-.map-large {
-  position: absolute;
-  left: 0%;
-  width: 100%; /* The map occupies the full width of the screen */
-  transition: width 0.5s ease, left 0.5s ease; /* Consistent transition settings */
-}
-/* For the Profile component */
-.map-semi-small {
-  position: absolute;
-  left: 0%;
-  width: 68%; /* The map shrinks to 70% width when the profile is visible */
-  transition: width 0.5s ease, right 0.5s ease;; /* Smooth transition for resizing */
-}
-
-.map-semi-large {
-  position: absolute;
-  left: 0%;
-  width: 100%; /* Full width when profile is not visible */
-  transition: width 0.5s ease, right 0.5s ease; /* Consistent transition settings */
-}
-
-.Factpage {
+.Standardpage {
   position: fixed;
   left: 0;
-  top: 5%;
+  top: 9%;
   height: 100%;
   width: 100%; /* Initial width, adjust as needed */
   background-color: #9fddb0; /* Eller valfri bakgrundsfärg */
@@ -158,11 +140,6 @@
   overflow: auto; /* Tillåter skrollning inom komponenten */
 }
 
-.fact-page {
-  background-color: #9fddb0; /* Set background color */
-  padding: 20px; /* Add padding */
-  border-radius: 10px; /* Add border radius */
-}
 
 .fact-page-heading {
   color: #ffffff; /* Set text color */
@@ -199,21 +176,9 @@
 
 }
 
-.profile-container.show {
-  right: 0; /* Slide in to view */
-}
-
 .profile-image {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   margin-bottom: 20px;
-}
-
-.profile-close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  font-size: 24px;
 }

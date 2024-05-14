@@ -1,3 +1,4 @@
+
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, Depends, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -59,6 +60,17 @@ def read_root():
 
 
 # Users
+@app.get("/api/get/login")
+async def login(username, password):
+   return dc.log_in(username, password)
+
+
+@app.get("/api/get/user/{user_id}")
+async def get_user_profile(user_id: str):
+    user_info = dc.get_user_by_id(user_id)
+    return user_info
+
+
 @app.post("/api/post/add_user")
 async def add_user(model: UserData):
    return dc.add_user(model.id, model.user, model.bio)
