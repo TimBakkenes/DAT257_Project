@@ -3,10 +3,26 @@ from fastapi.middleware.cors import CORSMiddleware
 import postgres_connection as dc
 from pydantic import BaseModel
 
-
+#Models
 app = FastAPI()
 
 class FavouriteData(BaseModel):
+    user: str
+    store: str
+
+class RatingData(BaseModel):
+    user: str
+    store: str
+    rating: int
+
+class StoreData(BaseModel):
+    id: str
+    owner: str
+    name: str
+    lat: float
+    long: float
+   
+class RemoveRatingData(BaseModel):
     user: str
     store: str
 
@@ -55,13 +71,13 @@ def read_root():
 # async def get_stores():
 #    return dc.get_favourites()
 
-# @app.post("/api/post/add_store")
-# async def add_store(id, owner, name, lat, long):
-#    return dc.add_store(id, owner, name, lat, long)
+@app.post("/api/post/add_store")
+async def add_store(model: StoreData):
+   return dc.add_store(model.id, model.owner, model.name, model.lat, model.long)
 
-# @app.post("/api/post/remove_store")
-# async def remove_store(id: str):
-#    return dc.remove_store(id)
+@app.post("/api/post/remove_store")
+async def remove_store(id: str):
+   return dc.remove_store(id)
 
 
 # Favourites
@@ -93,13 +109,13 @@ async def remove_favourite(favourite_data: FavouriteData):
 # async def get_all_stores_ratings():
 #    return dc.get_all_stores_rating()
 
-# @app.post("/api/post/add_rating")
-# async def add_rating(user: str, store: str, rating:int):
-#    return dc.add_rating(user, store, rating)
+@app.post("/api/post/add_rating")
+async def add_rating(model: RatingData):
+   return dc.add_rating(model.user, model.store, model.rating)
 
-# @app.post("/api/post/remove_rating")
-# async def remove_rating(user: str, store: str):
-#    return dc.add_rating(user, store)
+@app.post("/api/post/remove_rating")
+async def remove_rating(model: RemoveRatingData):
+   return dc.add_rating(model.user, model.store)
 
 
 
