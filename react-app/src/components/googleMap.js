@@ -207,6 +207,7 @@ export function Google (username) {
                         <div style={{backgroundColor:'white', minWidth:'200px', minHeight:'100px'}}>
                             <h3>{selectedStore.name}</h3>
                             <p>{selectedStore.description}</p>
+                            <p>Owner: {selectedStore.owner}</p>
                             <p>Rating: </p>
                             <button className='addFavouritesButton' onClick={handleAddFavourites}  style={{ 
                                   position: 'absolute',
