@@ -5,7 +5,7 @@ from contextlib import contextmanager
 
 @contextmanager
 def database_context():
-    conn = psycopg2.connect(host="localhost", dbname="agil", user="postgres", password="0", port="5432")
+    conn = psycopg2.connect(host="localhost", dbname="postgres", user="postgres", password="postgres", port="5432")
     cur = conn.cursor()
     try:
         yield cur, conn
@@ -39,12 +39,13 @@ def get_user_by_id(user_id):
         return {'username': user_row[0], 'bio': user_row[1]}
     
     
-def add_store(self, name, owner, descripiton, lat, long):
+def add_store(name, owner, descripiton, lat, long):
     query = "INSERT INTO Stores (name, owner, description, latitude, longitude) VALUES (%s, %s, %s, %s, %s)"
-    val = (name, owner, descripiton, lat, long) 
-    self.cur.execute(query, val)
-    self.conn.commit()
-    return "Success"
+    with database_context() as (cur, conn):
+        val = (name, owner, descripiton, lat, long) 
+        cur.execute(query, val)
+        conn.commit()
+        return "Success"
     
 
 def remove_user(id):
