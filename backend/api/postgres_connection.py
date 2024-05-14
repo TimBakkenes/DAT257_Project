@@ -56,9 +56,9 @@ class DataBaseManager():
         return value[0][0]
 
     
-    def add_store(self, id, owner, name, lat, long):
-        query = "INSERT INTO Stores (id, owner, name, latitude, longitude) VALUES (%s, %s, %s, %s, %s)"
-        val = (id, owner, name, lat, long) 
+    def add_store(self, name, owner, descripiton, lat, long):
+        query = "INSERT INTO Stores (name, owner, description, latitude, longitude) VALUES (%s, %s, %s, %s, %s)"
+        val = (name, owner, descripiton, lat, long) 
         self.cur.execute(query, val)
         self.conn.commit()
         return "Success"

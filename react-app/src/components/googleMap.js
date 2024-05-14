@@ -87,7 +87,7 @@ export function Google (username) {
         "owner": username.parameter,
         "description": description,
         "lat": formLocation.lat,
-        "long": formLocation.long
+        "long": formLocation.lng
       }); 
       
       console.log(response.data)
