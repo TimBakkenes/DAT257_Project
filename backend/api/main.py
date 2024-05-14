@@ -1,15 +1,43 @@
-from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
-from postgres_connection import DataBaseManager
+
 from contextlib import asynccontextmanager
+from fastapi import FastAPI, Depends, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
+import postgres_connection as dc
+from pydantic import BaseModel
 
+class FavouriteData(BaseModel):
+    user: str
+    store: str
 
-dc = DataBaseManager()
+class RatingData(BaseModel):
+    user: str
+    store: str
+    rating: int
+
+class StoreData(BaseModel):
+    id: str
+    owner: str
+    name: str
+    lat: float
+    long: float
+   
+class RemoveRatingData(BaseModel):
+    user: str
+    store: str
+
+class UserData(BaseModel):
+   id: str
+   user: str
+   bio: str
+
+class RemoveUserData(BaseModel):
+   id: str
+   user: str
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
    print("Connecting ... ")
-   dc.get_conn()
-   dc.get_cursor()
+   dc.database_context()
    print("Connected")
    yield
    print("Disconnecting ... ")
@@ -26,34 +54,44 @@ app.add_middleware(
    allow_headers=['*']
 )
 
-
 @app.get("/")
 def read_root():
    return {"message": "Hello, world!"}
 
 
 # Users
+@app.get("/api/get/login")
+async def login(username, password):
+   return dc.log_in(username, password)
+
+
+@app.get("/api/get/user/{user_id}")
+async def get_user_profile(user_id: str):
+    user_info = dc.get_user_by_id(user_id)
+    return user_info
+
+
 @app.post("/api/post/add_user")
-async def add_user(id, user, bio):
-   return dc.add_user(id, user, bio)
+async def add_user(model: UserData):
+   return dc.add_user(model.id, model.user, model.bio)
 
 @app.get("/api/get/get_users")
 async def get_users():
    return dc.get_users()
 
 @app.post("/api/post/remove_user")
-async def remove_user(id, user):
-   return dc.remove_user(id, user)
+async def remove_user(model: RemoveUserData):
+   return dc.remove_user(model.id, model.user)
 
 
 # Stores
 @app.get("/api/get/get_stores")
 async def get_stores():
-   return dc.get_favourites()
+   return dc.get_stores()
 
 @app.post("/api/post/add_store")
-async def add_store(id, owner, name, lat, long):
-   return dc.add_store(id, owner, name, lat, long)
+async def add_store(model: StoreData):
+   return dc.add_store(model.id, model.owner, model.name, model.lat, model.long)
 
 @app.post("/api/post/remove_store")
 async def remove_store(id: str):
@@ -66,13 +104,19 @@ async def get_favourites(user: str):
    return dc.get_favourites(user)
 
 @app.post("/api/post/add_favourite")
-async def add_favourite(user: str, store: str):
-   return dc.add_favourite(user, store)
+async def add_favourite(favourite_data: FavouriteData):
+    try:
+        dc.add_favourite(favourite_data.user, favourite_data.store)
+    except Exception as e:
+        raise Exception(str(e))
 
 @app.post("/api/post/remove_favourite")
-async def remove_favourite(user: str, store: str):
-   return dc.remove_favourite(user, store)
-
+async def remove_favourite(favourite_data: FavouriteData):
+   try:
+        return dc.remove_favourite(favourite_data.user, favourite_data.store)
+   except Exception as e:
+      raise Exception(str(e))
+   
 
 # Ratings
 @app.get("/api/get/get_ratings")
@@ -84,12 +128,12 @@ async def get_all_stores_ratings():
    return dc.get_all_stores_rating()
 
 @app.post("/api/post/add_rating")
-async def add_rating(user: str, store: str, rating:int):
-   return dc.add_rating(user, store, rating)
+async def add_rating(model: RatingData):
+   return dc.add_rating(model.user, model.store, model.rating)
 
 @app.post("/api/post/remove_rating")
-async def remove_rating(user: str, store: str):
-   return dc.add_rating(user, store)
+async def remove_rating(model: RemoveRatingData):
+   return dc.add_rating(model.user, model.store)
 
 
 

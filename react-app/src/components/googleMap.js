@@ -2,6 +2,7 @@ import React, {useState, useRef} from 'react';
 import { GoogleMap, LoadScript, MarkerF, InfoWindowF} from '@react-google-maps/api';
 import storeData from '../data/stores.json';
 import ".//css/info.css"
+import axios from 'axios';
 
 export function Google () {
     const mapStyles = {
@@ -33,7 +34,18 @@ export function Google () {
     };
     
     const handleAddFavourites = () => {
-      alert('Added to Favoutries')
+      axios.post("http://127.0.0.1:8000/api/post/add_favourite", {
+        user: "11111111",
+        store: "222222"
+      })
+      .then(response => {
+        alert('Added to Favourites successfully');
+        console.log(response);
+      })
+      .catch(error => {
+          alert('Failed to add to Favourites');
+          console.error('Error:', error);
+      });
     };
 
     return (
