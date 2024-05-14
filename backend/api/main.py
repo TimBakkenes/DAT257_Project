@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from postgres_connection import DataBaseManager
 from contextlib import asynccontextmanager
@@ -36,6 +36,13 @@ def read_root():
 @app.get("/api/get/login")
 async def login(username, password):
    return dc.log_in(username, password)
+
+
+@app.get("/api/get/user/{user_id}")
+async def get_user_profile(user_id: str):
+    user_info = dc.get_user_by_id(user_id)
+    return user_info
+
 
 @app.post("/api/post/add_user")
 async def add_user(id, user, bio):

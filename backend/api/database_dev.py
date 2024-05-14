@@ -31,9 +31,6 @@ with open("backend/api/views.sql", "r") as views_file:
 
 conn.commit()
 
-cursor.execute("SELECT * FROM Agg_Ratings;")
-res = cursor.fetchall()
-print(res)
 
 
 
