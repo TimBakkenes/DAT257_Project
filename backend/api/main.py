@@ -18,6 +18,7 @@ class Store(BaseModel):
     name: str
     owner: str
     description: str
+    type: str
     lat: float
     long: float
    
@@ -94,8 +95,8 @@ async def get_stores():
 
 @app.post("/api/post/add_store")
 async def add_store(store: Store):
-   print("test")
-   return dc.add_store(store.name, store.owner, store.description, store.lat, store.long)
+   print(store)
+   return dc.add_store(store.name, store.owner, store.description, store.type, store.lat, store.long)
 
 
 @app.post("/api/post/remove_store")

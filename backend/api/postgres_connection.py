@@ -32,7 +32,7 @@ def get_users():
         return value
     
 def get_user_by_id(user_id):
-    query = "SELECT username, bio FROM Users WHERE id = %s;"
+    query = "SELECT username, bio FROM Users WHERE username = %s;"
     with database_context() as (cur, conn):
         cur.execute(query, (user_id,))
         user_row = cur.fetchone()
@@ -40,7 +40,7 @@ def get_user_by_id(user_id):
     
 
 def remove_user(id):
-    query = "DELETE FROM Users WHERE (id = %s);"
+    query = "DELETE FROM Users WHERE (username = %s);"
     val = (id,)
     with database_context() as (cur, conn):
         cur.execute(query, val)
@@ -100,13 +100,13 @@ def get_stores():
     with database_context() as (cur, conn):
         cur.execute(query)
         result = cur.fetchall()
-        keys = ["name", "owner", "description", "latitude", "longitude"]
+        keys = ["name", "owner", "description", "type", "latitude", "longitude"]
         return [zip(keys, row) for row in result]
 
-def add_store(name, owner, descripiton, lat, long):
-    query = "INSERT INTO Stores (name, owner, description, latitude, longitude) VALUES (%s, %s, %s, %s, %s)"
+def add_store(name, owner, descripiton, type, lat, long):
+    query = "INSERT INTO Stores (name, owner, description, type, latitude, longitude) VALUES (%s, %s, %s, %s, %s, %s)"
     with database_context() as (cur, conn):
-        val = (name, owner, descripiton, lat, long) 
+        val = (name, owner, descripiton, type, lat, long) 
         cur.execute(query, val)
         conn.commit()
         return "Success"

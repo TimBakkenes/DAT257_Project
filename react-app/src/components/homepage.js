@@ -67,6 +67,7 @@ function Homepage() {
             <Contact/>
           </div>
         )}
+        
 
 
 {showProfile && currentUser && (

@@ -1,7 +1,8 @@
 import React, {useState, useRef, useEffect} from 'react';
 import { GoogleMap, LoadScript, MarkerF, InfoWindowF} from '@react-google-maps/api';
 import storeData from '../data/stores.json';
-import ".//css/info.css"
+import "./css/info.css"
+
 
 import axios from 'axios';
 
@@ -18,18 +19,24 @@ export function Google (username) {
       lat: 57.7089,
       lng: 11.9746
     })
+    const [type, setType] = useState('Random')
     
 
     const [customStores, setCustomStores] = useState([])
+    const [filteredCustomStores, setFilteredCustomStores] = useState([]);
+  console.log(filteredCustomStores)
     useEffect(() => {
       var url = "http://127.0.0.1:8000/api/get/get_stores"
       axios.get(url).then((response) => {
         setCustomStores(response.data)
-        console.log(response.data)
+        setFilteredCustomStores(response.data)
+        // console.log(response.data)
       }).catch((error) => {
         alert("Failed to fetch stores" + error)
       })
     }, []) 
+
+    
     
     const handleCloseStore = () => {
       setSelectedStore(null);
@@ -84,6 +91,7 @@ export function Google (username) {
       const lng = mapProps.latLng.lng();
       setShowForm(true);
       setFormLocation({ lat, lng });
+      console.log(formLocation)
     } else {
       alert("Please select the specific location");
     }
@@ -109,18 +117,20 @@ export function Google (username) {
 
   const addStore = async () => {
     try {
-      console.log({data: {
+      /* console.log({data: {
         name: id,
         owner: username.parameter,
         description: description,
+        type: type,
         lat: formLocation.lat,
         long: formLocation.lng,
-      }})
+      }}) */
       // use data destructuring to get data from the promise object
       const response = await axios.post("http://127.0.0.1:8000/api/post/add_store", {
         "name": id,
         "owner": username.parameter,
         "description": description,
+        "type": type,
         "lat": formLocation.lat,
         "long": formLocation.lng
       }).catch(error => {alert("Failed to add store: " + error)}); 
@@ -135,7 +145,45 @@ export function Google (username) {
 
   }
 
+  const filterOptions = ['All', 'Clothing', 'Furniture', 'Random'];
+  
+  console.log(filteredCustomStores)
+
+
+   const applyFilter = (option) => {
+    if (option !== 'All') {
+      var filtered = customStores.filter(store => store.type === option);
+      setFilteredCustomStores(filtered);
+    } else {
+      setFilteredCustomStores(customStores);
+    }
+  } 
+
+  const handleTypeChange = (type) => {
+    console.log(type);
+    setType(type);
+  }
+
+  const [showGoogleStores, setShowGStores] = useState(true);
+
+  const toggleGoogleStores = () => {
+    setShowGStores(prevState => !prevState)
+
+  }
+
     return (
+      <div className='container'>
+        <div className='store-filter'>
+          <select name="select" onChange={ (event) => applyFilter(event.target.value)}  >
+            {filterOptions.map(function(n) { 
+              return (<option >{n}</option>);
+            })}
+          </select>
+        </div>
+        <div className='googleButton'>
+          <button onClick={toggleGoogleStores}>Show Google Stores</button>
+        </div>
+      
       <LoadScript
         googleMapsApiKey={API_KEY}
       >
@@ -145,20 +193,24 @@ export function Google (username) {
           center={center}
           onClick={handleMapClick}
         >
-          {storeData.places.map(place => (
+          {showGoogleStores && storeData.places.map(place => (
                     <MarkerF
                         key={place.id} 
                         position={{ lat: place.location.latitude, lng: place.location.longitude }}
                         title={place.displayName.text} 
                         onClick={ ()=> handleMarkerClick(place)}
+                        
                     />
                 ))}
+
+
           
-          {customStores.map(store => (
+          {filteredCustomStores.map(store => (
             <MarkerF
               key={store.name}
               position={{lat: store.latitude, lng: store.longitude}}
               onClick={() => handleStoreClick(store)}
+              icon={"http://maps.google.com/mapfiles/ms/icons/blue-dot.png"}
             />
           ))}
           
@@ -169,6 +221,14 @@ export function Google (username) {
                   <p>Name:</p>
                   <input onChange={(e) => handleSetId(e.target.value)}/>
                   <br></br>
+                  <p>Type of store:</p>
+                  <select onChange={(event) => handleTypeChange(event.target.value)}>
+                    <option >{"Clothing"}</option>
+                    <option >{"Furniture"}</option>
+                    <option >{"Random"}</option>
+                  </select>
+                  <br></br>
+
                   <p>Description(What are you going to sell for example?)</p>
                   <input onChange={(e) => handleSetDescription(e.target.value)}/>
                   <br></br>
@@ -221,8 +281,8 @@ export function Google (username) {
                 )}
             
         </GoogleMap>
-        
       </LoadScript>
+      </div>
     );
   };
   

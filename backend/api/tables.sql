@@ -14,6 +14,7 @@ CREATE TABLE Stores(
     name TEXT PRIMARY KEY,
     owner TEXT REFERENCES Users(username) ON DELETE CASCADE,
     description TEXT NOT NULL,
+    type TEXT CHECK (type in ('Clothing', 'Furniture', 'Random')),
     latitude NUMERIC(8, 6) NOT NULL,
     longitude NUMERIC(8, 6) NOT NULL
 );
