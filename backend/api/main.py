@@ -129,6 +129,10 @@ async def remove_favourite(favourite_data: FavouriteData):
 async def get_rating(user: str, store:str):
    return dc.get_ratings(user, store)
 
+@app.get("/api/get/get_user_ratings")
+async def get_user_ratings(user: str):
+   return dc.get_user_ratings(user)
+
 @app.get("/api/get/get_all_stores_ratings")
 async def get_all_stores_ratings():
    return dc.get_all_stores_rating()
