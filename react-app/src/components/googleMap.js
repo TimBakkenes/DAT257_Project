@@ -25,7 +25,6 @@ export function Google (username) {
       var url = "http://127.0.0.1:8000/api/get/get_stores"
       axios.get(url).then((response) => {
         setCustomStores(response.data)
-        console.log(response.data)
       }).catch((error) => {
         alert("Failed to fetch stores" + error)
       })

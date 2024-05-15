@@ -59,14 +59,15 @@ def remove_user(id):
 
 # favourites 
 def get_favourites(user):
-    query = "SELECT store FROM Favourites WHERE user_id = %s"
+    query = "SELECT store, description FROM UserFavouriteStores WHERE user_id = %s"
     val = (user,)
     with database_context() as (cur, conn):
         cur.execute(query, val)
         value = cur.fetchall()
+        print(value)
         val_array = []
         for row in value:
-            val_dict ={'name': row[0]}
+            val_dict ={'name': row[0], 'description': row[1]}
             val_array.append(val_dict)
         return val_array
 

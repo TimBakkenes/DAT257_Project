@@ -8,15 +8,6 @@ CREATE VIEW Agg_Ratings AS (
 );
 
 CREATE VIEW UserFavouriteStores AS
-SELECT
-    u.id AS user_id,
-    u.name AS user_name,
-    s.name AS store_name,
-    s.description AS store_description,
-    s.owner AS store_owner
-FROM
-    Favourites f
-JOIN
-    Users u ON f.user_id = u.id
-JOIN
-    Stores s ON f.store = s.name;
+   SELECT user_id, store, description
+    FROM Favourites 
+    JOIN Stores ON name = store

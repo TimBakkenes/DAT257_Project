@@ -15,7 +15,7 @@ export function FavoriteStores(username) {
     })
   }, []) 
 
-    const [stores, setStores] = useState([
+    /* const [stores, setStores] = useState([
         {
             name: "Store 1",
             image: "store1.jpg",
@@ -34,7 +34,7 @@ export function FavoriteStores(username) {
             rating: 3.2,
             description: "Test 3"
           }
-    ]);
+    ]); */
 
   const renderStars = (rating) => {
     const starCount = Math.round(rating);
@@ -49,7 +49,7 @@ export function FavoriteStores(username) {
     return stars;
   };
   
-    useEffect(() => {
+    /* useEffect(() => {
       const timer = setTimeout(() => {
         setStores([
             {
@@ -74,7 +74,7 @@ export function FavoriteStores(username) {
       }, 1000);
   
       return () => clearTimeout(timer);
-    }, []);
+    }, []); */
   
     return (
     <div className="stores-wrapper">
@@ -87,13 +87,12 @@ export function FavoriteStores(username) {
       <div className="stores-container">
         {favourtieStores.map((store, index) => (
           <div key={index} className="store">
-            <img src={"store1.jpg"} alt={store.name} />
             <h2>{store.name}</h2>
             <div className="rating">
-              {renderStars(store.rating)}
-              <span>({store.rating})</span>
+              {renderStars(randint)}
+              <span>({randint})</span>
             </div>
-            <p>Description: {"hej"}</p>
+            <p>Description: {store.description}</p>
           </div>
         ))}
       </div>
