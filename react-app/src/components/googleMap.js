@@ -50,13 +50,15 @@ export function Google({ username }) {
                 user: username.parameter,
                 store: storeName
             });
-            setUserRating(response.data.rating || 1);
+            /* setUserRating(response.data.rating || 1); */
         } catch (error) {
             console.error('Failed to fetch rating:', error);
         }
     };
 
     const submitRating = async (storeName, userRating) => {
+        console.log(storeName);
+        console.log(username.parameter)
         try {
             await axios.post('http://localhost:8000/api/post/add_rating', {
                 user: username.parameter,
@@ -83,6 +85,7 @@ export function Google({ username }) {
             const lat = mapProps.latLng.lat();
             const lng = mapProps.latLng.lng();
             setShowForm(true);
+            setCenter({lat: lat, lng: lng})
             setFormLocation({ lat, lng });
         } else {
             alert("Please select the specific location");
@@ -238,12 +241,14 @@ export function Google({ username }) {
                                 <p>{selectedStore.description}</p>
                                 <p>Owner: {selectedStore.owner}</p>
                                 <p>Rating: {selectedStore.rating || "No rating set"}</p>
-                                <select value={userRating} onChange={(e) => setUserRating(e.target.value)}>
+                                <select value={userRating} onChange={(rating) => setUserRating(rating.target.value)}>
                                     {[1, 2, 3, 4, 5].map(num => (
                                         <option key={num} value={num}>{num}</option>
                                     ))}
                                 </select>
+
                                 <button onClick={() => submitRating(selectedStore.name, userRating)}>Set Rating</button>
+
                                 <button className='addFavouritesButton' onClick={handleAddFavourites} style={{
                                     position: 'absolute',
                                     right: '5px',
