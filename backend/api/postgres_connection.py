@@ -1,5 +1,4 @@
 import psycopg2
-from pydantic import BaseModel
 from contextlib import contextmanager
 
 
