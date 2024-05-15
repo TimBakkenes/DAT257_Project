@@ -72,7 +72,7 @@ export function Google (username) {
     };
 
     // Code for adding stores to the map
-    const [selectedLocation, setSelectedLocation] = useState({});
+    
     const [showForm, setShowForm] = useState(false);
     const [formLocation, setFormLocation] = useState("");
 
@@ -84,14 +84,13 @@ export function Google (username) {
       const lng = mapProps.latLng.lng();
       setShowForm(true);
       setFormLocation({ lat, lng });
-      setSelectedLocation({ lat, lng });
     } else {
       alert("Please select the specific location");
     }
   };
 
   const handleCloseClick = () => {
-    setSelectedLocation(null);
+    
     setSelectedPlace(null);
     setShowForm(false);
   }
@@ -106,7 +105,6 @@ export function Google (username) {
   const handleSetDescription = (e) => {
     setCenter({lat: formLocation.lat, lng: formLocation.lng})
     setDesription(e);
-    
   }
 
   const addStore = async () => {

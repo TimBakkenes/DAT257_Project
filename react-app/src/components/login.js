@@ -1,5 +1,5 @@
-import React, {useState, useRef} from 'react';
-import ".//css/login.css"
+import React, {useState} from 'react';
+import ".//css/loginAndSignUp.css"
 import { useNavigate } from 'react-router-dom'
 import axios from "axios";
 
@@ -21,7 +21,7 @@ function Login() {
             
             console.log(response.data)
 
-            if (response.data == true) {
+            if (response.data === true) {
                 navigate("/home", {state: {user: userName}});
             } else {
                 console.log("Wrong password")
@@ -34,7 +34,9 @@ function Login() {
 
     } 
 
-    
+    const onSignUpClick = async () => {
+        navigate("/signup")
+    }
 
     return (
         <div className='login-container'>
@@ -63,7 +65,12 @@ function Login() {
                 </div>
                 <br />
                 <div className={'login-input'}>
-                    <input className={'login-button'} type="button" onClick={onLoginClick} value={'Log in'} />
+                    <input className={'login-signup-button'} type="button" onClick={onLoginClick} value={'Log in'} />
+                </div>
+                <br></br>
+                <p className='signup'>Don't have an account? Then sign up below.</p>
+                <div className={'login-input'}>
+                    <input className={'login-signup-button'} type="button" onClick={onSignUpClick} value={'Sign Up'} />
                 </div>
             </div>
 

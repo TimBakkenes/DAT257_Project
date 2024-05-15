@@ -1,7 +1,6 @@
 import psycopg2
 
-conn = psycopg2.connect(host="localhost", dbname="postgres", user="postgres", password="POSTGRES", port="5432")
-conn = psycopg2.connect(host="localhost", dbname="agil", user="postgres", password="0", port="5432")
+conn = psycopg2.connect(host="localhost", dbname="postgres", user="postgres", password="postgres", port="5432")
 cursor = conn.cursor()
 
 query = """ SELECT table_name 
@@ -33,4 +32,4 @@ with open("backend/api/views.sql", "r") as views_file:
 conn.commit()
 cursor.close()
 conn.close()
-print("dome")
+print("done")
