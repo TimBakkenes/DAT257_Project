@@ -5,7 +5,7 @@ from psycopg2 import DatabaseError
 
 @contextmanager
 def database_context():
-    conn = psycopg2.connect(host="localhost", dbname="postgres", user="postgres", password="POSTGRES", port="5432")
+    conn = psycopg2.connect(host="localhost", dbname="postgres", user="postgres", password="postgres", port="5432")
     cur = conn.cursor()
     try:
         yield cur, conn
@@ -126,7 +126,7 @@ def remove_store(self, id):
 
 # Ratings
 def get_ratings(user, store):
-    query = "SELECT store FROM Ratings WHERE user_id = %s AND store = %s"
+    query = "SELECT store FROM Ratings WHERE rating_user = %s AND store = %s"
     val = (user, store)
     with database_context() as (cur, conn):
         cur.execute(query, val)
@@ -141,7 +141,7 @@ def get_all_stores_rating():
         return result
 
 def add_rating(user, store, rating):
-    query = "INSERT INTO Ratings (user_id, store, rating) VALUES (%s, %s, %s);"
+    query = "INSERT INTO Ratings (rating_user, store, rating) VALUES (%s, %s, %s);"
     val = (user, store, rating)
     with database_context() as (cur, conn):
         cur.execute(query, val)
@@ -149,7 +149,7 @@ def add_rating(user, store, rating):
         return "Success"
 
 def remove_rating(user, store):
-    query = "DELETE FROM Ratings WHERE (user_id = %s AND store = %s)"
+    query = "DELETE FROM Ratings WHERE (rating_user = %s AND store = %s)"
     val = (user, store)
     with database_context() as (cur, conn):
         cur.execute(query, val)
