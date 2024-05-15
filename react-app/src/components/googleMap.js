@@ -4,7 +4,7 @@ import storeData from '../data/stores.json';
 import './css/info.css';
 import axios from 'axios';
 
-export function Google({ username }) {
+export function Google (username) {
     const mapStyles = {
         height: "100vh",
         width: "100%"
@@ -29,6 +29,12 @@ export function Google({ username }) {
         fetchStores();
     }, []);
 
+    useEffect(() => {
+      fetchRatings();
+
+      
+  }, []);
+
     const fetchStores = async () => {
         try {
             const response = await axios.get("http://127.0.0.1:8000/api/get/get_stores");
@@ -41,20 +47,36 @@ export function Google({ username }) {
 
     const handleStoreClick = (store) => {
         setSelectedStore(store);
-        fetchUserRating(store.name);
     };
 
-    const fetchUserRating = async (storeName) => {
+    /* const fetchUserRating = async (storeName) => {
         try {
-            const response = await axios.post('http://localhost:8000/api/get/get_rating', {
+            const response = await axios.post('http://localhost:8000/api/get/get_ratings', {params: {
                 user: username.parameter,
                 store: storeName
-            });
-            /* setUserRating(response.data.rating || 1); */
+            }});
+            setUserRating(response.data.rating || 1); 
         } catch (error) {
             console.error('Failed to fetch rating:', error);
         }
-    };
+    }; */
+
+    
+
+    const [aggstoreRating, setaggStoreRating] = useState({})
+    const fetchRatings = async () => {
+        try {
+          const aggResponse = await axios.get('http://localhost:8000/api/get/get_all_stores_ratings')
+          var storeRatings = aggResponse.data.reduce((acc, [name, rating]) => {
+            acc[name] = rating;
+            return acc;
+          }, {});
+          setaggStoreRating(storeRatings)
+          console.log(aggstoreRating)
+      } catch (error) {
+          console.error('Failed to fetch rating:', error);
+      }
+    }
 
     const submitRating = async (storeName, userRating) => {
         console.log(storeName);
@@ -240,12 +262,13 @@ export function Google({ username }) {
                                 <h3>{selectedStore.name}</h3>
                                 <p>{selectedStore.description}</p>
                                 <p>Owner: {selectedStore.owner}</p>
-                                <p>Rating: {selectedStore.rating || "No rating set"}</p>
+                                <p>Rating: {aggstoreRating[selectedStore.name]||"No rating set"}</p>
                                 <select value={userRating} onChange={(rating) => setUserRating(rating.target.value)}>
                                     {[1, 2, 3, 4, 5].map(num => (
                                         <option key={num} value={num}>{num}</option>
                                     ))}
                                 </select>
+                                <br></br>
 
                                 <button onClick={() => submitRating(selectedStore.name, userRating)}>Set Rating</button>
 
