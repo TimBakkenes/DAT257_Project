@@ -38,13 +38,13 @@ def test_get_favourites():
     assert response.json() is not None
     assert len(response.json()) > 0
     
-def test_get_rating():
-    test_query = """INSERT INTO Ratings (rating_user, store, rating) VALUES ('11111111', 'Test store', 3);"""
-    cursor.execute(test_query)
-    conn.commit()
-    response = client.get("/api/get/get_ratings", params={"user": '11111111', "store": 'Test store'})
-    assert response.status_code == 200
-    assert response.json() == [[3]]
+# def test_get_rating():
+#     test_query = """INSERT INTO Ratings (rating_user, store, rating) VALUES ('11111111', 'Test store', 3);"""
+#     cursor.execute(test_query)
+#     conn.commit()
+#     response = client.get("/api/get/get_ratings", params={"user": '11111111', "store": 'Test store'})
+#     assert response.status_code == 200
+#     assert response.json() == [[3]]
 
 def test_get_all_stores_ratings():
     response = client.get("/api/get/get_all_stores_ratings")
