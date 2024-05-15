@@ -4,7 +4,7 @@ from contextlib import contextmanager
 
 @contextmanager
 def database_context():
-    conn = psycopg2.connect(host="localhost", dbname="postgres", user="postgres", password="postgres", port="5432")
+    conn = psycopg2.connect(host="localhost", dbname="postgres", user="postgres", password="POSTGRES", port="5432")
     cur = conn.cursor()
     try:
         yield cur, conn
