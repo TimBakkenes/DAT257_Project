@@ -1,8 +1,21 @@
 import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
-export function FavoriteStores() {
+export function FavoriteStores(username) {
     
-    const [stores, setStores] = useState([
+  const [favourtieStores, setFavouriteStores] = useState([])
+  useEffect(() => {
+    //console.log(username.parameter)
+    var url = `http://127.0.0.1:8000/api/get/get_favourites?user=${username.parameter}`
+    axios.get(url).then((response) => {
+      setFavouriteStores(response.data)
+      console.log(response.data)
+    }).catch((error) => {
+      alert("Failed to fetch favourites" + error)
+    })
+  }, []) 
+
+    /* const [stores, setStores] = useState([
         {
             name: "Store 1",
             image: "store1.jpg",
@@ -21,7 +34,7 @@ export function FavoriteStores() {
             rating: 3.2,
             description: "Test 3"
           }
-    ]);
+    ]); */
 
   const renderStars = (rating) => {
     const starCount = Math.round(rating);
@@ -36,7 +49,7 @@ export function FavoriteStores() {
     return stars;
   };
   
-    useEffect(() => {
+    /* useEffect(() => {
       const timer = setTimeout(() => {
         setStores([
             {
@@ -61,7 +74,7 @@ export function FavoriteStores() {
       }, 1000);
   
       return () => clearTimeout(timer);
-    }, []);
+    }, []); */
   
     return (
     <div className="stores-wrapper">
@@ -72,13 +85,12 @@ export function FavoriteStores() {
         </div>
 
       <div className="stores-container">
-        {stores.map((store, index) => (
+        {favourtieStores.map((store, index) => (
           <div key={index} className="store">
-            <img src={store.image} alt={store.name} />
             <h2>{store.name}</h2>
             <div className="rating">
-              {renderStars(store.rating)}
-              <span>({store.rating})</span>
+              {renderStars(Math.random()*5)}
+              <span>({})</span>
             </div>
             <p>Description: {store.description}</p>
           </div>

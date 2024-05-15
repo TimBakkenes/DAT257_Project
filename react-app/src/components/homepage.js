@@ -50,7 +50,7 @@ function Homepage() {
       <Header toggleFavorites={toggleFavorites} toggleFactpage={toggleFactpage} navigateProfilePage={navigateProfilePage} toggleContact={toggleContact}/>
       <div className='FavouritesPage'>
         <div className={`FavouriteStores ${showFavorites ? 'visible' : 'hidden'}`}>
-          <FavoriteStores/>
+          <FavoriteStores parameter={state.state.user}/>
         </div>
         <div className={`Google ${showFavorites ? 'map-small' : (showProfile ? 'map-semi-small' : 'map-large')}`}>
           <Google parameter={state.state.user}/> 
