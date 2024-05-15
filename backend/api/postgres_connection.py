@@ -1,10 +1,11 @@
 import psycopg2
 from contextlib import contextmanager
+from psycopg2 import DatabaseError
 
 
 @contextmanager
 def database_context():
-    conn = psycopg2.connect(host="localhost", dbname="postgres", user="postgres", password="postgres", port="5432")
+    conn = psycopg2.connect(host="localhost", dbname="postgres", user="postgres", password="POSTGRES", port="5432")
     cur = conn.cursor()
     try:
         yield cur, conn
@@ -31,29 +32,38 @@ def get_users():
         return value
     
 def get_user_by_id(user_id):
-    query = "SELECT username, bio FROM Users WHERE id = %s;"
+    query = "SELECT username, bio FROM Users WHERE username = %s;"
     with database_context() as (cur, conn):
         cur.execute(query, (user_id,))
         user_row = cur.fetchone()
         return {'username': user_row[0], 'bio': user_row[1]}
     
-    
-def add_store(name, owner, descripiton, lat, long):
-    query = "INSERT INTO Stores (name, owner, description, latitude, longitude) VALUES (%s, %s, %s, %s, %s)"
-    with database_context() as (cur, conn):
-        val = (name, owner, descripiton, lat, long) 
-        cur.execute(query, val)
-        conn.commit()
-        return "Success"
-    
 
 def remove_user(id):
-    query = "DELETE FROM Users WHERE (id = %s);"
+    query = "DELETE FROM Users WHERE (username = %s);"
     val = (id,)
     with database_context() as (cur, conn):
         cur.execute(query, val)
         conn.commit()
         return "Success"
+
+def add_user(username, displayname, bio, password):
+    user_query = "INSERT INTO Users (username, displayname, bio) VALUES (%s, %s, %s);"
+    user_values = (username, displayname, bio)
+
+    password_query = "INSERT INTO Passwords VALUES (%s, %s)"
+    password_values = (username, password)
+
+    with database_context() as (cur, conn):
+        try:
+            cur.execute(user_query, user_values)
+            cur.execute(password_query, password_values)
+            conn.commit()
+            print("True")
+            return True
+        except DatabaseError as e:
+            print(e)
+            return e
 
 
 
@@ -89,22 +99,28 @@ def remove_favourite(user:str, store:str):
         return "Success"
 
 
-def remove_store(self, id):
-    query = "DELETE FROM Stores WHERE (id = %s);"
-    val = (id,)
-    self.cur.execute(query, val)
-    self.conn.commit()
-
 # Stores
 def get_stores():
     query = "SELECT * FROM Stores;"
     with database_context() as (cur, conn):
         cur.execute(query)
         result = cur.fetchall()
-        keys = ["name", "owner", "description", "latitude", "longitude"]
+        keys = ["name", "owner", "description", "type", "latitude", "longitude"]
         return [zip(keys, row) for row in result]
-        
 
+def add_store(name, owner, descripiton, type, lat, long):
+    query = "INSERT INTO Stores (name, owner, description, type, latitude, longitude) VALUES (%s, %s, %s, %s, %s, %s)"
+    with database_context() as (cur, conn):
+        val = (name, owner, descripiton, type, lat, long) 
+        cur.execute(query, val)
+        conn.commit()
+        return "Success"
+        
+def remove_store(self, id):
+    query = "DELETE FROM Stores WHERE (id = %s);"
+    val = (id,)
+    self.cur.execute(query, val)
+    self.conn.commit()
 
 
 

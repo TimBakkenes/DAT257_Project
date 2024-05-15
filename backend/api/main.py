@@ -18,6 +18,7 @@ class Store(BaseModel):
     name: str
     owner: str
     description: str
+    type: str
     lat: float
     long: float
    
@@ -26,9 +27,10 @@ class RemoveRatingData(BaseModel):
     store: str
 
 class UserData(BaseModel):
-   id: str
-   user: str
+   username: str
+   displayname: str
    bio: str
+   password: str
 
 class RemoveUserData(BaseModel):
    id: str
@@ -41,7 +43,7 @@ async def lifespan(app: FastAPI):
    print("Connected")
    yield
    print("Disconnecting ... ")
-   dc.disconnect()
+   
    print("Disconnected")
 
 app = FastAPI(lifespan=lifespan)
@@ -73,7 +75,8 @@ async def get_user_profile(user_id: str):
 
 @app.post("/api/post/add_user")
 async def add_user(model: UserData):
-   return dc.add_user(model.id, model.user, model.bio)
+   print("Start")
+   return dc.add_user(model.username, model.displayname, model.bio, model.password)
 
 @app.get("/api/get/get_users")
 async def get_users():
@@ -92,8 +95,8 @@ async def get_stores():
 
 @app.post("/api/post/add_store")
 async def add_store(store: Store):
-   print("test")
-   return dc.add_store(store.name, store.owner, store.description, store.lat, store.long)
+   print(store)
+   return dc.add_store(store.name, store.owner, store.description, store.type, store.lat, store.long)
 
 
 @app.post("/api/post/remove_store")

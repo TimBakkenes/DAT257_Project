@@ -33,7 +33,7 @@
     padding-left: 8px;
   }
 
-.login-button {
+.login-signup-button {
     border: none;
     background: rgb(255, 255, 255);
     color: black;
@@ -43,4 +43,24 @@
     border-radius: 8px;
     cursor: pointer;
     align-self: center;
+}
+
+.signup {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.back-button {
+    border: none;
+    background: rgb(255, 255, 255);
+    color: black;
+    padding: 12px 24px;
+    margin: 8px;
+    font-size: 3vh;
+    border-radius: 8px;
+    cursor: pointer;
+    position: fixed;
+    left: 5%;
+    top: 5%;
 }

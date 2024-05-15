@@ -32,4 +32,4 @@ with open("backend/api/views.sql", "r") as views_file:
 conn.commit()
 cursor.close()
 conn.close()
-print("dome")
+print("done")
