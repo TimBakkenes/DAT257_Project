@@ -53,7 +53,7 @@ function Homepage() {
           <FavoriteStores/>
         </div>
         <div className={`Google ${showFavorites ? 'map-small' : (showProfile ? 'map-semi-small' : 'map-large')}`}>
-          <Google/> 
+          <Google parameter={state.state.user}/> 
         </div>
       </div>
       {showFactpage && (

@@ -4,7 +4,7 @@ from contextlib import contextmanager
 
 @contextmanager
 def database_context():
-    conn = psycopg2.connect(host="localhost", dbname="agil", user="postgres", password="0", port="5432")
+    conn = psycopg2.connect(host="localhost", dbname="postgres", user="postgres", password="postgres", port="5432")
     cur = conn.cursor()
     try:
         yield cur, conn
@@ -37,11 +37,11 @@ def get_user_by_id(user_id):
         user_row = cur.fetchone()
         return {'username': user_row[0], 'bio': user_row[1]}
     
-
-def add_user(id, user, bio):
-    query = "INSERT INTO Users (id, username, bio) VALUES (%s, %s, %s)"
-    val = (id, user, bio) 
+    
+def add_store(name, owner, descripiton, lat, long):
+    query = "INSERT INTO Stores (name, owner, description, latitude, longitude) VALUES (%s, %s, %s, %s, %s)"
     with database_context() as (cur, conn):
+        val = (name, owner, descripiton, lat, long) 
         cur.execute(query, val)
         conn.commit()
         return "Success"
@@ -84,29 +84,23 @@ def remove_favourite(user:str, store:str):
         return "Success"
 
 
+def remove_store(self, id):
+    query = "DELETE FROM Stores WHERE (id = %s);"
+    val = (id,)
+    self.cur.execute(query, val)
+    self.conn.commit()
+
 # Stores
 def get_stores():
     query = "SELECT * FROM Stores;"
     with database_context() as (cur, conn):
         cur.execute(query)
         result = cur.fetchall()
-        return result
+        keys = ["name", "owner", "description", "latitude", "longitude"]
+        return [zip(keys, row) for row in result]
+        
 
-def add_stores(id, owner, name, lat, long):
-    query = "INSERT INTO Stores (id, owner, name, latitude, longitude) VALUES (%s, %s, %s, %s, %s)"
-    val = (id, owner, name, lat, long) 
-    with database_context() as (cur, conn):
-        cur.execute(query, val)
-        conn.commit()
-        return "Success"
 
-def remove_stores(id):
-    query = "DELETE FROM Stores WHERE (id = %s);"
-    val = (id,)
-    with database_context() as (cur, conn):
-        cur.execute(query, val)
-        conn.commit()
-        return "Success"
 
 
 # Ratings
