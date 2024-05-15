@@ -140,6 +140,15 @@ def get_all_stores_rating():
         result = cur.fetchall()
         return result
 
+def get_user_ratings(user: str):
+    query = "SELECT (store, rating) FROM Ratings WHERE rating_user = %s;"
+    value = (user,)
+    with database_context() as (cur, conn):
+        cur.execute(query, value)
+        result = cur.fetchall()
+        return result
+
+
 def add_rating(user, store, rating):
     query = "INSERT INTO Ratings (rating_user, store, rating) VALUES (%s, %s, %s);"
     val = (user, store, rating)
