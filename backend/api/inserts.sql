@@ -1,6 +1,7 @@
-INSERT INTO Users (id, username, bio) VALUES ('11111111', 'Axel', 'Likes lego');
-INSERT INTO Users (id, username, bio) VALUES ('22222222', 'Tim', 'Also likes lego');
-INSERT INTO Users (id, username, bio) VALUES ('33333333', 'Anton', 'Hates lego');
+INSERT INTO Users (username, displayname, bio) VALUES ('11111111', 'Axel', 'Likes lego');
+INSERT INTO Users (username, displayname, bio) VALUES ('22222222', 'Tim', 'Also likes lego');
+INSERT INTO Users (username, displayname, bio) VALUES ('33333333', 'Anton', 'Hates lego');
+INSERT INTO Users (username, displayname, bio) VALUES ('TimTennis02', 'Tim Bakkenes', 'Likes to sell lego');
 
 INSERT INTO Passwords VALUES ('11111111', 'a');
 INSERT INTO Passwords VALUES ('22222222', 'b');
