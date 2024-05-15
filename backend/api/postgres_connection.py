@@ -1,137 +1,143 @@
 import psycopg2
-
-class DatabaseConnection():
-    
-    @staticmethod
-    def get_connection():
-        conn = psycopg2.connect(host="localhost", dbname="postgres", user="postgres", password="postgres", port="5432") 
-        return conn
-    
-    @staticmethod
-    def get_cursor(conn):
-        return conn.cursor()
-    
-
-class DataBaseManager():
-    def __init__(self):
-        self.conn = None
-        self.cur = None
-    
-    def get_conn(self):
-        self.conn = DatabaseConnection.get_connection()
-    
-    def get_cursor(self):
-        self.cur = DatabaseConnection.get_cursor(self.conn)
-    
-    def disconnect(self):
-        self.conn.close()
-        self.cur.close()
+from contextlib import contextmanager
 
 
-    def get_users(self):
-        query = """SELECT * FROM Users;"""
-        self.cur.execute(query)
-        value = self.cur.fetchall()
+@contextmanager
+def database_context():
+    conn = psycopg2.connect(host="localhost", dbname="postgres", user="postgres", password="postgres", port="5432")
+    cur = conn.cursor()
+    try:
+        yield cur, conn
+    finally:
+        cur.close()
+        conn.close()
+
+# Login
+def log_in(username, password):
+    query = "SELECT EXISTS (SELECT * FROM Passwords WHERE c_user = %s AND password = %s);"
+    val = (username, password)
+    with database_context() as (cur, conn):
+        cur.execute(query, val)
+        value = cur.fetchall()
+        return value[0][0]
+                
+
+# Users
+def get_users():
+    query = """SELECT * FROM Users;"""
+    with database_context() as (cur, conn):
+        cur.execute(query)
+        value = cur.fetchall()
         return value
     
-    def add_user(self, id, user, bio):
-        query = "INSERT INTO Users (id, username, bio) VALUES (%s, %s, %s)"
-        val = (id, user, bio) 
-        self.cur.execute(query, val)
-        self.conn.commit()
+def get_user_by_id(user_id):
+    query = "SELECT username, bio FROM Users WHERE id = %s;"
+    with database_context() as (cur, conn):
+        cur.execute(query, (user_id,))
+        user_row = cur.fetchone()
+        return {'username': user_row[0], 'bio': user_row[1]}
+    
+    
+def add_store(name, owner, descripiton, lat, long):
+    query = "INSERT INTO Stores (name, owner, description, latitude, longitude) VALUES (%s, %s, %s, %s, %s)"
+    with database_context() as (cur, conn):
+        val = (name, owner, descripiton, lat, long) 
+        cur.execute(query, val)
+        conn.commit()
         return "Success"
     
-    def log_in(self, username, password):
-        query = "SELECT EXISTS (SELECT * FROM Passwords WHERE c_user = %s AND password = %s);"
-        val = (username, password)
-        self.cur.execute(query, val)
-        value = self.cur.fetchall()
-        return value[0][0]
 
-    
-    def add_stores(self, id, owner, name, lat, long):
-        query = "INSERT INTO Stores (id, owner, name latitude, longitude) VALUES (%s, %s, %s, %s, %s)"
-        val = (id, owner, name, lat, long) 
-        self.cur.execute(query, val)
-        self.conn.commit()
+def remove_user(id):
+    query = "DELETE FROM Users WHERE (id = %s);"
+    val = (id,)
+    with database_context() as (cur, conn):
+        cur.execute(query, val)
+        conn.commit()
         return "Success"
-    
-    def get_favourites(self, user):
-        query = "SELECT store FROM Favourites WHERE user_id = %s"
-        val = (user,)
-        self.cur.execute(query, val)
-        result = self.cur.fetchall()
+
+
+
+# favourites 
+def get_favourites(user):
+    query = "SELECT store FROM Favourites WHERE user_id = %s"
+    val = (user,)
+    with database_context() as (cur, conn):
+        cur.execute(query, val)
+        value = cur.fetchall()
+        return value
+
+
+def add_favourite(user:str, store:str):
+    query = "INSERT INTO Favourites (user_id, store) VALUES (%s, %s);"
+    val = (user, store)
+    with database_context() as (cur, conn):
+        cur.execute(query, val)
+        conn.commit()
+        return "Success"
+
+def remove_favourite(user:str, store:str):
+    query = "DELETE FROM Favourites WHERE (user_id = %s AND store = %s);"
+    val = (user, store)
+    with database_context() as (cur, conn):
+        cur.execute(query, val)
+        conn.commit()
+        return "Success"
+
+
+def remove_store(self, id):
+    query = "DELETE FROM Stores WHERE (id = %s);"
+    val = (id,)
+    self.cur.execute(query, val)
+    self.conn.commit()
+
+# Stores
+def get_stores():
+    query = "SELECT * FROM Stores;"
+    with database_context() as (cur, conn):
+        cur.execute(query)
+        result = cur.fetchall()
+        keys = ["name", "owner", "description", "latitude", "longitude"]
+        return [zip(keys, row) for row in result]
+        
+
+
+
+
+# Ratings
+def get_ratings(user, store):
+    query = "SELECT store FROM Ratings WHERE user_id = %s AND store = %s"
+    val = (user, store)
+    with database_context() as (cur, conn):
+        cur.execute(query, val)
+        result = cur.fetchall()
         return result
-    
-    def add_favourite(self, user, store):
-        query = "INSERT INTO Favourites (user_id, store) VALUES (%s, %s);"
-        val = (user, store)
-        self.cur.execute(query, val)
-        self.conn.commit()
-        return "Success"
-    
-    def remove_favourite(self, user, store):
-        query = "DELETE FROM Favourites WHERE (user_id = %s AND stores = %s);"
-        val = (user, store)
-        self.cur.execute(query, val)
-        self.conn.commit()
-        return "Success"
-    
-    def remove_user(self, id):
-        query = "DELETE FROM Users WHERE (id = %s);"
-        val = (id,)
-        self.cur.execute(query, val)
-        self.conn.commit()
-        return "Success"
 
-    def get_stores(self):
-        query = "SELECT * FROM Stores;"
-        self.cur.execute(query)
-        result = self.cur.fetchall()
-        return "Success"
-
-    def remove_stores(self, id):
-        query = "DELETE FROM Stores WHERE (id = %s);"
-        val = (id,)
-        self.cur.execute(query, val)
-        self.conn.commit()
-        return "Success"
-    
-    def get_ratings(self, user, store):
-        query = "SELECT store FROM Ratings WHERE user_id = %s, store = %s"
-        val = (user,store)
-        self.cur.execute(query, val)
-        result = self.cur.fetchall()
-        return result
-    
-    def get_all_stores_rating(self):
-        query = "SELECT * FROM Agg_Ratings;"
-        self.cur.execute(query)
-        result = self.cur.fetchall()
+def get_all_stores_rating():
+    query = "SELECT * FROM Agg_Ratings;"
+    with database_context() as (cur, conn):
+        cur.execute(query)
+        result = cur.fetchall()
         return result
 
-    def add_rating(self, user, store, rating):
-        query = "INSERT INTO Ratings (user_id, store, rating) VALUES (%s, %s, %s);"
-        val = (user, store, rating)
-        self.cur.execute(query, val)
-        self.conn.commit()
+def add_rating(user, store, rating):
+    query = "INSERT INTO Ratings (user_id, store, rating) VALUES (%s, %s, %s);"
+    val = (user, store, rating)
+    with database_context() as (cur, conn):
+        cur.execute(query, val)
+        conn.commit()
         return "Success"
 
-    def remove_rating(self, user, store):
-        query = "DELETE FROM Ratings WHERE (user_id = %s, store = %s)"
-        val = (user, store)
-        self.cur.execute(query, val)
-        self.conn.commit()
+def remove_rating(user, store):
+    query = "DELETE FROM Ratings WHERE (user_id = %s AND store = %s)"
+    val = (user, store)
+    with database_context() as (cur, conn):
+        cur.execute(query, val)
+        conn.commit()
         return "Success"
 
 
         
         
-        
-d = DataBaseManager()
-d.get_conn()
-d.get_cursor()
-
-print(d.log_in('11111111', 'a'))
+    
 
         
