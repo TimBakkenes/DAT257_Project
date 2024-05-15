@@ -262,6 +262,7 @@ export function Google (username) {
                                 <h3>{selectedStore.name}</h3>
                                 <p>{selectedStore.description}</p>
                                 <p>Owner: {selectedStore.owner}</p>
+                                <p>Type of store: {selectedStore.type}</p>
                                 <p>Rating: {aggstoreRating[selectedStore.name]||"No rating set"}</p>
                                 <select value={userRating} onChange={(rating) => setUserRating(rating.target.value)}>
                                     {[1, 2, 3, 4, 5].map(num => (
