@@ -57,10 +57,12 @@ export function Google (username) {
     }; */
     
     const handleAddFavourites = () => {
-      axios.post("http://127.0.0.1:8000/api/post/add_favourite", {
-        user: "11111111",
-        store: "222222"
-      })
+      var data =  {
+        "user": username.parameter,
+        "store": selectedStore.name
+      }
+      console.log(data)
+      axios.post("http://127.0.0.1:8000/api/post/add_favourite", data)
       .then(response => {
         alert('Added to Favourites successfully');
         console.log(response);
