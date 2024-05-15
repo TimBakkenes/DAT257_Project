@@ -66,6 +66,7 @@ export function Google (username) {
       .then(response => {
         alert('Added to Favourites successfully');
         console.log(response);
+        window.location.reload()
       })
       .catch(error => {
           alert('Failed to add to Favourites');

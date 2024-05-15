@@ -64,7 +64,11 @@ def get_favourites(user):
     with database_context() as (cur, conn):
         cur.execute(query, val)
         value = cur.fetchall()
-        return value
+        val_array = []
+        for row in value:
+            val_dict ={'name': row[0]}
+            val_array.append(val_dict)
+        return val_array
 
 
 def add_favourite(user:str, store:str):

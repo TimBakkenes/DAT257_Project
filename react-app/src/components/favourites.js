@@ -1,7 +1,20 @@
 import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
-export function FavoriteStores() {
+export function FavoriteStores(username) {
     
+  const [favourtieStores, setFavouriteStores] = useState([])
+  useEffect(() => {
+    //console.log(username.parameter)
+    var url = `http://127.0.0.1:8000/api/get/get_favourites?user=${username.parameter}`
+    axios.get(url).then((response) => {
+      setFavouriteStores(response.data)
+      console.log(response.data)
+    }).catch((error) => {
+      alert("Failed to fetch favourites" + error)
+    })
+  }, []) 
+
     const [stores, setStores] = useState([
         {
             name: "Store 1",
@@ -72,15 +85,15 @@ export function FavoriteStores() {
         </div>
 
       <div className="stores-container">
-        {stores.map((store, index) => (
+        {favourtieStores.map((store, index) => (
           <div key={index} className="store">
-            <img src={store.image} alt={store.name} />
+            <img src={"store1.jpg"} alt={store.name} />
             <h2>{store.name}</h2>
             <div className="rating">
               {renderStars(store.rating)}
               <span>({store.rating})</span>
             </div>
-            <p>Description: {store.description}</p>
+            <p>Description: {"hej"}</p>
           </div>
         ))}
       </div>
