@@ -29,6 +29,12 @@
   border-radius: 2px;
 }
 
+.googleButton button:hover {
+  transform: scale(1.1);
+  background-color: #9fddb0;
+  color: white;
+}
+
 .store-filter select {
   height: 100%;
   width: 100%;
