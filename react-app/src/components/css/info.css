@@ -3,7 +3,7 @@
 }
 
 .store-filter {
-  z-index: 1000;
+  z-index: 1;
   width: 14%;
   height: 5%;
   position: absolute;
@@ -13,13 +13,15 @@
 }
 
 .googleButton {
-  z-index: 1000;
+  z-index: 1;
   width: 7%;
   height: 5%;
   position: absolute;
   right: 22%;
   top: 1.3%;
   box-shadow:1px 1px 1px #c9c8c8;
+  
+  overflow: hidden; 
 }
 .googleButton button {
   height: 100%;
@@ -41,5 +43,4 @@
   float: left;
   border: none;
   border-radius: 2px;
-  
 }
