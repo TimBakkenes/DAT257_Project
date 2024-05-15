@@ -4,7 +4,7 @@ class DatabaseConnection():
     
     @staticmethod
     def get_connection():
-        conn = psycopg2.connect(host="localhost", dbname="postgres", user="postgres", password="postgres", port="5432") 
+        conn = psycopg2.connect(host="localhost", dbname="postgres", user="postgres", password="POSTGRES", port="5432") 
         return conn
     
     @staticmethod
