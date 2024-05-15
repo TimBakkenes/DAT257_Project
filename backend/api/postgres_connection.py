@@ -1,12 +1,11 @@
 import psycopg2
-from pydantic import BaseModel
 from contextlib import contextmanager
 from psycopg2 import DatabaseError
 
 
 @contextmanager
 def database_context():
-    conn = psycopg2.connect(host="localhost", dbname="postgres", user="postgres", password="postgres", port="5432")
+    conn = psycopg2.connect(host="localhost", dbname="postgres", user="postgres", password="POSTGRES", port="5432")
     cur = conn.cursor()
     try:
         yield cur, conn

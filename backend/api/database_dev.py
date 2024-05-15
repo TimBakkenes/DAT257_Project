@@ -17,15 +17,15 @@ for table_name in table_names:
     print(f"Dropped table {table_name[0]}")
 
 
-with open("DAT257_Project/backend/api/tables.sql", "r") as tables_file:
+with open("backend/api/tables.sql", "r") as tables_file:
     create_tables = tables_file.read()
     cursor.execute(create_tables)
 
-with open("DAT257_Project/backend/api/inserts.sql", "r") as inserts_file:
+with open("backend/api/inserts.sql", "r") as inserts_file:
     inserts = inserts_file.read()
     cursor.execute(inserts)
 
-with open("DAT257_Project/backend/api/views.sql", "r") as views_file:
+with open("backend/api/views.sql", "r") as views_file:
     views = views_file.read()
     cursor.execute(views)
 
