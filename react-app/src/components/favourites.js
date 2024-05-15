@@ -89,8 +89,8 @@ export function FavoriteStores(username) {
           <div key={index} className="store">
             <h2>{store.name}</h2>
             <div className="rating">
-              {renderStars(randint)}
-              <span>({randint})</span>
+              {renderStars(Math.random()*5)}
+              <span>({})</span>
             </div>
             <p>Description: {store.description}</p>
           </div>
