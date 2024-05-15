@@ -14,10 +14,10 @@ class RatingData(BaseModel):
     store: str
     rating: int
 
-class StoreData(BaseModel):
-    id: str
-    owner: str
+class Store(BaseModel):
     name: str
+    owner: str
+    description: str
     lat: float
     long: float
    
@@ -88,10 +88,13 @@ async def remove_user(model: RemoveUserData):
 @app.get("/api/get/get_stores")
 async def get_stores():
    return dc.get_stores()
+    
 
 @app.post("/api/post/add_store")
-async def add_store(model: StoreData):
-   return dc.add_store(model.id, model.owner, model.name, model.lat, model.long)
+async def add_store(store: Store):
+   print("test")
+   return dc.add_store(store.name, store.owner, store.description, store.lat, store.long)
+
 
 @app.post("/api/post/remove_store")
 async def remove_store(id: str):
