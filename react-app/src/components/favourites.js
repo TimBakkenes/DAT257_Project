@@ -9,6 +9,7 @@ export function FavoriteStores(username) {
     var url = `http://127.0.0.1:8000/api/get/get_favourites?user=${username.parameter}`
     axios.get(url).then((response) => {
       setFavouriteStores(response.data)
+      console.log("222")
       console.log(response.data)
     }).catch((error) => {
       alert("Failed to fetch favourites" + error)
@@ -75,6 +76,27 @@ export function FavoriteStores(username) {
   
       return () => clearTimeout(timer);
     }, []); */
+
+    useEffect(() => {
+      fetchRatings();
+      console.log("Test")
+      console.log(aggstoreRating)
+    }, []);
+
+    const [aggstoreRating, setaggStoreRating] = useState({})
+    const fetchRatings = async () => {
+        try {
+          const aggResponse = await axios.get('http://localhost:8000/api/get/get_all_stores_ratings')
+          var storeRatings = aggResponse.data.reduce((acc, [name, rating]) => {
+            acc[name] = rating;
+            return acc;
+          }, {});
+          setaggStoreRating(storeRatings)
+          console.log(aggstoreRating)
+      } catch (error) {
+          console.error('Failed to fetch rating:', error);
+      }
+    }
   
     return (
     <div className="stores-wrapper">
@@ -89,8 +111,8 @@ export function FavoriteStores(username) {
           <div key={index} className="store">
             <h2>{store.name}</h2>
             <div className="rating">
-              {renderStars(Math.random()*5)}
-              <span>({})</span>
+              {renderStars(aggstoreRating[store.name])}
+              <span>({aggstoreRating[store.name]})</span>
             </div>
             <p>Description: {store.description}</p>
           </div>
