@@ -21,9 +21,6 @@
     background-color: transparent;
 }
 
-/* .map-button {
-/*  background-image: url('./Icon_map.png'); /* Path to your image */
-/*} */
 
 .favorites-button {
     background-image: url('./Icon_heart.png'); /* Path to your image */
@@ -45,6 +42,12 @@
     transform: scale(1.1); /* Slightly enlarge button on hover */
 }
 
+.log-out {
+    position: absolute;
+    right: 5%;
+    width: 100px; 
+    height: 30px;
+}
 
  
   
